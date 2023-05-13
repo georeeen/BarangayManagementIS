@@ -67,7 +67,7 @@ session_start();
                   $_SESSION['userid'] = $row['id'];
                   $_SESSION['username'] = $row['username'];
                 }    
-                header ('location: pages/officials/officials.php');
+                header ('location: pages/dashboard/dashboard.php');
             }
             elseif($numrow_zone > 0)
             {
