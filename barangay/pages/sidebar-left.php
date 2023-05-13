@@ -29,8 +29,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="../staff/staff.php">
-                                    <i class="fa fa-user"></i> <span>Staff</span>
+                                <a href="../announcements/announcements.php">
+                                    <i class="fa fa-user"></i> <span>Announcement</span>
                                 </a>
                             </li>
                             <li>
