@@ -3,7 +3,7 @@
    echo  '<header class="header">
             <a href="#" class="logo">
                 <!-- Add the class icon to your logo image or logo icon to add the margining -->
-                Barangay Information System
+                Barangay Tangos North
             </a>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top" role="navigation">
@@ -14,7 +14,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <div class="navbar-right">
+                <div class="navbar-left">
                     <ul class="nav navbar-nav">
 
                         <!-- User Account: style can be found in dropdown.less -->
