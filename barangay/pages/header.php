@@ -75,20 +75,6 @@
                                     </div>';
                             } 
                         }
-                        elseif($_SESSION['role'] == "Zone Leader"){
-                            $user = mysqli_query($con,"SELECT * from tblzone where id = '".$_SESSION['userid']."' ");
-                            while($row = mysqli_fetch_array($user)){
-                                echo '
-                                    <div class="form-group">
-                                        <label>Username:</label>
-                                        <input name="txt_username" id="txt_username" class="form-control input-sm" type="text" value="'.$row['username'].'" />
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Password:</label>
-                                        <input name="txt_password" id="txt_password" class="form-control input-sm" type="password"  value="'.$row['password'].'"/>
-                                    </div>';
-                            } 
-                        }
                         elseif($_SESSION['staff'] == "Staff"){
                             $user = mysqli_query($con,"SELECT * from tblstaff where id = '".$_SESSION['userid']."' ");
                             while($row = mysqli_fetch_array($user)){
