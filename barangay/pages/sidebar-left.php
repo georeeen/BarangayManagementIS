@@ -34,11 +34,6 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="../zone/zone.php">
-                                    <i class="fa fa-user"></i> <span>Zone Leader</span>
-                                </a>
-                            </li>
-                            <li>
                                 <a href="../household/household.php">
                                     <i class="fa fa-home"></i> <span>Household</span>
                                 </a>
@@ -80,21 +75,6 @@
                             </li>                            
                             
                     </ul>';
-                    }
-                    elseif($_SESSION['role'] == "Zone Leader"){
-                        echo '
-                        <ul class="sidebar-menu">
-                            <li>
-                                <a href="../permit/permit.php">
-                                    <i class="fa fa-file"></i> <span>Permit</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../clearance/clearance.php">
-                                    <i class="fa fa-file"></i> <span>Clearance</span>
-                                </a>
-                            </li>
-                        </ul>';
                     }
                     elseif(isset($_SESSION['staff'])){
                         echo '
