@@ -1,20 +1,19 @@
 <?php
 if(isset($_POST['btn_add'])){
-    $txt_name = $_POST['txt_name'];
-    $txt_uname = $_POST['txt_uname'];
-    $txt_pass = $_POST['txt_pass'];
+    $txt_announcement = $_POST['txt_announcement'];
+    $txt_about = $_POST['txt_about'];
 
     if(isset($_SESSION['role'])){
-        $action = 'Added Staff with name of '.$txt_name;
-        $iquery = mysqli_query($con,"INSERT INTO tbllogs (user,logdate,action) values ('".$_SESSION['role']."', NOW(), '".$action."')");
+        $action = 'Added Announcement'.$txt_id;
+        $iquery = mysqli_query($con,"INSERT INTO tblannounce (announcement, about, action) values ('".$_SESSION['role']."', NOW(), '".$action."')");
     }
 
-    $su = mysqli_query($con,"SELECT * from tblstaff where username = '".$txt_uname."' ");
+    $su = mysqli_query($con,"SELECT * from tblannounce where about = '".$txt_about."' ");
     $ct = mysqli_num_rows($su);
     
     if($ct == 0){
-        $query = mysqli_query($con,"INSERT INTO tblstaff (name,username,password) 
-            values ('$txt_name', '$txt_uname', '$txt_pass')") or die('Error: ' . mysqli_error($con));
+        $query = mysqli_query($con,"INSERT INTO tblannounce (announcement,about) 
+            values ('$txt_title', '$txt_about')") or die('Error: ' . mysqli_error($con));
         if($query == true)
         {
             $_SESSION['added'] = 1;
@@ -31,20 +30,19 @@ if(isset($_POST['btn_add'])){
 if(isset($_POST['btn_save']))
 {
     $txt_id = $_POST['hidden_id'];
-    $txt_edit_name = $_POST['txt_edit_name'];
-    $txt_edit_uname = $_POST['txt_edit_uname'];
-    $txt_edit_pass = $_POST['txt_edit_pass'];
-
+    $txt_edit_title = $_POST['txt_edit_title'];
+    $txt_edit_about = $_POST['txt_edit_about'];
+    
     if(isset($_SESSION['role'])){
-        $action = 'Update Staff with name of '.$txt_edit_name;
-        $iquery = mysqli_query($con,"INSERT INTO tbllogs (user,logdate,action) values ('".$_SESSION['role']."', NOW(), '".$action."')");
+        $action = 'Update Successfully'.$txt_edit_title;
+        $iquery = mysqli_query($con,"INSERT INTO tblannouncelogs (title,about,logdate,action) values ('".$_SESSION['role']."', NOW(), '".$action."')");
     }
 
-    $su = mysqli_query($con,"SELECT * from tblstaff where username = '".$txt_edit_uname."' ");
+    $su = mysqli_query($con,"SELECT * from tblannounce where about = '".$txt_edit_about."' ");
     $ct = mysqli_num_rows($su);
     
     if($ct == 0){
-        $update_query = mysqli_query($con,"UPDATE tblstaff set name = '".$txt_edit_name."', username = '".$txt_edit_uname."', password = '".$txt_edit_pass."' where id = '".$txt_id."' ") or die('Error: ' . mysqli_error($con));
+        $update_query = mysqli_query($con,"UPDATE tblannounce set name = '".$txt_edit_title."', about = '".$txt_edit_about."' where id = '".$txt_id."' ") or die('Error: ' . mysqli_error($con));
 
         if($update_query == true){
             $_SESSION['edited'] = 1;
@@ -63,7 +61,7 @@ if(isset($_POST['btn_delete']))
     {
         foreach($_POST['chk_delete'] as $value)
         {
-            $delete_query = mysqli_query($con,"DELETE from tblstaff where id = '$value' ") or die('Error: ' . mysqli_error($con));
+            $delete_query = mysqli_query($con,"DELETE from tblannounce where id = '$value' ") or die('Error: ' . mysqli_error($con));
                     
             if($delete_query == true)
             {
