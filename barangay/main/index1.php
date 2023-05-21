@@ -75,6 +75,7 @@
             ';
             include "detailsModal.php";
         }
+        ;
         ?>
     </tbody>
 </table>
