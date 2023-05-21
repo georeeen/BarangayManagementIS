@@ -91,9 +91,9 @@
 
                             <?php include "../duplicate_error.php"; ?>
 
-            <?php include "add_modal.php"; ?>
+                            <?php include "add_modal.php"; ?>
 
-            <?php include "function.php"; ?>
+                            <?php include "edit_modal.php"; ?>    
 
 
                     </div>   <!-- /.row -->
