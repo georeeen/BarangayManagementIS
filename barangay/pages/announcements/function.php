@@ -30,12 +30,12 @@ if(isset($_POST['btn_add'])){
 if(isset($_POST['btn_save']))
 {
     $txt_id = $_POST['hidden_id'];
-    $txt_edit_title = $_POST['txt_edit_title'];
+    $txt_edit_announcement = $_POST['txt_edit_announcement'];
     $txt_edit_about = $_POST['txt_edit_about'];
     
     if(isset($_SESSION['role'])){
-        $action = 'Update Successfully'.$txt_edit_title;
-        $iquery = mysqli_query($con,"INSERT INTO tblannouncelogs (title,about,logdate,action) values ('".$_SESSION['role']."', NOW(), '".$action."')");
+        $action = 'Update Successfully'.$txt_edit_announcement;
+        $iquery = mysqli_query($_POST,"INSERT INTO tblannounce (title,about,logdate,action) values ('".$_SESSION['role']."', NOW(), '".$action."')");
     }
 
     $su = mysqli_query($con,"SELECT * from tblannounce where about = '".$txt_edit_about."' ");
