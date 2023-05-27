@@ -56,7 +56,7 @@
 <div class="wrapper row-offcanvas row-offcanvas-left">
 
 <div class="breadcrumb">
-  <h3> <b>Welcome Resident,</b>  </h3>
+  <center> <h3> <b>Welcome Resident,</b>  </h3>
   <center>
   &nbsp; 
   &nbsp; 
