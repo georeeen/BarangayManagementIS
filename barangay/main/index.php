@@ -66,12 +66,7 @@
   <center> <h3> <b>Welcome Resident,</b>  </h3> 
   &nbsp; 
       <br> 
-  <a class="center" href="index.php"><img alt="Brand" src="../img/logo.png" style="width:70px; margin-top:-15px; "></a>
-  <style> 
-body {
-  background-color: lightgreen;
-}   
-</style> 
+  <a class="center" href="index.php"><img alt="Brand" src="../img/logo.png" style="width:70px; margin-top:-15px; background-color: lightgreen; "></a>
   <center>
  <a class="center" href="index.php"><img alt="Brand" src="../img/bg.jpg" style="width:800px; margin-top:50px;"></a>
   &nbsp; 
