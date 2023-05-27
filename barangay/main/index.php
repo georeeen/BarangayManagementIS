@@ -76,6 +76,7 @@
   <br>
   <br> To be a community that promotes peace and wellness, environmental and health hygiene, become developed in the field of economy and provide more knowledge. Education for the youth towards the growth of the individual and the society as a whole.
 
+  <br> 
   <br>
   <br> <b> MISSION </b> 
   <br>
