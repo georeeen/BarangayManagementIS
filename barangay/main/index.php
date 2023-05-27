@@ -56,7 +56,7 @@
 <div class="breadcrumb">
  <center>  <h3><b>Welcome Resident,</b> </h3>
 
- <h1> Learn more about </h1>
+ <h1>  color: green; Learn more about </h1>
 </div>
 
 </div>
