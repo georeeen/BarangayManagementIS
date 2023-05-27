@@ -24,7 +24,7 @@
             <?php include('../sidebar-left.php'); ?>
 
             <!-- Right side column. Contains the navbar and content of the page -->
-            <aside class="center">
+            <aside class="right-side">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                  <h1>
