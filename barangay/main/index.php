@@ -70,12 +70,14 @@
   entrepreneurs usually lived in Barangay Tangos, which was once considered the "first class subdivision" of the BNI Realty Corporation. (BNI) because of their prosperous 
   business. The village later became a "commercial" and "industrial" area and was called the "business capital" of Navotas. Livelihood improved in the village and in 1967 it 
   began to be called Barangay Tangos.
-
+  
+  <br> 
   <br> <b> VISION </b> 
   <br> To be a community that promotes peace and wellness, environmental and health hygiene, become developed in the field of economy and provide more knowledge. Education for the youth towards the growth of the individual and the society as a whole.
 
-MISSION
-Lead and be a model in the way of life through unity, cooperation with fear of God. </h4>
+  <br>
+  <br> <b> MISSION </b>
+  <br>  Lead and be a model in the way of life through unity, cooperation with fear of God. </h4>
 
 
 </div>
