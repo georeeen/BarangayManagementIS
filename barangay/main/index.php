@@ -29,7 +29,10 @@
     </style>
 </head>
 <body>
-background-image: img alt="Brand" src="../img/logo.png"
+{
+  background-image: url("paper.gif");
+  background-color: #cccccc;
+}
 <nav class="navbar navbar-inverse" style="border-radius:0px;">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
