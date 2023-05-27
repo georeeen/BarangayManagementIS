@@ -36,9 +36,6 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        {
-  background-color: lightblue;
-} 
       </button>
       <a class="navbar-brand" href="index.php"><img alt="Brand" src="../img/logo.png" style="width:50px; margin-top:-15px; "></a>
     </div>
@@ -60,7 +57,9 @@
  <center>  <h3><b>Welcome Resident,</b> </h3>
  <t> </t>
 
- <right> <h4> Barangay Tangos is a former fishpond that is part of the San Roque coast. The word Tangos means "sea coast" or "beach". The Patron of this barangay is San Roque which is believed by many to provide abundant marine resources to fishermen; which raises the livelihood of the village.
+ <p> {
+  text-indent: 50px;
+} <right> <h4> Barangay Tangos is a former fishpond that is part of the San Roque coast. The word Tangos means "sea coast" or "beach". The Patron of this barangay is San Roque which is believed by many to provide abundant marine resources to fishermen; which raises the livelihood of the village.
 
 Fishermen entrepreneurs usually lived in Barangay Tangos, which was once considered the "first class subdivision" of the BNI Realty Corporation. (BNI) because of their prosperous business.
 
@@ -70,7 +69,7 @@ VISION
 To be a community that promotes peace and wellness, environmental and health hygiene, become developed in the field of economy and provide more knowledge. Education for the youth towards the growth of the individual and the society as a whole.
 
 MISSION
-Lead and be a model in the way of life through unity, cooperation with fear of God. </h4>
+Lead and be a model in the way of life through unity, cooperation with fear of God. </h4> </p>
 </div>
 
 </div>
