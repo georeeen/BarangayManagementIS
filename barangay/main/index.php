@@ -55,6 +55,8 @@
 
 <div class="breadcrumb">
  <center>  <h3><b>Welcome Resident,</b> </h3>
+ <p> </p>
+ <p> </p>
 
  <right> <h4> Barangay Tangos is a former fishpond that is part of the San Roque coast. The word Tangos means "sea coast" or "beach". The Patron of this barangay is San Roque which is believed by many to provide abundant marine resources to fishermen; which raises the livelihood of the village.
 
