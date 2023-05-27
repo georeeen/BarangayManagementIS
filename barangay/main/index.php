@@ -29,7 +29,7 @@
     
   
     
-    </style>
+    
 </head>
 <body>
 <nav class="navbar navbar-inverse" style="border-radius:0px;">
@@ -91,6 +91,7 @@
 
 </div>
   
+</style>
 </body>
 
 
