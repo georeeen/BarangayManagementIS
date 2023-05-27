@@ -56,7 +56,7 @@
     <thead>
         <tr>
             <th>Title</th>
-            <th>Welcome</th>
+            <th>About</th>
             <th style="width: 5% !important;">Details</th>
         </tr>
     </thead>
