@@ -57,7 +57,7 @@
 
 <div class="breadcrumb">
  <center>  <h3><b>Welcome Resident,</b> </h3>
- <t> </t>
+ <a class="navbar-brand" href="index.php"><img alt="Brand" src="../img/logo.png" style="width:50px; margin-top:-15px; "></a>
 
  <p> 
  &nbsp; 
