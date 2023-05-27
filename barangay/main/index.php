@@ -23,6 +23,9 @@
     .dataTables_filter input { 
     padding-top: 50px;
     padding-bottom: 50px;}
+    .p1 {
+  font-family: "Times New Roman", Times, serif;
+}
     </style>
 </head>
 <body>
@@ -53,7 +56,7 @@
 <div class="wrapper row-offcanvas row-offcanvas-left">
 
 <div class="breadcrumb">
-    <h3>Welcome Resident, </h3>
+<p class="p1"> <center> <h3>Welcome Resident, </h3> </p>
 </div>
 
 </div>
