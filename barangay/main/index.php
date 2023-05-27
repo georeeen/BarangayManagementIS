@@ -71,7 +71,7 @@
   business. The village later became a "commercial" and "industrial" area and was called the "business capital" of Navotas. Livelihood improved in the village and in 1967 it 
   began to be called Barangay Tangos.
 
-VISION
+  <br> <b> VISION </b> 
 To be a community that promotes peace and wellness, environmental and health hygiene, become developed in the field of economy and provide more knowledge. Education for the youth towards the growth of the individual and the society as a whole.
 
 MISSION
