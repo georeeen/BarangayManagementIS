@@ -72,15 +72,15 @@
   began to be called Barangay Tangos.</p> </h4>
   
   <br> 
-  <br> <h4><p style="padding: 10px; border: 2px solid green;"> <b> VISION </b> 
+  <br> <h4><p style="padding: 10px; border: 2px solid green;"> <b> VISION </b> </p>
   <br>
-  <br> To be a community that promotes peace and wellness, environmental and health hygiene, become developed in the field of economy and provide more knowledge. Education for the youth towards the growth of the individual and the society as a whole. </p>
+  <br> To be a community that promotes peace and wellness, environmental and health hygiene, become developed in the field of economy and provide more knowledge. Education for the youth towards the growth of the individual and the society as a whole. 
 
   <br> 
   <br> <p style="padding: 10px; border: 2px solid green;">
-  <br> <b> MISSION </b> 
+  <br> <b> MISSION </b> </p>
   <br>
-  <br>  Lead and be a model in the way of life through unity, cooperation with fear of God. </h4> </p>
+  <br>  Lead and be a model in the way of life through unity, cooperation with fear of God. </h4> <
   <h4> _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ </h4>
 
 
