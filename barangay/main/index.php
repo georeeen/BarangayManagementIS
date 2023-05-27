@@ -56,9 +56,12 @@
 <div class="wrapper row-offcanvas row-offcanvas-left">
 
 <div class="breadcrumb">
- <div> <center>  <h3><b>Welcome Resident,</b> </h3> </div>
+  <h3> <b>Welcome Resident,</b>  </h3>
+  &nbsp; 
+  &nbsp; 
  <a class="navbar-brand" href="index.php"><img alt="Brand" src="../img/bg.jpg" style="width:1000px; margin-top:50px; "></a>
-
+ &nbsp; 
+ &nbsp; 
  <p> 
  &nbsp; 
  &nbsp; 
