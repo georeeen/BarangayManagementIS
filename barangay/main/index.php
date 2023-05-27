@@ -29,11 +29,7 @@
 </style>    
 </head>
 <body>
-      <style> 
-      body {
-  background-color: #E0F8EC;
-}   
-</style>
+      
 <nav class="navbar navbar-inverse" style="border-radius:0px;">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -63,7 +59,7 @@
 <div class="breadcrumb">
 
 
-  <center> <h3> <b>Welcome Resident,</b>  </h3> 
+  <center> <h3> <b>Welcome</b>  </h3> 
   &nbsp; 
       <br> 
   <a class="center" href="index.php"><img alt="Brand" src="../img/logo.png" style="width:70px; margin-top:-15px;"></a>
