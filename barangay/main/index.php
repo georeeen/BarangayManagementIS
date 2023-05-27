@@ -23,16 +23,14 @@
     .dataTables_filter input { 
     padding-top: 50px;
     padding-bottom: 50px;}
-
+    body {
+  background-color: coral;
+}
   
     
     </style>
 </head>
 <body>
-{
-  background-image: url("paper.gif");
-  background-color: #cccccc;
-}
 <nav class="navbar navbar-inverse" style="border-radius:0px;">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
