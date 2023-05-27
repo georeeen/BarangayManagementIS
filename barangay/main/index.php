@@ -58,7 +58,8 @@
 <div class="breadcrumb">
   <center> <h3> <b>Welcome Resident,</b>  </h3> 
   &nbsp; 
-  <a class="center" href="index.php"><img alt="Brand" src="../img/logo.png" style="width:50px; margin-top:-15px; "></a>
+      <br> 
+  <a class="center" href="index.php"><img alt="Brand" src="../img/logo.png" style="width:70px; margin-top:-15px; "></a>
   <center>
  <a class="center" href="index.php"><img alt="Brand" src="../img/bg.jpg" style="width:800px; margin-top:50px;"></a>
   &nbsp; 
