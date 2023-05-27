@@ -24,11 +24,11 @@
             <?php include('../sidebar-left.php'); ?>
 
             <!-- Right side column. Contains the navbar and content of the page -->
-            <aside class="right-side">
+            <aside class="center">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
-                   <div class= "center"> <h1>
-                    Announcements </h1> </div>
+                 <h1>
+                    Announcements </h1>
                     
                 </section>
 
