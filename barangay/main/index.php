@@ -62,7 +62,6 @@
  <a class="navbar-brand" href="index.php"><img alt="Brand" src="../img/bg.jpg" style="width:1000px; margin-top:50px; "></a>
  &nbsp; 
  &nbsp; 
- <p> 
  &nbsp; 
  &nbsp; 
  &nbsp; 
