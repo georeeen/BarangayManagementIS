@@ -77,10 +77,10 @@
   <br> To be a community that promotes peace and wellness, environmental and health hygiene, become developed in the field of economy and provide more knowledge. Education for the youth towards the growth of the individual and the society as a whole. </p>
 
   <br> 
-  <br>
+  <br> <p style="padding: 10px; border: 2px solid green;">
   <br> <b> MISSION </b> 
   <br>
-  <br>  Lead and be a model in the way of life through unity, cooperation with fear of God. </h4>
+  <br>  Lead and be a model in the way of life through unity, cooperation with fear of God. </h4> </p>
   <h4> _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ </h4>
 
 
