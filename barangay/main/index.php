@@ -31,7 +31,7 @@
 <body>
       <style> 
       body {
-  background-color: lightgreen;
+  background-color: #E0F8EC;
 }   
 </style>
 <nav class="navbar navbar-inverse" style="border-radius:0px;">
@@ -62,7 +62,7 @@
 <h4> _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ </h4>
 <div class="breadcrumb">
 
-
+<div>
   <center> <h3> <b>Welcome Resident,</b>  </h3> 
   &nbsp; 
       <br> 
@@ -95,7 +95,7 @@
 
 
 </div>
-
+</div>
 </body>
 
 
