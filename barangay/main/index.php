@@ -31,7 +31,7 @@
 <body>
       <style> 
       body {
-  background-color: light green;
+  background-color: lightgreen;
 }   
 </style>
 <nav class="navbar navbar-inverse" style="border-radius:0px;">
