@@ -80,7 +80,7 @@
   <br> <p style="padding: 10px; border: 2px solid green;">
   <br> <b> MISSION </b> </p>
   <br>
-  <br>  Lead and be a model in the way of life through unity, cooperation with fear of God. </h4> <
+  <br>  Lead and be a model in the way of life through unity, cooperation with fear of God. </h4> 
   <h4> _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ </h4>
 
 
