@@ -62,9 +62,9 @@
  &nbsp; 
  &nbsp; 
 
- <right> <h4> Barangay Tangos is a former fishpond that is part of the San Roque coast. The word Tangos means "sea coast" or "beach". The Patron of this barangay is San Roque which is believed by many to provide abundant marine resources to fishermen; which raises the livelihood of the village.
+ <right> <h4>  <p class="space">Barangay Tangos is a former fishpond that is part of the San Roque coast. The word Tangos means "sea coast" or "beach". The Patron of this barangay is San Roque which is believed by many to provide abundant marine resources to fishermen; which raises the livelihood of the village.</p>
 
-Fishermen entrepreneurs usually lived in Barangay Tangos, which was once considered the "first class subdivision" of the BNI Realty Corporation. (BNI) because of their prosperous business.
+ <p class="space"> Fishermen entrepreneurs usually lived in Barangay Tangos, which was once considered the "first class subdivision" of the BNI Realty Corporation. (BNI) because of their prosperous business. </p>
 
 The village later became a "commercial" and "industrial" area and was called the "business capital" of Navotas. Livelihood improved in the village and in 1967 it began to be called Barangay Tangos.
 
