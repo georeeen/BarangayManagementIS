@@ -66,9 +66,9 @@
   <center> <h3> <b>Welcome Resident,</b>  </h3> 
   &nbsp; 
       <br> 
-  <a class="center" href="index.php"><img alt="Brand" src="../img/logo.png" style="width:70px; margin-top:-15px; background-color: #E0F8EC; "></a>
+  <a class="center" href="index.php"><img alt="Brand" src="../img/logo.png" style="width:70px; margin-top:-15px;"></a>
   <center>
- <a class="center" href="index.php"><img alt="Brand" src="../img/bg.jpg" style="width:800px; margin-top:50px; background-color: #E0F8EC;"></a>
+ <a class="center" href="index.php"><img alt="Brand" src="../img/bg.jpg" style="width:800px; margin-top:50px;"></a>
   &nbsp; 
   &nbsp;
 
@@ -82,12 +82,12 @@
   
 
   <br> 
-  <br> <h4><p style="padding: 10px; border: 2px solid green; background-color: #E0F8EC;"> <b> VISION </b> </p>
+  <br> <h4><p style="padding: 10px; border: 2px solid green;"> <b> VISION </b> </p>
   <br>
   <br> To be a community that promotes peace and wellness, environmental and health hygiene, become developed in the field of economy and provide more knowledge. Education for the youth towards the growth of the individual and the society as a whole. 
 
   <br> 
-  <br> <p style="padding: 10px; border: 2px solid green; background-color: #E0F8EC;">
+  <br> <p style="padding: 10px; border: 2px solid green;">
   <br> <b> MISSION </b> </p>
   <br>
   <br>  Lead and be a model in the way of life through unity, cooperation with fear of God. </h4> 
