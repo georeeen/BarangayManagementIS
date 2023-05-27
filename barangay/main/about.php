@@ -47,7 +47,7 @@
 <div class="wrapper row-offcanvas row-offcanvas-left">
 
 <div class="breadcrumb">
-    <h2> Welcome </h2>
+    <h2> Hello </h2>
 </div>
 
 </div>
