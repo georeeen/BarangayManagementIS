@@ -27,9 +27,8 @@
             <aside class="right-side">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
-                    <h1>
-                        Announcements
-                    </h1>
+                   <div class= "center"> <h1>
+                    Announcements </h1> </div>
                     
                 </section>
 
