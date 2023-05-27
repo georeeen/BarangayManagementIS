@@ -72,7 +72,7 @@
   began to be called Barangay Tangos.
 
   <br> <b> VISION </b> 
-To be a community that promotes peace and wellness, environmental and health hygiene, become developed in the field of economy and provide more knowledge. Education for the youth towards the growth of the individual and the society as a whole.
+  <br> To be a community that promotes peace and wellness, environmental and health hygiene, become developed in the field of economy and provide more knowledge. Education for the youth towards the growth of the individual and the society as a whole.
 
 MISSION
 Lead and be a model in the way of life through unity, cooperation with fear of God. </h4>
