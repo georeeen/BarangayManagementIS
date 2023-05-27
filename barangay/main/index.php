@@ -60,16 +60,15 @@
 
 <div class="wrapper row-offcanvas row-offcanvas-left">
 <h4> _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ </h4>
-<div>
 <div class="breadcrumb">
 
 
   <center> <h3> <b>Welcome Resident,</b>  </h3> 
   &nbsp; 
       <br> 
-  <a class="center" href="index.php"><img alt="Brand" src="../img/logo.png" style="width:70px; margin-top:-15px; background-color: lightgreen; "></a>
+  <a class="center" href="index.php"><img alt="Brand" src="../img/logo.png" style="width:70px; margin-top:-15px; background-color: #E0F8EC; "></a>
   <center>
- <a class="center" href="index.php"><img alt="Brand" src="../img/bg.jpg" style="width:800px; margin-top:50px;"></a>
+ <a class="center" href="index.php"><img alt="Brand" src="../img/bg.jpg" style="width:800px; margin-top:50px; background-color: #E0F8EC;"></a>
   &nbsp; 
   &nbsp;
 
@@ -88,14 +87,13 @@
   <br> To be a community that promotes peace and wellness, environmental and health hygiene, become developed in the field of economy and provide more knowledge. Education for the youth towards the growth of the individual and the society as a whole. 
 
   <br> 
-  <br> <p style="padding: 10px; border: 2px solid green;">
+  <br> <p style="padding: 10px; border: 2px solid green; background-color: #E0F8EC;">
   <br> <b> MISSION </b> </p>
   <br>
   <br>  Lead and be a model in the way of life through unity, cooperation with fear of God. </h4> 
   <h4> _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ </h4>
 
 
-</div>
 </div>
 </body>
 
