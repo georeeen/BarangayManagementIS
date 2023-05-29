@@ -71,7 +71,7 @@
                                                 <th>Address</th>
                                                 <th>Head of the Family</th>
                                                 <th>No. of Members</th>
-                                                <th style="width: 40px !important;">Option</th>
+                                                <th style="width: 40px !important;">Manage</th>
                                             </tr>
                                         </thead>
                                         <tbody>
