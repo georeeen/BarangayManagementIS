@@ -15,20 +15,20 @@
                     <input class="form-control input-sm" type="text" value="'.$row['residentname'].'" readonly/>
                 </div>
                 <div class="form-group">
+                <label>Type of Business:</label>
+                <select name="ddl_edit_tob" class="form-control input-sm">
+                    <option value="'.$row['typeOfBusiness'].'" selected>'.$row['typeOfBusiness'].'</option>
+                    <option value="Option 1">Option 1</option>
+                    <option value="Option 2">Option 2</option>
+                </select>
+            </div>
+                <div class="form-group">
                     <label>Business Name: </label>
                     <input name="txt_edit_busname" class="form-control input-sm" type="text" value="'.$row['businessName'].'"/>
                 </div>
                 <div class="form-group">
                     <label>Business Address : </label>
                     <input name="txt_edit_busadd" class="form-control input-sm" type="text" value="'.$row['businessAddress'].'" />
-                </div>
-                <div class="form-group">
-                    <label>Type of Business:</label>
-                    <select name="ddl_edit_tob" class="form-control input-sm">
-                        <option value="'.$row['typeOfBusiness'].'" selected>'.$row['typeOfBusiness'].'</option>
-                        <option value="Option 1">Option 1</option>
-                        <option value="Option 2">Option 2</option>
-                    </select>
                 </div>
                 <div class="form-group">
                     <label>OR Number : </label>
