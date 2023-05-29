@@ -89,7 +89,6 @@
                                                             <td>'.$row['sPosition'].'</td>
                                                             <td>'.$row['completeName'].'</td>
                                                             <td>'.$row['pcontact'].'</td>
-                                                            <td>'.$row['paddress'].'</td>
                                                             <td>'.$row['termStart'].'</td>
                                                             <td>'.$row['termEnd'].'</td>
                                                             <td>
@@ -120,7 +119,6 @@
                                                             <td>'.$row['sPosition'].'</td>
                                                             <td>'.$row['completeName'].'</td>
                                                             <td>'.$row['pcontact'].'</td>
-                                                            <td>'.$row['paddress'].'</td>
                                                             <td>'.$row['termStart'].'</td>
                                                             <td>'.$row['termEnd'].'</td>
                                                             <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
