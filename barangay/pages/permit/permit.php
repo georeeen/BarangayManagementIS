@@ -101,9 +101,9 @@
                                                     <tr>
                                                         <td><input type="checkbox" name="chk_delete[]" class="chk_delete" value="'.$row['pid'].'" /></td>
                                                         <td>'.$row['residentname'].'</td>
+                                                        <td>'.$row['typeOfBusiness'].'</td>
                                                         <td>'.$row['businessName'].'</td>
                                                         <td>'.$row['businessAddress'].'</td>
-                                                        <td>'.$row['typeOfBusiness'].'</td>
                                                         <td>'.$row['orNo'].'</td>
                                                         <td>₱ '.number_format($row['samount'],2).'</td>
                                                         <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
@@ -120,9 +120,9 @@
                                                     echo '
                                                     <tr>
                                                         <td>'.$row['residentname'].'</td>
+                                                        <td>'.$row['typeOfBusiness'].'</td>
                                                         <td>'.$row['businessName'].'</td>
                                                         <td>'.$row['businessAddress'].'</td>
-                                                        <td>'.$row['typeOfBusiness'].'</td>
                                                         <td>'.$row['orNo'].'</td>
                                                         <td>₱ '.number_format($row['samount'],2).'</td>
                                                         <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
@@ -149,7 +149,7 @@
                                                 <?php
                                                     }
                                                 ?>
-                                                <th>Resident</th>
+                                                <th>Owner</th>
                                                 <th>Business Name</th>
                                                 <th>Business Address</th>
                                                 <th>Type of Business</th>
