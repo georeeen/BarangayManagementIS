@@ -12,7 +12,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label>Resident:</label>
+                                    <label>Owner:</label>
                                     <select name="ddl_resident" class="select2 form-control input-sm" style="width:100%;">
                                         <option selected="" disabled="">-- Select Resident -- </option>
                                         <?php
@@ -26,20 +26,20 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label>Business Name:</label>
-                                    <input name="txt_busname" class="form-control input-sm" type="text" placeholder="Business Name"/>
-                                </div>
-                                <div class="form-group">
-                                    <label>Business Address:</label>
-                                    <input name="txt_busadd" class="form-control input-sm" type="text" placeholder="Business Address"/>
-                                </div>
-                                <div class="form-group">
                                     <label>Type of Business:</label>
                                     <select name="ddl_tob" class="form-control input-sm">
                                         <option selected="" disabled="">-- Select Type of Business -- </option>
                                         <option value="Option 1">Option 1</option>
                                         <option value="Option 2">Option 2</option>
                                     </select>                                    
+                                </div>
+                                <div class="form-group">
+                                    <label>Business Name:</label>
+                                    <input name="txt_busname" class="form-control input-sm" type="text" placeholder="Business Name"/>
+                                </div>
+                                <div class="form-group">
+                                    <label>Business Address:</label>
+                                    <input name="txt_busadd" class="form-control input-sm" type="text" placeholder="Business Address"/>
                                 </div>
                                 <div class="form-group">
                                     <label>OR Number:</label>
