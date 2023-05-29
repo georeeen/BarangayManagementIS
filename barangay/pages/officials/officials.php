@@ -69,11 +69,10 @@
                                                 ?>
                                                 <th>Position</th>
                                                 <th>Name</th>
-                                                <th>Contact</th>
-                                                <th>Address</th>
+                                                <th>Contact No.</th>
                                                 <th>Start of Term</th>
                                                 <th>End of Term</th>
-                                                <th style="width: 130px !important;">Option</th>
+                                                <th style="width: 130px !important;">Manage</th>
                                             </tr>
                                         </thead>
                                         <tbody>
