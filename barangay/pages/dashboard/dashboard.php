@@ -60,7 +60,7 @@
 
                                 <div class="col-md-3 col-sm-6 col-xs-12"><br>
                                   <div class="info-box">
-                                    <a href="../resident/resident.php"><span class="info-box-icon bg-aqua"><i class="fa fa-users"></i></span></a>
+                                    <a href="../resident/resident.php"><span class="info-box-icon bg-red"><i class="fa fa-users"></i></span></a>
 
                                     <div class="info-box-content">
                                       <span class="info-box-text">Total Resident</span>
@@ -79,7 +79,7 @@
 
                                 <div class="col-md-3 col-sm-6 col-xs-12"><br>
                                   <div class="info-box">
-                                    <a href="../clearance/clearance.php"><span class="info-box-icon bg-aqua"><i class="fa fa-file"></i></span></a>
+                                    <a href="../clearance/clearance.php"><span class="info-box-icon bg-red"><i class="fa fa-file"></i></span></a>
 
                                     <div class="info-box-content">
                                       <span class="info-box-text">Total Clearance</span>
@@ -98,7 +98,7 @@
 
                                 <div class="col-md-3 col-sm-6 col-xs-12"><br>
                                   <div class="info-box">
-                                    <a href="../permit/permit.php"><span class="info-box-icon bg-aqua"><i class="fa fa-file"></i></span></a>
+                                    <a href="../permit/permit.php"><span class="info-box-icon bg-red"><i class="fa fa-file"></i></span></a>
 
                                     <div class="info-box-content">
                                       <span class="info-box-text">Total Permit</span>
@@ -117,7 +117,7 @@
 
                                 <div class="col-md-3 col-sm-6 col-xs-12"><br>
                                   <div class="info-box">
-                                    <a href="../blotter/blotter.php"><span class="info-box-icon bg-aqua"><i class="fa fa-user"></i></span></a>
+                                    <a href="../blotter/blotter.php"><span class="info-box-icon bg-red"><i class="fa fa-user"></i></span></a>
 
                                     <div class="info-box-content">
                                       <span class="info-box-text">Total Blotter</span>
