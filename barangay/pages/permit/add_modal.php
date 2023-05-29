@@ -13,10 +13,10 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label>Owner:</label>
-                                    <select name="ddl_resident" class="select2 form-control input-sm" style="width:100%;">
-                                        <option selected="" disabled="">-- Select Resident -- </option>
+                                    <select name="ddl_owner" class="select2 form-control input-sm" style="width:100%;">
+                                        <option selected="" disabled="">-- Select Owner -- </option>
                                         <?php
-                                            $squery = mysqli_query($con,"SELECT id,lname,fname,mname from tblresident");
+                                            $squery = mysqli_query($con,"SELECT id,lname,fname,mname from tblowner");
                                             while ($row = mysqli_fetch_array($squery)){
                                                 echo '
                                                     <option value="'.$row['id'].'">'.$row['lname'].', '.$row['fname'].' '.$row['mname'].'</option>    
