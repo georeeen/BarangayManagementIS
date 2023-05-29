@@ -67,10 +67,10 @@
                                                 <?php
                                                     }
                                                 ?>
-                                                <th>Household #</th>
-                                                <th>Zone</th>
-                                                <th>Total Members</th>
-                                                <th>Head of Family</th>
+                                                <th>Household No.</th>
+                                                <th>Address</th>
+                                                <th>Head of the Family</th>
+                                                <th>No. of Members</th>
                                                 <th style="width: 40px !important;">Option</th>
                                             </tr>
                                         </thead>
