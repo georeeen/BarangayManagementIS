@@ -12,16 +12,16 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label>Household #:</label>
+                                    <label>Household No:</label>
                                     <input onkeyup="show_head()" id="txt_householdno" name="txt_householdno" class="form-control input-sm" type="number" placeholder="Household #"/>
                                 </div>
                                 <div class="form-group">
-                                    <label>Zone:</label>
+                                    <label>Address:</label>
                                     <input name="txt_zone" class="form-control input-sm" type="text" placeholder="Zone #"/>
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Head Of Family:</label>
+                                    <label>Head of the Family:</label>
 
                                     <select id="txt_hof" name="txt_hof" class="form-control input-sm select2" style="width:100%" onchange="show_total()">
                                     <option disabled selected>-- Input Household # First --</option>
@@ -29,7 +29,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label>Total Number of Members:</label>
+                                    <label>Number of Members:</label>
                                     <input id="txt_totalmembers" disabled name="txt_totalmembers" class="form-control input-sm" type="text" placeholder="Total Number of Members"/>
                                 </div>
                             </div>
