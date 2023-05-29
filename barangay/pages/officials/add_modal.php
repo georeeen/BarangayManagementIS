@@ -53,7 +53,7 @@
                         
                     </div>
                     <div class="modal-footer">
-                        <input type="button" class="btn btn-default btn-sm" data-dismiss="modal" value="Cancel"/>
+                        <input type="button" class="btn btn-default btn-sm" data-dismiss="modal" value="Remove"/>
                         <input type="submit" class="btn btn-primary btn-sm" name="btn_add" value="Add Officials"/>
                     </div>
                 </div>
