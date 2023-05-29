@@ -91,17 +91,17 @@ if(isset($_POST['btn_save']))
     }
 }
 
-if(isset($_POST['btn_delete']))
+if(isset($_POST['btn_remove']))
 {
-    if(isset($_POST['chk_delete']))
+    if(isset($_POST['chk_remove']))
     {
-        foreach($_POST['chk_delete'] as $value)
+        foreach($_POST['chk_remove'] as $value)
         {
-            $delete_query = mysqli_query($con,"DELETE from tblpermit where id = '$value' ") or die('Error: ' . mysqli_error($con));
+            $delete_query = mysqli_query($con,"REMOVE from tblpermit where id = '$value' ") or die('Error: ' . mysqli_error($con));
                     
             if($delete_query == true)
             {
-                $_SESSION['delete'] = 1;
+                $_SESSION['remove'] = 1;
                 header("location: ".$_SERVER['REQUEST_URI']);
             }
         }
