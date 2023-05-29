@@ -239,7 +239,7 @@
                                         <thead>
                                             <tr>
                                                 <th style="width: 20px !important;"><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></th>
-                                                <th>Resident</th>
+                                                <th>Owner</th>
                                                 <th>Business Name</th>
                                                 <th>Business Address</th>
                                                 <th>Type of Business</th>
