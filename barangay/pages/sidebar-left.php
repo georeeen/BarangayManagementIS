@@ -59,7 +59,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="../activity/activity.php">
+                                <a href="../activity logs/activitylogs.php">
                                     <i class="fa fa-calendar"></i> <span>Activity Logs</span>
                                 </a>
                             </li>
@@ -106,8 +106,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="../activity/activity.php">
-                                    <i class="fa fa-calendar"></i> <span>Activity</span>
+                                <a href="../activity logs/activitylogs.php">
+                                    <i class="fa fa-calendar"></i> <span>Activity Logs</span>
                                 </a>
                             </li>
                         </ul>';
@@ -115,6 +115,7 @@
                     else{
                         echo '
                         <ul class="sidebar-menu">
+
                             <li>
                                 <a href="../permit/permit.php">
                                     <i class="fa fa-file"></i> <span>Permit</span>
@@ -126,8 +127,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="../activity/activity.php">
-                                    <i class="fa fa-calendar"></i> <span>Activity</span>
+                                <a href="../activity logs/activitylogs.php">
+                                    <i class="fa fa-calendar"></i> <span>Activity Logs</span>
                                 </a>
                             </li>
                         </ul>';
