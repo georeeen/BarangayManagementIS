@@ -39,7 +39,7 @@
                         <!-- left column -->
                             <div class="box">
                                 <div class="box-header">
-                                    <div style="padding:10px;">
+                                    <div style="padding:10px;" div class= "pull-right">
                                         
                                         <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addCourseModal"><i class="fa fa-user-plus" aria-hidden="true"></i> Add Officials</button>  
 
