@@ -44,7 +44,7 @@
                                     <a href="../household/household.php"><span class="info-box-icon bg-green"><i class="fa fa-home"></i></span></a>
 
                                     <div class="info-box-content">
-                                      <span class="info-box-text">Total Household</span>
+                                      <span class="info-box-text">No. of Household</span>
                                       <span class="info-box-number">
                                         <?php
                                             $q = mysqli_query($con,"SELECT * from tblhousehold");
@@ -63,7 +63,7 @@
                                     <a href="../resident/resident.php"><span class="info-box-icon bg-green"><i class="fa fa-users"></i></span></a>
 
                                     <div class="info-box-content">
-                                      <span class="info-box-text">Total Resident</span>
+                                      <span class="info-box-text">No. of Residents</span>
                                       <span class="info-box-number">
                                         <?php
                                             $q = mysqli_query($con,"SELECT * from tblresident");
@@ -82,7 +82,7 @@
                                     <a href="../clearance/clearance.php"><span class="info-box-icon bg-green"><i class="fa fa-file"></i></span></a>
 
                                     <div class="info-box-content">
-                                      <span class="info-box-text">Total Clearance</span>
+                                      <span class="info-box-text">Clearance Requests</span>
                                       <span class="info-box-number">
                                         <?php
                                             $q = mysqli_query($con,"SELECT * from tblclearance where status = 'Approved' ");
@@ -101,7 +101,7 @@
                                     <a href="../permit/permit.php"><span class="info-box-icon bg-green"><i class="fa fa-file"></i></span></a>
 
                                     <div class="info-box-content">
-                                      <span class="info-box-text">Total Permit</span>
+                                      <span class="info-box-text">Permit Requests</span>
                                       <span class="info-box-number">
                                         <?php
                                             $q = mysqli_query($con,"SELECT * from tblpermit where status = 'Approved' ");
@@ -120,7 +120,7 @@
                                     <a href="../blotter/blotter.php"><span class="info-box-icon bg-green"><i class="fa fa-user"></i></span></a>
 
                                     <div class="info-box-content">
-                                      <span class="info-box-text">Total Blotter</span>
+                                      <span class="info-box-text">Blotter Requests</span>
                                       <span class="info-box-number">
                                         <?php
                                             $q = mysqli_query($con,"SELECT * from tblblotter");
