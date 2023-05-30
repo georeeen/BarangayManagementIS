@@ -3,7 +3,7 @@
    echo  '<header class="header">
             <a href="#" class="logo">
                 <!-- Add the class icon to your logo image or logo icon to add the margining -->
-                Barangay Tangos
+                Barangay Tangos North
             </a>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top" role="navigation">
@@ -24,7 +24,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
-                                <li class="user-header bg-light-blue">
+                                <li class="user-header bg-red">
                                     
                                     <p>
                                         '.$_SESSION['role'].'
