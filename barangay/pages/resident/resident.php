@@ -100,7 +100,7 @@
                                                         <td>'.$row['age'].'</td>
                                                         <td>'.$row['gender'].'</td>
                                                         <td>'.$row['formerAddress'].'</td>
-                                                        <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
+                                                        <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal" style="background-color: #556B2F"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
                                                     </tr>
                                                     ';
 
@@ -172,7 +172,7 @@
                                                 <th>Age</th>
                                                 <th>Gender</th>
                                                 <th>Former Address</th>
-                                                <th style="width: 40px !important;">Option</th>
+                                                <th style="width: 40px !important;">Manage</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -188,7 +188,7 @@
                                                     <td>'.$row['age'].'</td>
                                                     <td>'.$row['gender'].'</td>
                                                     <td>'.$row['formerAddress'].'</td>
-                                                    <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
+                                                    <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal" style="background-color: #556B2F"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
                                                 </tr>
                                                 ';
 
