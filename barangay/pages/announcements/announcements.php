@@ -40,8 +40,8 @@
                                 <div class="box-header">
                                     <div style="padding:10px;" div class="pull-right">
 
-                                         <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal"><i class="fa fa-plus" aria-hidden="true"></i> Create</button>  
-                                        <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash-o" aria-hidden="true"></i> Remove</button> 
+                                         <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal" style="background-color: green"><i class="fa fa-plus" aria-hidden="true"></i> Create</button>  
+                                        <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal" style="background-color: red"><i class="fa fa-trash-o" aria-hidden="true"></i> Remove</button> 
                                     
                                     </div>                                
                                 </div><!-- /.box-header -->
