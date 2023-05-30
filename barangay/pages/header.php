@@ -6,7 +6,7 @@
                 <style>
   .my_font
 { 
- font-family: Helvetica;
+ font-family: sans-serif;
  font-size: 40px:
  font-weight: bold; 
 }
