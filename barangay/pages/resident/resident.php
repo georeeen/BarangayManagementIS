@@ -48,7 +48,7 @@
                         <!-- left column -->
                             <div class="box">
                                 <div class="box-header">
-                                    <div style="padding:10px;">
+                                    <div style="padding:10px;" div class= "pull-right">
                                         
                                         <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addCourseModal"><i class="fa fa-user-plus" aria-hidden="true"></i> Add Residents</button>  
                                         <?php 
@@ -75,13 +75,13 @@
                                                 <?php
                                                     }
                                                 ?>
-                                                <th>Zone</th>
+                                                <th>Street</th>
                                                 <th>Image</th>
                                                 <th>Name</th>
                                                 <th>Age</th>
                                                 <th>Gender</th>
-                                                <th>Former Address</th>
-                                                <th style="width: 40px !important;">Option</th>
+                                                <th>Address</th>
+                                                <th style="width: 40px !important;">Manage</th>
                                             </tr>
                                         </thead>
                                         <tbody>
