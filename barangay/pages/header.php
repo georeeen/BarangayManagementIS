@@ -24,7 +24,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
-                                <li class="user-header bg-darkred">
+                                <li class="user-header bg-red">
                                     
                                     <p>
                                         '.$_SESSION['role'].'
