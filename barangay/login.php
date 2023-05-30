@@ -13,7 +13,7 @@ session_start();
         <link href="css/AdminLTE.css" rel="stylesheet" type="text/css" />
 
     </head>
-    <body class="skin-black">
+    <body class="skin-red">
         <div class="container" style="margin-top:30px">
           <div class="col-md-4 col-md-offset-4">
               <div class="panel panel-default">
