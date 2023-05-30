@@ -39,6 +39,9 @@
                         <!-- left column -->
                             <div class="box">
                                 
+                            div {
+                              background: yellow; 
+                                  }
                                 <div class="col-md-3 col-sm-6 col-xs-12"><br>
                                   <div class="info-box">
                                     <a href="../household/household.php"><span class="info-box-icon bg-green"><i class="fa fa-home"></i></span></a>
