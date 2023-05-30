@@ -41,7 +41,7 @@
                                 
                                 <div class="col-md-3 col-sm-6 col-xs-12"><br>
                                   <div class="info-box">
-                                    <a href="../household/household.php"><span class="info-box-icon bg-red"><i class="fa fa-home"></i></span></a>
+                                    <a href="../household/household.php"><span class="info-box-icon bg-#F44336"><i class="fa fa-home"></i></span></a>
 
                                     <div class="info-box-content">
                                       <span class="info-box-text">Total Household</span>
