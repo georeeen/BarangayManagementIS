@@ -88,7 +88,7 @@
                                                     <th>Purpose</th>
                                                     <th>OR Number</th>
                                                     <th>Amount</th>
-                                                    <th style="width: 15% !important;">Option</th>
+                                                    <th style="width: 15% !important;">Manage</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -109,8 +109,8 @@
                                                             <td>'.$row['purpose'].'</td>
                                                             <td>'.$row['orNo'].'</td>
                                                             <td>₱ '.number_format($row['samount'],2).'</td>
-                                                            <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button>
-                                                            <a target="_blank" href="clearance_form.php?resident='.$row['residentid'].'&clearance='.$row['clearanceNo'].'&val='.base64_encode($row['clearanceNo'].'|'.$row['residentname'].'|'.$row['dateRecorded']).'" onclick="location.reload();" class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Generate</a></td>
+                                                            <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: #556B2F"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button>
+                                                            
                                                         </tr>
                                                         ';
 
@@ -129,8 +129,8 @@
                                                             <td>'.$row['purpose'].'</td>
                                                             <td>'.$row['orNo'].'</td>
                                                             <td>₱ '.number_format($row['samount'],2).'</td>
-                                                            <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button>
-                                                            <a target="_blank" href="clearance_form.php?resident='.$row['residentid'].'&clearance='.$row['clearanceNo'].'&val='.sha1($row['clearanceNo'].'|'.$row['residentname'].'|'.$row['dateRecorded']).'" onclick="location.reload();" class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Generate</a></td>
+                                                            <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: #556B2F"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button>
+                                                            
                                                         </tr>
                                                         ';
 
@@ -242,7 +242,7 @@
                                                     <th style="width: 20px !important;"><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></th>
                                                     <th>Resident Name</th>
                                                     <th>Purpose</th>
-                                                    <th style="width: 25% !important;">Option</th>
+                                                    <th style="width: 25% !important;">Manage</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
