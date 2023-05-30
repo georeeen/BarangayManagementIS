@@ -94,7 +94,7 @@
                                                         <td>'.$row['actionTaken'].'</td>
                                                         <td>'.$row['sStatus'].'</td>
                                                         <td>'.$row['locationOfIncidence'].'</td>
-                                                        <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['bid'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
+                                                        <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['bid'].'" data-toggle="modal" style="background-color: #556B2F"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
                                                     </tr>
                                                     ';
 
