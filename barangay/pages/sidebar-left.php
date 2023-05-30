@@ -63,16 +63,7 @@
                                     <i class="fa fa-calendar"></i> <span>Activity Logs</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="../report/report.php">
-                                    <i class="fa fa-file"></i> <span>Report</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../logs/logs.php">
-                                    <i class="fa fa-history"></i> <span>Logs</span>
-                                </a>
-                            </li>                            
+                                               
                             
                     </ul>';
                     }
