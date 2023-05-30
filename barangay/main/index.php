@@ -17,16 +17,16 @@
     <link href="../css/select2.css" rel="stylesheet" type="text/css" />
     <script src="../js/jquery-1.12.3.js" type="text/javascript"></script>
     <style>
-      background-image: url("bg1.JPG");
-      background-size: 500px;
-      background-repeat: no-repeat;
     .no-print{
         display:none;
     }
     .dataTables_filter input { 
     padding-top: 50px;
     padding-bottom: 50px;}
-    
+   
+    background-image: url("bg1.JPG");
+      background-size: 500px;
+      background-repeat: no-repeat;
   
     
 </style>    
