@@ -9,6 +9,7 @@
  font-family: Helvetica;
  font-size: 40px:
  font-weight: bold; 
+ color: #FEF9ED;
 }
 </style>
 
