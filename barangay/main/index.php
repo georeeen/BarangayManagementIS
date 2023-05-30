@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Barangay Information System</title>
+    <title>Barangay Tangos North</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- bootstrap 3.0.2 -->
     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -18,11 +18,6 @@
     <script src="../js/jquery-1.12.3.js" type="text/javascript"></script>
     <style>
 
-      body {
-        background-image: url("bg1.JPG");
-      background-size: 500px;
-      background-repeat: no-repeat;
-      }
     .no-print{
         display:none;
     }
