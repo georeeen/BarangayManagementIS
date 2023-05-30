@@ -17,6 +17,12 @@
     <link href="../css/select2.css" rel="stylesheet" type="text/css" />
     <script src="../js/jquery-1.12.3.js" type="text/javascript"></script>
     <style>
+
+      body {
+        background-image: url("bg1.JPG");
+      background-size: 500px;
+      background-repeat: no-repeat;
+      }
     .no-print{
         display:none;
     }
@@ -24,15 +30,13 @@
     padding-top: 50px;
     padding-bottom: 50px;}
    
-    background-image: url("bg1.JPG");
-      background-size: 500px;
-      background-repeat: no-repeat;
   
     
 </style>    
 </head>
 <body>
       
+
 <nav class="navbar navbar-inverse" style="border-radius:0px;">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
