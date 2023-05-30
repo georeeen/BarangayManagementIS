@@ -60,7 +60,7 @@
                             </li>
                             <li>
                                 <a href="../activity/activity.php">
-                                    <i class="fa fa-calendar"></i> <span>Activity</span>
+                                    <i class="fa fa-calendar"></i> <span>Activity Logs</span>
                                 </a>
                             </li>
                             <li>
