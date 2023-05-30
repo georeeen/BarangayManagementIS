@@ -106,7 +106,7 @@
                                                         <td>'.$row['businessAddress'].'</td>
                                                         <td>'.$row['orNo'].'</td>
                                                         <td>₱ '.number_format($row['samount'],2).'</td>
-                                                        <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
+                                                        <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: #556B2F"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
                                                     </tr>
                                                     ';
 
