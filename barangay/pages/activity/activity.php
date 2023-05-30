@@ -28,7 +28,7 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        Activity
+                        Activity Logs
                     </h1>
                     
                 </section>
@@ -39,19 +39,19 @@
                         <!-- left column -->
                             <div class="box">
                                 <div class="box-header">
-                                    <div style="padding:10px;">
+                                    <div style="padding:10px;" div class= "pull-right" >
                                         <?php 
                                             if(!isset($_SESSION['resident']))
                                             {
                                         ?>
 
-                                                <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal"><i class="fa fa-user-plus" aria-hidden="true"></i> Add Activity</button>  
+                                                <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal" style="background-color: green"><i class="fa fa-user-plus" aria-hidden="true"></i> Add Activity</button>  
                                                 
                                                 <?php 
                                                     if(!isset($_SESSION['staff']))
                                                     {
                                                 ?>
-                                                <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button> 
+                                                <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal" style="background-color: red"><i class="fa fa-trash-o" aria-hidden="true"></i> Remove</button> 
                                                 <?php
                                                     }
                                             }
