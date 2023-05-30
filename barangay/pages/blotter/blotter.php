@@ -39,14 +39,14 @@
                         <!-- left column -->
                             <div class="box">
                                 <div class="box-header">
-                                    <div style="padding:10px;">
+                                    <div style="padding:10px;" div class= "pull-right">
                                         
-                                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal"><i class="fa fa-user-plus" aria-hidden="true"></i> Add Blotter</button>  
+                                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal" style="background-color: green"><i class="fa fa-user-plus" aria-hidden="true"></i> Add Blotter</button>  
                                         <?php 
                                             if(!isset($_SESSION['staff']))
                                             {
                                         ?>
-                                        <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button> 
+                                        <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal" style="background-color: red"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button> 
                                         <?php
                                             }
                                         ?>
@@ -72,8 +72,8 @@
                                                 <th>Complaint</th>
                                                 <th>Action Taken</th>
                                                 <th>Status</th>
-                                                <th>Location of Incidence</th>
-                                                <th style="width: 40px !important;">Option</th>
+                                                <th>Location of Incident</th>
+                                                <th style="width: 40px !important;">Manage</th>
                                             </tr>
                                         </thead>
                                         <tbody>
