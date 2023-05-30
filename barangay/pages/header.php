@@ -3,7 +3,17 @@
    echo  '<header class="header">
             <a href="#" class="logo">
                 <!-- Add the class icon to your logo image or logo icon to add the margining -->
-                Barangay Tangos North
+                <style>
+  .my_font
+{ 
+ font-family: Helvetica;
+ font-size: 40px:
+ font-weight: bold; 
+}
+</style>
+
+<div class="my_font" >Barangay Tangos North </div>
+
             </a>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top" role="navigation">
