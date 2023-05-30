@@ -5,7 +5,7 @@ session_start();
 ?>
     <head>
         <meta charset="UTF-8">
-        <title>Barangay Information System</title>
+        <title>Barangay Tangos North</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -21,7 +21,7 @@ session_start();
                 <img src="img/logo.png" style="height:150px;"/>
               <h3 class="panel-title">
                 <strong>
-                    Barangay Information System
+                    Barangay Tangos North
                 </strong>
               </h3>
             </div>
