@@ -144,7 +144,7 @@
 
   $(document).ready(function () {             
   $('.dataTables_filterinput[type="search"]').css(
-     {'width':'100px','display':'inline-block'}
+     {'width':'500px','display':'inline-block'}
   );
 });
 </script>
