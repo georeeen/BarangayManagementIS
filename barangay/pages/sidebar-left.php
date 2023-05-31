@@ -122,6 +122,11 @@
                                 </a>
                             </li>
                             <li>
+                                <a href="../blotter/blotter.php">
+                                    <i class="fa fa-users"></i> <span>Blotter</span>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="../clearance/clearance.php">
                                     <i class="fa fa-file"></i> <span>Clearance</span>
                                 </a>
