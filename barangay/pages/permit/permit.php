@@ -45,14 +45,14 @@
                         <!-- left column -->
                             <div class="box">
                                 <div class="box-header">
-                                    <div style="padding:10px;" div class= "pull-right">
+                                    <div style="padding:10px;">
                                         
-                                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal" style="background-color: green"><i class="fa fa-user-plus" aria-hidden="true"></i> Add Permit</button>  
+                                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal"><i class="fa fa-user-plus" aria-hidden="true"></i> Add Permit</button>  
                                         <?php 
                                             if(!isset($_SESSION['staff']))
                                             {
                                         ?>
-                                        <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal" style="background-color: red"><i class="fa fa-trash-o" aria-hidden="true"></i> Remove</button> 
+                                        <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button> 
                                         <?php
                                             }
                                         ?>
@@ -79,13 +79,13 @@
                                                 <?php
                                                     }
                                                 ?>
-                                                <th>Owner</th>
+                                                <th>Resident</th>
                                                 <th>Business Name</th>
                                                 <th>Business Address</th>
                                                 <th>Type of Business</th>
                                                 <th>OR Number</th>
                                                 <th>Amount</th>
-                                                <th style="width: 40px !important;">Manage</th>
+                                                <th style="width: 40px !important;">Option</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -101,12 +101,12 @@
                                                     <tr>
                                                         <td><input type="checkbox" name="chk_delete[]" class="chk_delete" value="'.$row['pid'].'" /></td>
                                                         <td>'.$row['residentname'].'</td>
-                                                        <td>'.$row['typeOfBusiness'].'</td>
                                                         <td>'.$row['businessName'].'</td>
                                                         <td>'.$row['businessAddress'].'</td>
+                                                        <td>'.$row['typeOfBusiness'].'</td>
                                                         <td>'.$row['orNo'].'</td>
                                                         <td>₱ '.number_format($row['samount'],2).'</td>
-                                                        <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: #556B2F"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
+                                                        <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
                                                     </tr>
                                                     ';
 
@@ -120,9 +120,9 @@
                                                     echo '
                                                     <tr>
                                                         <td>'.$row['residentname'].'</td>
-                                                        <td>'.$row['typeOfBusiness'].'</td>
                                                         <td>'.$row['businessName'].'</td>
                                                         <td>'.$row['businessAddress'].'</td>
+                                                        <td>'.$row['typeOfBusiness'].'</td>
                                                         <td>'.$row['orNo'].'</td>
                                                         <td>₱ '.number_format($row['samount'],2).'</td>
                                                         <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
@@ -149,7 +149,7 @@
                                                 <?php
                                                     }
                                                 ?>
-                                                <th>Owner</th>
+                                                <th>Resident</th>
                                                 <th>Business Name</th>
                                                 <th>Business Address</th>
                                                 <th>Type of Business</th>
@@ -239,7 +239,7 @@
                                         <thead>
                                             <tr>
                                                 <th style="width: 20px !important;"><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></th>
-                                                <th>Owner</th>
+                                                <th>Resident</th>
                                                 <th>Business Name</th>
                                                 <th>Business Address</th>
                                                 <th>Type of Business</th>
@@ -456,6 +456,112 @@
             });
             $(".select2").select2();
         });
+        <section class="content">
+                    <div class="row">
+                        <!-- left column -->
+                            <div class="box">
+                                
+                                <div class="col-md-3 col-sm-6 col-xs-12"><br>
+                                  <div class="info-box">
+                                    <a href="../household/household.php"><span class="info-box-icon bg-green"><i class="fa fa-home"></i></span></a>
+
+                                    <div class="info-box-content">
+                                      <span class="info-box-text">No. of Household</span>
+                                      <span class="info-box-number">
+                                        <?php
+                                            $q = mysqli_query($con,"SELECT * from tblhousehold");
+                                            $num_rows = mysqli_num_rows($q);
+                                            echo $num_rows;
+                                        ?>
+                                      </span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                  </div>
+                                  <!-- /.info-box -->
+                                </div>
+
+                                <div class="col-md-3 col-sm-6 col-xs-12"><br>
+                                  <div class="info-box">
+                                    <a href="../resident/resident.php"><span class="info-box-icon bg-green"><i class="fa fa-users"></i></span></a>
+
+                                    <div class="info-box-content">
+                                      <span class="info-box-text">No. of Residents</span>
+                                      <span class="info-box-number">
+                                        <?php
+                                            $q = mysqli_query($con,"SELECT * from tblresident");
+                                            $num_rows = mysqli_num_rows($q);
+                                            echo $num_rows;
+                                        ?>
+                                      </span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                  </div>
+                                  <!-- /.info-box -->
+                                </div>
+
+                                <div class="col-md-3 col-sm-6 col-xs-12"><br>
+                                  <div class="info-box">
+                                    <a href="../clearance/clearance.php"><span class="info-box-icon bg-green"><i class="fa fa-file"></i></span></a>
+
+                                    <div class="info-box-content">
+                                      <span class="info-box-text">Clearance Requests</span>
+                                      <span class="info-box-number">
+                                        <?php
+                                            $q = mysqli_query($con,"SELECT * from tblclearance where status = 'Approved' ");
+                                            $num_rows = mysqli_num_rows($q);
+                                            echo $num_rows;
+                                        ?>
+                                      </span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                  </div>
+                                  <!-- /.info-box -->
+                                </div>
+
+                                <div class="col-md-3 col-sm-6 col-xs-12"><br>
+                                  <div class="info-box">
+                                    <a href="../permit/permit.php"><span class="info-box-icon bg-green"><i class="fa fa-file"></i></span></a>
+
+                                    <div class="info-box-content">
+                                      <span class="info-box-text">Permit Requests</span>
+                                      <span class="info-box-number">
+                                        <?php
+                                            $q = mysqli_query($con,"SELECT * from tblpermit where status = 'Approved' ");
+                                            $num_rows = mysqli_num_rows($q);
+                                            echo $num_rows;
+                                        ?>
+                                      </span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                  </div>
+                                  <!-- /.info-box -->
+                                </div>
+
+                                <div class="col-md-3 col-sm-6 col-xs-12"><br>
+                                  <div class="info-box">
+                                    <a href="../blotter/blotter.php"><span class="info-box-icon bg-green"><i class="fa fa-user"></i></span></a>
+
+                                    <div class="info-box-content">
+                                      <span class="info-box-text">Blotter Requests</span>
+                                      <span class="info-box-number">
+                                        <?php
+                                            $q = mysqli_query($con,"SELECT * from tblblotter");
+                                            $num_rows = mysqli_num_rows($q);
+                                            echo $num_rows;
+                                        ?>
+                                      </span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                  </div>
+                                  <!-- /.info-box -->
+                                </div>
+                            </div><!-- /.box -->
+                    </div>   <!-- /.row -->
+                </section><!-- /.content -->
+            </aside><!-- /.right-side -->
+        </div><!-- ./wrapper -->
+        <!-- jQuery 2.0.2 -->
+
     <?php
     }
     else
