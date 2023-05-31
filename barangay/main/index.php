@@ -24,11 +24,7 @@
     .dataTables_filter input { 
     padding-top: 50px;
     padding-bottom: 50px;}
-    body {
-  background-image: url("bg1.JPG");
-  background-repeat: repeat;
-  background-color: #cccccc;
-    }
+   
 
   
     
