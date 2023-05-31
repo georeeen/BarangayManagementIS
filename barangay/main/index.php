@@ -18,21 +18,16 @@
     <script src="../js/jquery-1.12.3.js" type="text/javascript"></script>
     <style>
    
-    .no-print{
+   .no-print{
         display:none;
     }
     .dataTables_filter input { 
     padding-top: 50px;
     padding-bottom: 50px;}
-   
-
-  
-    
+ 
 </style>    
 </head>
 <body>
-      
-
 <nav class="navbar navbar-inverse" style="border-radius:0px;">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -56,13 +51,11 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
 <div class="wrapper row-offcanvas row-offcanvas-left">
 <h4> _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ </h4>
 <div class="breadcrumb">
 
-
-  <center> <h3> <b>Welcome</b>  </h3> 
+  <center><h3> <b>Welcome</b>  </h3> 
   &nbsp; 
       <br> 
   <a class="center" href="index.php"><img alt="Brand" src="../img/logo.png" style="width:70px; margin-top:-15px;"></a>
@@ -78,7 +71,6 @@
   entrepreneurs usually lived in Barangay Tangos, which was once considered the "first class subdivision" of the BNI Realty Corporation. (BNI) because of their prosperous 
   business. The village later became a "commercial" and "industrial" area and was called the "business capital" of Navotas. Livelihood improved in the village and in 1967 it 
   began to be called Barangay Tangos.</p> </h4>
-  
 
   <br> 
   <br> <h4><p style="padding: 10px; border: 2px solid green;"> <b> VISION </b> </p>
