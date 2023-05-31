@@ -20,7 +20,6 @@
     <style>
          body {
   background-color: coral;
-  background-size: absolute;
   }
 
    
