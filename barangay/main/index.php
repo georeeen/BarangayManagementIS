@@ -24,9 +24,15 @@
     .dataTables_filter input { 
     padding-top: 50px;
     padding-bottom: 50px;}
-   
 
-  
+    div {
+  background-color: green;
+    }
+
+    div.first {
+  opacity: 0.1;
+    }
+
     
 </style>    
 </head>
@@ -55,7 +61,9 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
+<div class="first">
+  <h1>opacity 0.1</h1>
+</div>
 <div class="wrapper row-offcanvas row-offcanvas-left">
 <h4> _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ </h4>
 <div class="breadcrumb">
