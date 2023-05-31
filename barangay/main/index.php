@@ -21,7 +21,6 @@
          body {
   background-color: coral;
   background-size: cover;
-  background-position: center;
   }
 
    
