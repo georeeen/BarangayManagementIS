@@ -292,8 +292,8 @@
                         <!-- left column -->
                             <div class="box">
                                 <div class="box-header">  
-                                    <div style="padding:10px;">
-                                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#reqModal"><i class="fa fa-user-plus" aria-hidden="true"></i> Request Permit</button>  
+                                    <div style="padding:10px;" div class= "pull-right">
+                                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#reqModal" style="background-color: green"><i class="fa fa-user-plus" aria-hidden="true"></i> Request Permit</button>  
                                     </div>
                                 </div><!-- /.box-header -->
                                 <div class="box-body table-responsive">

@@ -58,8 +58,8 @@
                                         </thead>
                                         <tbody>
                                             <?php
-                                            $squery = mysqli_query($con, "select * from tblannounce");
-                                            while($row = mysqli_fetch_array($squery))
+                                            $query = mysqli_query($con, "select * from tblannounce");
+                                            while($row = mysqli_fetch_array($query))
                                             {
                                                 echo '
                                                 <tr>
