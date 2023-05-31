@@ -106,29 +106,7 @@
                                     </div>
 
                                     <div class="col-sm-2" style="width:110px;">
-                                        <label class="control-label">Action:</label>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <select name="ddl_acttaken" class="form-control input-sm">
-                                            <option value="1st Option">1st Option</option>
-                                            <option value="2nd Option">2nd Option</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <div class="col-sm-2" style="width:110px;">
-                                        <label class="control-label">Status:</label>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <select name="ddl_stat" class="form-control input-sm">
-                                            <option >Solved</option>
-                                            <option >Unsolved</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="col-sm-2" style="width:110px;">
-                                        <label class="control-label">Incidence:</label>
+                                        <label class="control-label">Location of Incident:</label>
                                     </div>
                                     <div class="col-sm-4">
                                         <input name="txt_location" class="form-control input-sm" type="text" placeholder="Location of Incidence"/>
