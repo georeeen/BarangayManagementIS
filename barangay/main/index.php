@@ -18,20 +18,17 @@
     <script src="../js/jquery-1.12.3.js" type="text/javascript"></script>
     <style>
    
-    .no-print{
-        display:none;
-    }
-    .dataTables_filter input { 
-    padding-top: 50px;
-    padding-bottom: 50px;}
-   
+   body {
+  background-image: url("bg1.JPG");
+  background-repeat: repeat;
+  background-color: #cccccc;
+}
 
   
     
 </style>    
 </head>
 <body>
-      
 
 <nav class="navbar navbar-inverse" style="border-radius:0px;">
   <div class="container-fluid">
