@@ -2,6 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Barangay Tangos North</title>
+    <link rel="stylesheet" href="main/style.css">
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- bootstrap 3.0.2 -->
     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -54,7 +55,6 @@
 <div class="wrapper row-offcanvas row-offcanvas-left">
 <h4> _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ </h4>
 <div class="breadcrumb">
-
   <center><h3> <b>Welcome</b>  </h3> 
   &nbsp; 
       <br> 
