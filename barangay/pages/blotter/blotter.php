@@ -41,7 +41,7 @@
                                 <div class="box-header">
                                     <div style="padding:10px;" div class= "pull-right">
                                         
-                                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal" style="background-color: green"><i class="fa fa-user-plus" aria-hidden="true"></i> Add Blotter</button>  
+                                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal" style="background-color: green"><i class="fa fa-user-plus" aria-hidden="true"></i> Compose</button>  
                                         <?php 
                                             if(!isset($_SESSION['staff']))
                                             {
@@ -66,14 +66,11 @@
                                                 <?php
                                                     }
                                                 ?>
-                                                <th>Date Recorded</th>
-                                                <th>Complainant</th>
+                                                <th>Date</th>
+                                                <th>Name of Complainant</th>
                                                 <th>Person To Complain</th>
-                                                <th>Complaint</th>
-                                                <th>Action Taken</th>
-                                                <th>Status</th>
                                                 <th>Location of Incident</th>
-                                                <th style="width: 40px !important;">Manage</th>
+                                                <th>Complaint</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -91,10 +88,7 @@
                                                         <td>'.$row['complainant'].'</td>
                                                         <td>'.$row['rname'].'</td>
                                                         <td>'.$row['complaint'].'</td>
-                                                        <td>'.$row['actionTaken'].'</td>
-                                                        <td>'.$row['sStatus'].'</td>
                                                         <td>'.$row['locationOfIncidence'].'</td>
-                                                        <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['bid'].'" data-toggle="modal" style="background-color: #556B2F"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
                                                     </tr>
                                                     ';
 
@@ -111,11 +105,8 @@
                                                         <td>'.$row['complainant'].'</td>
                                                         <td>'.$row['rname'].'</td>
                                                         <td>'.$row['complaint'].'</td>
-                                                        <td>'.$row['actionTaken'].'</td>
-                                                        <td>'.$row['sStatus'].'</td>
                                                         <td>'.$row['locationOfIncidence'].'</td>
-                                                        <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['bid'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
-                                                    </tr>
+                                                        
                                                     ';
 
                                                     include "edit_modal.php";
