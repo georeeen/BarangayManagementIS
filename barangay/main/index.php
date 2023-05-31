@@ -25,10 +25,20 @@
     padding-top: 50px;
     padding-bottom: 50px;}
 
+    .hero-image {
+  background-image: url("bg1.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
     
 </style>    
 </head>
 <body>
+<div class="hero-image"> </div>
 
 <nav class="navbar navbar-inverse" style="border-radius:0px;">
   <div class="container-fluid">
