@@ -63,7 +63,7 @@
 <h4> _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ </h4>
 <div class="breadcrumb">
 
-  <center> <div class="background-image"></div>> <h3> <b>Welcome</b>  </h3> 
+  <center> <div class="background-image"></div> <h3> <b>Welcome</b>  </h3> 
   &nbsp; 
       <br> 
   <a class="center" href="index.php"><img alt="Brand" src="../img/logo.png" style="width:70px; margin-top:-15px;"></a>
