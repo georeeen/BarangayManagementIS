@@ -2,7 +2,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Barangay Tangos North</title>
-    <link rel="stylesheet" href="main/style.css">
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- bootstrap 3.0.2 -->
     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -18,7 +17,7 @@
     <link href="../css/select2.css" rel="stylesheet" type="text/css" />
     <script src="../js/jquery-1.12.3.js" type="text/javascript"></script>
     <style>
-
+   
    .no-print{
         display:none;
     }
@@ -26,7 +25,7 @@
     padding-top: 50px;
     padding-bottom: 50px;}
  
-</style> 
+</style>    
 </head>
 <body>
 <nav class="navbar navbar-inverse" style="border-radius:0px;">
@@ -55,6 +54,7 @@
 <div class="wrapper row-offcanvas row-offcanvas-left">
 <h4> _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ </h4>
 <div class="breadcrumb">
+
   <center><h3> <b>Welcome</b>  </h3> 
   &nbsp; 
       <br> 
@@ -86,7 +86,8 @@
 
 
 </div>
-</body>   
+</body>
+
 
 <script src="../js/alert.js" type="text/javascript"></script>
 <script src="../js/bootstrap.min.js" type="text/javascript"></script>
@@ -139,7 +140,7 @@
 
   $(document).ready(function () {             
   $('.dataTables_filterinput[type="search"]').css(
-     {'width':'100px','display':'inline-block'}
+     {'width':'5000px','display':'inline-block'}
   );
 });
 </script>
