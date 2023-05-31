@@ -67,6 +67,8 @@
   <a class="center" href="index.php"><img alt="Brand" src="../img/logo.png" style="width:70px; margin-top:-15px;"></a>
   <center>
  <a class="center" href="index.php"><img alt="Brand" src="../img/bg.jpg" style="width:800px; margin-top:50px;"></a>
+  <relative> 
+  <a class="center" href="index.php"><img alt="Brand" src="../img1/bg.jpg" style="width:1000px; margin-top:1000px;"></a>
   &nbsp; 
   &nbsp;
 
