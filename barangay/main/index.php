@@ -19,7 +19,7 @@
     <script src="../js/jquery-1.12.3.js" type="text/javascript"></script>
     <style>
          body {
-  background-color: black;
+  background-color: coral;
   background-size: cover;
   background-position: center;
   }
