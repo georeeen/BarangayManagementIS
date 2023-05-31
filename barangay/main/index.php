@@ -17,7 +17,7 @@
     <link href="../css/select2.css" rel="stylesheet" type="text/css" />
     <script src="../js/jquery-1.12.3.js" type="text/javascript"></script>
     <style>
-
+   
     .no-print{
         display:none;
     }
@@ -25,6 +25,7 @@
     padding-top: 50px;
     padding-bottom: 50px;}
    
+
   
     
 </style>    
