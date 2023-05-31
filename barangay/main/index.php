@@ -17,19 +17,19 @@
     <link href="../css/select2.css" rel="stylesheet" type="text/css" />
     <script src="../js/jquery-1.12.3.js" type="text/javascript"></script>
     <style>
-      body {
-  background-image: url("bg1.JPG");
-  background-repeat: repeat;
-  background-color: #cccccc;
-    }
-
+   
     .no-print{
         display:none;
     }
     .dataTables_filter input { 
     padding-top: 50px;
     padding-bottom: 50px;}
-   
+    body {
+  background-image: url("bg1.JPG");
+  background-repeat: repeat;
+  background-color: #cccccc;
+    }
+
   
     
 </style>    
