@@ -24,14 +24,6 @@
     .dataTables_filter input { 
     padding-top: 50px;
     padding-bottom: 50px;}
-
-    .background-image {
-      background-image: url('C:\xampp\htdocs\BarangayManagementIS\barangay\img\bg1.JPG');
-      background-size: contain;
-      background-repeat: repeat;
-      weight: 500px;
-      height: 100vh;
-    }
  
 </style>    
 </head>
@@ -63,7 +55,7 @@
 <h4> _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ </h4>
 <div class="breadcrumb">
 
-  <center> <div class="background-image"></div> <h3> <b>Welcome</b>  </h3> 
+  <center><h3> <b>Welcome</b>  </h3> 
   &nbsp; 
       <br> 
   <a class="center" href="index.php"><img alt="Brand" src="../img/logo.png" style="width:70px; margin-top:-15px;"></a>
