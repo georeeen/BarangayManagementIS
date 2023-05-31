@@ -59,9 +59,7 @@
                                         <tbody>
                                             <?php
                                             $squery = mysqli_query($con, "select * from tblannounce");
-                                            while($row = mysqli_query($squery))
-
-                                            
+                                            while($row = mysqli_fetch_array($squery))
                                             {
                                                 echo '
                                                 <tr>
