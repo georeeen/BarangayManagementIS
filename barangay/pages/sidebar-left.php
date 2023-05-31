@@ -115,7 +115,11 @@
                     else{
                         echo '
                         <ul class="sidebar-menu">
-
+                            <li>
+                                <a href="../dasboardresi/dashboardresi.php">
+                                    <i class="fa fa-calendar"></i> <span>Dashboard</span>
+                                </a>
+                            </li>
                             <li>
                                 <a href="../permit/permit.php">
                                     <i class="fa fa-file"></i> <span>Permit</span>
