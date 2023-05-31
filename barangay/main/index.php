@@ -32,7 +32,7 @@
     padding-top: 50px;
     padding-bottom: 50px;}
  
-</style> 
+
 </head>
 <body>
 <nav class="navbar navbar-inverse" style="border-radius:0px;">
@@ -92,6 +92,7 @@
 
 
 </div>
+</style> 
 </body>   
 
 <script src="../js/alert.js" type="text/javascript"></script>
