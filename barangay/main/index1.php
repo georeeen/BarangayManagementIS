@@ -23,11 +23,6 @@
     .dataTables_filter input { 
     padding-top: 20px;
     padding-bottom: 20px;}
-
-    body {
-  background-color: coral;
-  }
-
     </style>
 </head>
 <body>
