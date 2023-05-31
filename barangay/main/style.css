@@ -4,8 +4,8 @@ body {
 }
 
 .hero {
-    background-color: #074f57
-    background-image: url("bg1.JPG")
+    background-color: #074f57;
+    background-image: url("../bg1.JPG");
     color: white;
 }
 
