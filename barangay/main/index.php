@@ -24,6 +24,14 @@
     .dataTables_filter input { 
     padding-top: 50px;
     padding-bottom: 50px;}
+
+    .background-image {
+      background-image: url('C:\xampp\htdocs\BarangayManagementIS\barangay\img\bg1.JPG');
+      background-size: contain;
+      background-repeat: repeat;
+      weight: 200px;
+      height: 100vh;
+    }
  
 </style>    
 </head>
@@ -55,7 +63,7 @@
 <div class="wrapper row-offcanvas row-offcanvas-left">
 <h4> _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ </h4>
 <div class="breadcrumb">
-
+<div class="background-image"></div>
 
   <center> <h3> <b>Welcome</b>  </h3> 
   &nbsp; 
