@@ -18,7 +18,7 @@
     <link href="../css/select2.css" rel="stylesheet" type="text/css" />
     <script src="../js/jquery-1.12.3.js" type="text/javascript"></script>
     <style>
-   
+
    .no-print{
         display:none;
     }
@@ -26,7 +26,7 @@
     padding-top: 50px;
     padding-bottom: 50px;}
  
-</style>    
+</style> 
 </head>
 <body>
 <nav class="navbar navbar-inverse" style="border-radius:0px;">
@@ -86,8 +86,7 @@
 
 
 </div>
-</body>
-
+</body>   
 
 <script src="../js/alert.js" type="text/javascript"></script>
 <script src="../js/bootstrap.min.js" type="text/javascript"></script>
@@ -140,7 +139,7 @@
 
   $(document).ready(function () {             
   $('.dataTables_filterinput[type="search"]').css(
-     {'width':'5000px','display':'inline-block'}
+     {'width':'100px','display':'inline-block'}
   );
 });
 </script>
