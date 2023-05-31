@@ -20,7 +20,7 @@
     <style>
          body {
   background-color: coral;
-  background-size: absolute;
+  background-size: cover;
   }
 
    
