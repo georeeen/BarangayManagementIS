@@ -29,7 +29,7 @@
       background-image: url('C:\xampp\htdocs\BarangayManagementIS\barangay\img\bg1.JPG');
       background-size: contain;
       background-repeat: repeat;
-      weight: 200px;
+      weight: 500px;
       height: 100vh;
     }
  
