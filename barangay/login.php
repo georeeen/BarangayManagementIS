@@ -36,7 +36,9 @@ session_start();
                   <input type="password" class="form-control" style="border-radius:0px" name="txt_password" placeholder="Enter Password">
                 </div>
                 <button type="submit" class="btn btn-sm btn-primary" name="btn_login">Log in</button>
-                <label id="error" class="label label-danger pull-right"></label> 
+                <label id="error" class="label label-danger pull-right" style="background color:green"></label> 
+                <button type="submit" class="btn btn-sm btn-primary" name="btn_login">Sign Up</button>
+                <label id="error" class="label label-danger pull-left" style="background color:red"></label> 
               </form>
             </div>
           </div>
