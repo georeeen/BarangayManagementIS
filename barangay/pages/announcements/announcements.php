@@ -11,7 +11,7 @@
     {
     ob_start();
     include('../head_css.php'); ?>
-    <body class="skin-white">
+    <body class="skin-black">
         <!-- header logo: style can be found in header.less -->
         <?php 
         
@@ -58,8 +58,8 @@
                                         </thead>
                                         <tbody>
                                             <?php
-                                            $query = mysqli_query($con, "select * from tblannounce");
-                                            while($row = mysqli_fetch_array($query))
+                                            $squery = mysqli_query($con, "select * from tblannounce");
+                                            while($row = mysqli_fetch_array($squery))
                                             {
                                                 echo '
                                                 <tr>
