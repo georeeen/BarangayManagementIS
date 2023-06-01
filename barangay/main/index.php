@@ -18,13 +18,9 @@
     <link href="../css/select2.css" rel="stylesheet" type="text/css" />
     <script src="../js/jquery-1.12.3.js" type="text/javascript"></script>
     <style>
-<<<<<<< HEAD
-  
-    .no-print{
-=======
+
 
    .no-print{
->>>>>>> parent of cca7f26 (Merge branch 'main' of https://github.com/georeeen/BarangayManagementIS)
         display:none;
     }
     .dataTables_filter input { 
