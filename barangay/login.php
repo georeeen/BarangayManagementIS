@@ -76,7 +76,7 @@ session_start();
                   $_SESSION['userid'] = $row['id'];
                   $_SESSION['username'] = $row['username'];
                 }    
-                header ('location: pages/dashboard/dashboard.php');
+                header ('location: pages/permit/permit.php');
             }
             elseif($numrow_staff > 0)
             {
@@ -86,7 +86,7 @@ session_start();
                   $_SESSION['userid'] = $row['id'];
                   $_SESSION['username'] = $row['username'];
                 }    
-                header ('location: pages/dashboard/dashboard.php');
+                header ('location: pages/resident/resident.php');
             }
             else
             {
