@@ -12,8 +12,13 @@ session_start();
         <!-- Theme style -->
         <link href="css/AdminLTE.css" rel="stylesheet" type="text/css" />
 
-    </head>
-    <body class="skin-red">
+    </head> 
+    <style> 
+    body {
+  background-color: lightblue;
+    }
+    </style> 
+    <body class="skin-red"> 
         <div class="container" style="margin-top:30px">
           <div class="col-md-4 col-md-offset-4">
               <div class="panel panel-default">
@@ -76,7 +81,7 @@ session_start();
                   $_SESSION['userid'] = $row['id'];
                   $_SESSION['username'] = $row['username'];
                 }    
-                header ('location: pages/dashboardresi/dashboardresi.php');
+                header ('location: pages/permit/permit.php');
             }
             elseif($numrow_staff > 0)
             {
@@ -86,7 +91,7 @@ session_start();
                   $_SESSION['userid'] = $row['id'];
                   $_SESSION['username'] = $row['username'];
                 }    
-                header ('location: pages/dashboardresi/dashboardresi.php');
+                header ('location: pages/resident/resident.php');
             }
             else
             {
