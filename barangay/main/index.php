@@ -25,8 +25,6 @@
  
 </style>    
 </head>
-<body style="background:url(bg1.jpg) ;background-repeat:no-repeat;background-size: 100% 100%">
-<center>
 <nav class="navbar navbar-inverse" style="border-radius:0px;">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -50,6 +48,8 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+<body style="background:url(bg1.jpg) ;background-repeat:no-repeat;background-size: 100% 100%">
+<center>
 <div class="wrapper row-offcanvas row-offcanvas-left">
 <h4> _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ </h4>
 <div class="breadcrumb">
