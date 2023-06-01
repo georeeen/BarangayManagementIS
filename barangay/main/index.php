@@ -17,12 +17,6 @@
     <link href="../css/select2.css" rel="stylesheet" type="text/css" />
     <script src="../js/jquery-1.12.3.js" type="text/javascript"></script>
     <style>
-<<<<<<< HEAD
-   
-   .no-print{
-=======
-    .no-print{
->>>>>>> f61403b710873bbd203ed728c12af5d2509a6c74
         display:none;
     }
     .dataTables_filter input { 
@@ -59,7 +53,7 @@
 <h4> _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ </h4>
 <div class="breadcrumb">
 
-  <center><h3> <b>Welcome</b>  </h3> 
+  <center><h1> <b>Welcome</b>  </h1> 
   &nbsp; 
       <br> 
   <a class="center" href="index.php"><img alt="Brand" src="../img/logo.png" style="width:70px; margin-top:-15px;"></a>

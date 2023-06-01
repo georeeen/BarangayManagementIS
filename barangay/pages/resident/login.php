@@ -65,7 +65,7 @@ session_start();
                   $_SESSION['userid'] = $row['id'];
                   $_SESSION['username'] = $row['username'];
                 }    
-                header ('location: ../permit/permit.php');
+                header ('location: ../dashboardresi/dashboardresi.php');
             }
             else
             {
