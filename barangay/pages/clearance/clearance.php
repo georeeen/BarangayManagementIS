@@ -62,6 +62,7 @@
                                 </div><!-- /.box-header -->
                                 <div class="box-body table-responsive">
                                 <ul class="nav nav-tabs" id="myTab">
+                                        <li class="active"><a data-target="#requests" data-toggle="tab">Requests</a></li>
                                       <li class="active"><a data-target="#approved" data-toggle="tab">Approved</a></li>
                                       <li><a data-target="#disapproved" data-toggle="tab">Disapproved</a></li>
                                 </ul>
@@ -109,7 +110,14 @@
                                                             <td>'.$row['purpose'].'</td>
                                                             <td>'.$row['orNo'].'</td>
                                                             <td>₱ '.number_format($row['samount'],2).'</td>
+<<<<<<< HEAD
                                                             <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: #556B2F"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button>
+=======
+                                                            <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: green"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Approve</button></td>
+                                                             <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: red"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Disapprove</button></td>
+                                                             <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: orange"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Generate</button></td>
+
+>>>>>>> f61403b710873bbd203ed728c12af5d2509a6c74
                                                             
                                                         </tr>
                                                         ';
