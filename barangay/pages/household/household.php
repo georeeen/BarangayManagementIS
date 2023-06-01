@@ -89,7 +89,7 @@
                                                         <td>'.$row['hzone'].'</td>
                                                         <td>'.$row['totalhousehold'].'</td>
                                                         <td>'.$row['hname'].'</td>
-                                                        <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['hid'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
+                                                        <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['hid'].'" data-toggle="modal" style="background-color:green"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
                                                     </tr>
                                                     ';
 
