@@ -18,8 +18,9 @@
     <script src="../js/jquery-1.12.3.js" type="text/javascript"></script>
     <style>
       h4 {
-  text-shadow: 2px 2px;
-      }
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
         display:none;
     }
     .dataTables_filter input { 
