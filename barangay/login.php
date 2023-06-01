@@ -76,7 +76,7 @@ session_start();
                   $_SESSION['userid'] = $row['id'];
                   $_SESSION['username'] = $row['username'];
                 }    
-                header ('location: pages/permit/permit.php');
+                header ('location: pages/dasboardresi/dashboardresi.php');
             }
             elseif($numrow_staff > 0)
             {
