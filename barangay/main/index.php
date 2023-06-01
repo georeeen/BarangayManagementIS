@@ -17,8 +17,12 @@
     <link href="../css/select2.css" rel="stylesheet" type="text/css" />
     <script src="../js/jquery-1.12.3.js" type="text/javascript"></script>
     <style>
+<<<<<<< HEAD
    
    .no-print{
+=======
+    .no-print{
+>>>>>>> f61403b710873bbd203ed728c12af5d2509a6c74
         display:none;
     }
     .dataTables_filter input { 
