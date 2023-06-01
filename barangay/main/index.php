@@ -17,6 +17,9 @@
     <link href="../css/select2.css" rel="stylesheet" type="text/css" />
     <script src="../js/jquery-1.12.3.js" type="text/javascript"></script>
     <style>
+      h4 {
+  text-shadow: 2px 2px;
+      }
         display:none;
     }
     .dataTables_filter input { 
