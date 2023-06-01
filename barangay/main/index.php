@@ -83,7 +83,7 @@
   The Patron of this barangay is San Roque which is believed by many to provide abundant marine resources to fishermen; which raises the livelihood of the village. Fishermen 
   entrepreneurs usually lived in Barangay Tangos, which was once considered the "first class subdivision" of the BNI Realty Corporation. (BNI) because of their prosperous 
   business. The village later became a "commercial" and "industrial" area and was called the "business capital" of Navotas. Livelihood improved in the village and in 1967 it 
-  began to be called Barangay Tangos.</p> </h4>
+  began to be called Barangay Tangos. </h4> </p>
 
   <br> 
   <br> <h4><p style="padding: 10px; border: 2px solid green;"> <b> VISION </b> </p>
