@@ -17,17 +17,7 @@
     <link href="../css/select2.css" rel="stylesheet" type="text/css" />
     <script src="../js/jquery-1.12.3.js" type="text/javascript"></script>
     <style>
-      p.round1 {
-  border: 2px solid red;
-  border-radius: 5px;
-  padding: 5px;
-      }
-
-      p.round2 {
-  border: 2px solid red;
-  border-radius: 8px;
-  padding: 5px;
-      }
+      
       h4 {
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
@@ -79,11 +69,11 @@
   &nbsp;
 <div> &nbsp; 
       &nbsp; </div> 
-      <h4> <p class="round 1"> Barangay Tangos </i> </b> is a former fishpond that is part of the San Roque coast. The word Tangos means "sea coast" or "beach". 
+      <h4> <p style="padding: 20px; border: 4px solid green;">  Barangay Tangos </i> </b> is a former fishpond that is part of the San Roque coast. The word Tangos means "sea coast" or "beach". 
   The Patron of this barangay is San Roque which is believed by many to provide abundant marine resources to fishermen; which raises the livelihood of the village. Fishermen 
   entrepreneurs usually lived in Barangay Tangos, which was once considered the "first class subdivision" of the BNI Realty Corporation. (BNI) because of their prosperous 
   business. The village later became a "commercial" and "industrial" area and was called the "business capital" of Navotas. Livelihood improved in the village and in 1967 it 
-  began to be called Barangay Tangos. </h4> </p>
+  began to be called Barangay Tangos.</p> </h4>
 
   <br> 
   <br> <h4><p style="padding: 10px; border: 2px solid green;"> <b> VISION </b> </p>
