@@ -54,7 +54,7 @@
 <div class="breadcrumb" style="background:url(bg3.jpg) ;background-repeat:no-repeat;background-size: 100% 100%">
 &nbsp; 
 &nbsp; 
-<h1> <b>Welcome</b>  </h1> 
+<h1> <b>Welcome Navotians!</b>  </h1> 
   &nbsp; 
       <br> 
   <a class="center" href="index.php"><img alt="Brand" src="../img/logo.png" style="width:70px; margin-top:-15px;"></a>
