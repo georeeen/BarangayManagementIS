@@ -23,10 +23,10 @@
     padding-top: 50px;
     padding-bottom: 50px;}
  
-</style>    
-</head>
+</style>  
 <body style="background:url(bg1.jpg) ;background-repeat:no-repeat;background-size: 100% 100%">
-<center>
+<center>  
+</head>
 <nav class="navbar navbar-inverse" style="border-radius:0px;">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -51,10 +51,10 @@
   </div><!-- /.container-fluid -->
 </nav>
 <div class="wrapper row-offcanvas row-offcanvas-left">
+<center>
 <h4> _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ </h4>
-<div class="breadcrumb">
-
-  <center><h1> <b>Welcome</b>  </h1> 
+<div class="breadcrumb" style="background:url(bg2.jpg) ;background-repeat:no-repeat;background-size: 100% 100%">
+<h1> <b>Welcome</b>  </h1> 
   &nbsp; 
       <br> 
   <a class="center" href="index.php"><img alt="Brand" src="../img/logo.png" style="width:70px; margin-top:-15px;"></a>
@@ -62,7 +62,6 @@
  <a class="center" href="index.php"><img alt="Brand" src="../img/bg.jpg" style="width:800px; margin-top:50px;"></a>
   &nbsp; 
   &nbsp;
-
 <div> &nbsp; 
       &nbsp; </div> 
       <h4> <p style="padding: 20px; border: 4px solid green;">  Barangay Tangos </i> </b> is a former fishpond that is part of the San Roque coast. The word Tangos means "sea coast" or "beach". 
