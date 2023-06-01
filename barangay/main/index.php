@@ -19,7 +19,7 @@
     <style>
       h4 {
   color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
 }
         display:none;
     }
