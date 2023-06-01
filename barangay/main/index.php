@@ -51,10 +51,10 @@
   </div><!-- /.container-fluid -->
 </nav>
 <div class="wrapper row-offcanvas row-offcanvas-left">
+<center>
 <h4> _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ </h4>
-<div class="breadcrumb">
-
-  <center><h1> <b>Welcome</b>  </h1> 
+<div class="breadcrumb" style="background:url(bg2.jpg) ;background-repeat:no-repeat;background-size: 100% 100%">
+<h1> <b>Welcome</b>  </h1> 
   &nbsp; 
       <br> 
   <a class="center" href="index.php"><img alt="Brand" src="../img/logo.png" style="width:70px; margin-top:-15px;"></a>
