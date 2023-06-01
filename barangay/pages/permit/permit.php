@@ -45,14 +45,14 @@
                         <!-- left column -->
                             <div class="box">
                                 <div class="box-header">
-                                    <div style="padding:10px;">
+                                    <div style="padding:10px;" div class= "pull-right">
                                         
-                                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal"><i class="fa fa-user-plus" aria-hidden="true"></i> Add Permit</button>  
+                                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal" style="background-color: green"><i class="fa fa-user-plus" aria-hidden="true"></i> Add Permit</button>  
                                         <?php 
                                             if(!isset($_SESSION['staff']))
                                             {
                                         ?>
-                                        <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button> 
+                                        <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal" style="background-color: red"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button> 
                                         <?php
                                             }
                                         ?>
@@ -86,7 +86,7 @@
                                                 <th>Type of Business</th>
                                                 <th>OR Number</th>
                                                 <th>Amount</th>
-                                                <th style="width: 40px !important;">Option</th>
+                                                <th style="width: 40px !important;">Manage</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -107,21 +107,12 @@
                                                         <td>'.$row['typeOfBusiness'].'</td>
                                                         <td>'.$row['orNo'].'</td>
                                                         <td>₱ '.number_format($row['samount'],2).'</td>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                                        <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
-                                                    </tr>
-=======
-                                                        <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: red"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
-                                                        <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: green"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Generate</button></td>
-=======
-                                                        <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: green"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Approve</button></td>
-                                                        <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: red"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Disapprove</button></td>
-                                                        <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: orange"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Generate</button></td>
->>>>>>> f61403b710873bbd203ed728c12af5d2509a6c74
+                                                            <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: green"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Approve</button></td>
+                                                            <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: red"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Disapprove</button></td>
+                                                            <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: orange"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Generate</button></td>
 
-                                                        </tr>
->>>>>>> 72e3a8922044ca7299f8694a14f94f5d7129efe7
+                                                    </tr>
+
                                                     ';
 
                                                     include "edit_modal.php";
@@ -139,8 +130,9 @@
                                                         <td>'.$row['typeOfBusiness'].'</td>
                                                         <td>'.$row['orNo'].'</td>
                                                         <td>₱ '.number_format($row['samount'],2).'</td>
-                                                        <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
-
+                                                            <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: green"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Approve</button></td>
+                                                            <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: red"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Disapprove</button></td>
+                                                            <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: orange"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Generate</button></td>
                                                     </tr>
                                                     ';
 
@@ -314,9 +306,8 @@
                                 <div class="box-body table-responsive">
 
                                 <ul class="nav nav-tabs" id="myTab">
-                                      <li class="active"><a data-target="#new" data-toggle="tab">New</a></li>
-                                      <li><a data-target="#approved" data-toggle="tab">Approved</a></li>
-                                      <li><a data-target="#disapproved" data-toggle="tab">Disapproved</a></li>
+                                      <li class="active"><a data-target="#new" data-toggle="tab">Request</a></li>
+
                                 </ul>
 
                                 <form method="post">
