@@ -26,11 +26,6 @@
 </style>    
 </head>
 <body>
-  <style>
-    body{
-      background: url('<?php $a = array('bg1.jpg'); echo $a[array_rand($a)];?>)
-    }
-    </style>
 <nav class="navbar navbar-inverse" style="border-radius:0px;">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
