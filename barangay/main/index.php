@@ -64,7 +64,7 @@
       <br> 
   <a class="center" href="index.php"><img alt="Brand" src="../img/logo.png" style="width:70px; margin-top:-15px;"></a>
   <center>
- <a class="center" href="index.php"><img alt="Brand" src="../img/bg.jpg" style="width:800px; margin-top:50px; border: 1px solid red;"></a>
+ <a class="center" href="index.php"><img alt="Brand" src="../img/bg.jpg" style="width:800px; margin-top:50px; border: 2px solid gray;"></a>
   &nbsp; 
   &nbsp;
 <div> &nbsp; 
