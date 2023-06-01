@@ -92,7 +92,7 @@
                                                             <td>'.$row['termStart'].'</td>
                                                             <td>'.$row['termEnd'].'</td>
                                                             <td>
-                                                                <button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal" style="background-color: #556B2F"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button>';
+                                                                <button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal" style="background-color: green"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button>';
                                                                
                                                             
                                                             echo '</td>
