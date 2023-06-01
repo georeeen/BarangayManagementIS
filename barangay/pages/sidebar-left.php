@@ -116,7 +116,7 @@
                         echo '
                         <ul class="sidebar-menu">
                             <li>
-                                <a href="../dasboardresi/dashboardresi.php">
+                                <a href="../dashboardresi/dashboardresi.php">
                                     <i class="fa fa-calendar"></i> <span>Dashboard</span>
                                 </a>
                             </li>
