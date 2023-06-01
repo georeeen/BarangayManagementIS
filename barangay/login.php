@@ -17,7 +17,7 @@ session_start();
     body {
   background-color: lightblue;
     }
-
+    </style> 
     <body class="skin-red"> 
         <div class="container" style="margin-top:30px">
           <div class="col-md-4 col-md-offset-4">
@@ -104,5 +104,4 @@ session_start();
       ?>
 
     </body>
-    </style> 
 </html>
