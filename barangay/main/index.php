@@ -24,8 +24,6 @@
     padding-bottom: 50px;}
  
 </style>  
-<body style="background:url(bg1.jpg) ;background-repeat:no-repeat;background-size: 100% 100%">
-<center>  
 </head>
 <nav class="navbar navbar-inverse" style="border-radius:0px;">
   <div class="container-fluid">
@@ -138,7 +136,7 @@
 
   $(document).ready(function () {             
   $('.dataTables_filterinput[type="search"]').css(
-     {'width':'5000px','display':'inline-block'}
+     {'width':'50px','display':'inline-block'}
   );
 });
 </script>
