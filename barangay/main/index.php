@@ -124,37 +124,3 @@
   });
 </script>
 </html>
-
-<script src="../js/alert.js" type="text/javascript"></script>
-<script src="../js/bootstrap.min.js" type="text/javascript"></script>
-
-
-<script src="../js/morris/raphael-2.1.0.min.js" type="text/javascript"></script>
-<script src="../js/morris/morris.js" type="text/javascript"></script>
-<script src="../js/select2.full.js" type="text/javascript"></script>
-
-<script src="../js/jquery.dataTables.min.js" type="text/javascript"></script>
-<script src="../js/dataTables.buttons.min.js" type="text/javascript"></script>
-<script src="../js/buttons.print.min.js" type="text/javascript"></script>
-
-<script src="../js/plugins/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
-<!-- AdminLTE App -->
-<script src="../js/AdminLTE/app.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-  $(function() {
-      $("#table").dataTable({
-         "aoColumnDefs": [ { "bSortable": false, "aTargets": [ 0,5 ] } ],"aaSorting": [],
-         "dom":' <"search"f><"top"l>rt<"bottom"ip><"clear">'
-      });
-  });
-
-  $(document).ready(function () {             
-  $('.dataTables_filterinput[type="search"]').css(
-     {'width':'50px','display':'inline-block'}
-  );
-});
-</script>
-
-
-</html>
