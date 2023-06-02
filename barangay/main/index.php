@@ -94,10 +94,10 @@
   <br>
 
   <br> 
-  <br> <p style="padding: 10px; border: 2px solid green;">
-  <br> <b> MISSION </b> </p>
   <br>
-  <br>  Lead and be a model in the way of life through unity, cooperation with fear of God. </h5> 
+  <br> <h4> <center> <b> MISSION </b> </h4>
+  <br>
+  <br><p style="padding: 20px; border: 4px solid gray; background: #2A7F46;"> Lead and be a model in the way of life through unity, cooperation with fear of God. </h5> 
   <h5> _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ </h5>
 </div>
 </body>
