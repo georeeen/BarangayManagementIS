@@ -36,8 +36,8 @@
         display:none;
     }
     .dataTables_filter input { 
-    padding-top: 50px;
-    padding-bottom: 50px;}
+    padding-top: 10px;
+    padding-bottom: 10px;}
  
 </style>  
 </head>
