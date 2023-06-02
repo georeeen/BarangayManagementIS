@@ -17,6 +17,10 @@ session_start();
     body {
   background-color: #2A7F46;
     }
+    h2 {
+  color: white;
+      }
+
     </style> 
     <body class="skin-red"> 
     <h2> <center> <i>Hello Admin!</b>  </h2> 
