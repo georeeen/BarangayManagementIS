@@ -38,7 +38,24 @@
                     <div class="row">
                         <!-- left column -->
                             <div class="box">
-                                
+                            <div class="col-md-3 col-sm-6 col-xs-12"><br>
+                                  <div class="info-box">
+                                    <a href="../announceresi/announceresi.php"><span class="info-box-icon bg-green"><i class="fa fa-user"></i></span></a>
+
+                                    <div class="info-box-content">
+                                      <span class="info-box-text">Announcements</span>
+                                      <span class="info-box-number">
+                                        <?php
+                                            $q = mysqli_query($con,"SELECT * from tblblotter");
+                                            $num_rows = mysqli_num_rows($q);
+                                            echo $num_rows;
+                                        ?>
+                                      </span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                  </div>
+                                  <!-- /.info-box -->
+                                </div>
                                 <div class="col-md-3 col-sm-6 col-xs-12"><br>
                                   <div class="info-box">
                                     <a href="../permit/permit.php"><span class="info-box-icon bg-green"><i class="fa fa-users"></i></span></a>
