@@ -26,7 +26,8 @@
 
       h3 {
   color: black;
-  text-shadow: 1px 1px 2px white, 0 0 25px black, 0 0 5px black;
+  font: arial; 
+  text-shadow: 1px 1px 2px white, 0 0 25px black;
       }
   {
         display:none;
