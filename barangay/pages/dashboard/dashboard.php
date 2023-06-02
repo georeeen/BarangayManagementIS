@@ -133,6 +133,25 @@
                                   </div>
                                   <!-- /.info-box -->
                                 </div>
+                                
+                                <div class="col-md-3 col-sm-6 col-xs-12"><br>
+                                  <div class="info-box">
+                                    <a href="../activity/activity.php"><span class="info-box-icon bg-green"><i class="fa fa-users"></i></span></a>
+
+                                    <div class="info-box-content">
+                                      <span class="info-box-text">Activity Logs</span>
+                                      <span class="info-box-number">
+                                        <?php
+                                            $q = mysqli_query($con,"SELECT * from tblactivity");
+                                            $num_rows = mysqli_num_rows($q);
+                                            echo $num_rows;
+                                        ?>
+                                      </span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                  </div>
+                                  <!-- /.info-box -->
+                                </div>
                             </div><!-- /.box -->
                     </div>   <!-- /.row -->
                 </section><!-- /.content -->
