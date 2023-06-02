@@ -59,12 +59,12 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="../activity logs/activitylogs.php">
+                                <a href="../activity/activity.php">
                                     <i class="fa fa-calendar"></i> <span>Activity Logs</span>
                                 </a>
                             </li>
                             <li>
-                            <a href="..report/report.php">
+                            <a href="../report/report.php">
                                 <i class="fa fa-calendar"></i> <span>Reports</span>
                             </a>
                         </li>              
@@ -113,6 +113,7 @@
                                     <i class="fa fa-calendar"></i> <span>Activity Logs</span>
                                 </a>
                             </li>
+                            
                         </ul>';
                     }
                     else{
