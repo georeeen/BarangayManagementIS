@@ -15,10 +15,10 @@ session_start();
     </head> 
     <style> 
     body {
-  background-color: #2A7F46;
+    background-color: #2A7F46;
     }
     h3 {
-  color: white;
+    color: white;
       }
 
     </style> 
