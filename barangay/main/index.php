@@ -20,7 +20,7 @@
       
       h4 {
   color: white;
-  font: serif;
+  font: sans-serif;
   text-align: justify ;
   text-shadow: 1px 1px 5px black;
      }
