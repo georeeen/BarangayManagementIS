@@ -22,11 +22,11 @@
   color: white;
   text-align: justify ;
   text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
-         }
+     }
 
       h3 {
   color: black;
-  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+  text-shadow: 1px 1px 2px white, 0 0 25px black, 0 0 5px black;
       }
   {
         display:none;
