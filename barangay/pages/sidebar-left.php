@@ -63,8 +63,11 @@
                                     <i class="fa fa-calendar"></i> <span>Activity Logs</span>
                                 </a>
                             </li>
-                                               
-                            
+                            <li>
+                            <a href="..report/report.php">
+                                <i class="fa fa-calendar"></i> <span>Reports</span>
+                            </a>
+                        </li>              
                     </ul>';
                     }
                     elseif(isset($_SESSION['staff'])){
