@@ -84,7 +84,7 @@
   began to be called Barangay Tangos.</p> </h4>
 
 
-  <br> <center> <b> VISION </b>
+  <br> <center> <b color: black;> VISION </b>
   <br> 
   <br> <h5><p style="padding: 20px; border: 4px solid gray; background: #2A7F46;"> To be a community that promotes peace and wellness, environmental and health hygiene, become developed in the field of economy and provide more knowledge. Education for the youth towards the growth of the individual and the society as a whole.</b> </p>
   <br>
