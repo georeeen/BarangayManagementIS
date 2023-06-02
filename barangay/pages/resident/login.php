@@ -15,11 +15,15 @@ session_start();
     </head>
     <style>
     body {
-  background-color: #2A7F46;
+    background-color: #2A7F46;
     }
+    h3 {
+    color: white;
+      }
     </style>
     <body class="skin-black">
-        <div class="container" style="margin-top:100px; margin-bottom: 140px">
+    <h3> <center> <i>Hello there!</b>  </h3> 
+        <div class="container" style="margin-top:70px; margin-bottom: 140px">
           <div class="col-md-4 col-md-offset-4">
               <div class="panel panel-default">
             <div class="panel-heading" style="text-align:center;">
