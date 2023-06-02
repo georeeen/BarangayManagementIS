@@ -25,7 +25,6 @@
      h4 {
   color: black;
   font: arial; 
-  text-decoration-line: underline;
       }
 
       h3 {
