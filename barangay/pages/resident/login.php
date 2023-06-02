@@ -13,6 +13,11 @@ session_start();
         <link href="../../css/AdminLTE.css" rel="stylesheet" type="text/css" />
 
     </head>
+    <style>
+    body {
+  background-color: #2A7F46;
+    }
+    </style>
     <body class="skin-black">
         <div class="container" style="margin-top:30px">
           <div class="col-md-4 col-md-offset-4">
