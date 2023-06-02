@@ -21,7 +21,7 @@
       h4 {
   color: black;
   text-align: justify ;
-  text-shadow: 1px 1px 2px black, 0 0 25px black;
+  text-shadow: 1px 1px 2px black;
      }
 
       h3 {
