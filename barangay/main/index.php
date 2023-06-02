@@ -21,7 +21,13 @@
       h4 {
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
-  }
+         }
+
+      h3 {
+  color: black;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+      }
+  {
         display:none;
     }
     .dataTables_filter input { 
@@ -65,7 +71,7 @@
   <a class="center" href="index.php"><img alt="Brand" src="../img/logo.png" style="width:70px; margin-top:-15px;"></a>
   <center>
  <a class="center" href="index.php"><img alt="Brand" src="mayor.jpg" style="width:400px; margin-top:50px; border: 2px solid gray;"></a>
- <h3> <b>Mayor. John Reynald M. Tiangco</b>  </h3>
+ <h3> <b>Mayor. John Reynald M. Tiangco</b> </h3>
   &nbsp; 
   &nbsp;
 <div> &nbsp; 
