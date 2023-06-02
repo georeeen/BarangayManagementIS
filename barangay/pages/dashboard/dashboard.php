@@ -152,6 +152,24 @@
                                   </div>
                                   <!-- /.info-box -->
                                 </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12"><br>
+                                  <div class="info-box">
+                                    <a href="../report/report.php"><span class="info-box-icon bg-green"><i class="fa fa-users"></i></span></a>
+
+                                    <div class="info-box-content">
+                                      <span class="info-box-text">Reports</span>
+                                      <span class="info-box-number">
+                                        <?php
+                          
+                                            $num_rows = mysqli_num_rows($q);
+                                            echo $num_rows;
+                                        ?>
+                                      </span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                  </div>
+                                  <!-- /.info-box -->
+                                </div>
                             </div><!-- /.box -->
                     </div>   <!-- /.row -->
                 </section><!-- /.content -->
