@@ -26,7 +26,6 @@
       h3 {
   color: black;
   font: arial; 
-  text-shadow: 1px 0px 0px black;
   text-decoration-line: underline;
       }
   {
