@@ -15,7 +15,7 @@ session_start();
     </head> 
     <style> 
     body {
-  background-color: lightblue;
+  background-color: lightgreen;
     }
     </style> 
     <body class="skin-red"> 
