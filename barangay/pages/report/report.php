@@ -93,9 +93,6 @@
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
 
-                            
-
-
                     </div>   <!-- /.row -->
                 </section><!-- /.content -->
             </aside><!-- /.right-side -->
