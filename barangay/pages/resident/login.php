@@ -25,7 +25,7 @@ session_start();
     <br>
     <br>
     <br>
-    <h3> <center> <i>Hello there!</b>  </h3> 
+    <h3> <center> <i>Hello Navoteño!</b>  </h3> 
         <div class="container" style="margin-top:70px; margin-bottom: 140px">
           <div class="col-md-4 col-md-offset-4">
               <div class="panel panel-default">
