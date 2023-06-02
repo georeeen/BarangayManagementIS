@@ -25,6 +25,7 @@ session_start();
     <body class="skin-red"> 
     <br>
     <br>
+    <br>
     <h3> <center> <i>Hello Admin!</b>  </h3> 
         <div class="container" style="margin-top:70px; margin-bottom: 140px">
           <div class="col-md-4 col-md-offset-4">
