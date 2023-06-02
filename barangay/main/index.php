@@ -57,9 +57,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="index.php"><b> Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="../login.php"> <b> Admin</a></li>
-        <li><a href="../pages/resident/login.php"> <b> Resident</a></li>
+        <li class="active"><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="../login.php">Admin</a></li>
+        <li><a href="../pages/resident/login.php">Resident</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
