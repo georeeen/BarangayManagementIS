@@ -64,7 +64,7 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<h3><center> <b>Barangay North Navotas</b>  </h3> 
+<p><center> <b>Barangay North Navotas</b>  </p> 
 <div class="wrapper row-offcanvas row-offcanvas-left">
 <center>
 <h4> _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ </h4>
