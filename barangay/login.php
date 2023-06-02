@@ -17,7 +17,7 @@ session_start();
     body {
   background-color: #2A7F46;
     }
-    h2 {
+    h3 {
   color: white;
       }
 
@@ -25,7 +25,7 @@ session_start();
     <body class="skin-red"> 
     <br>
     <br>
-    <h2> <center> <i>Hello Admin!</b>  </h2> 
+    <h3> <center> <i>Hello Admin!</b>  </h3> 
         <div class="container" style="margin-top:100px; margin-bottom: 140px">
           <div class="col-md-4 col-md-offset-4">
               <div class="panel panel-default">
