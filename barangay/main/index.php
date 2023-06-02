@@ -18,7 +18,7 @@
     <script src="../js/jquery-1.12.3.js" type="text/javascript"></script>
     <style>
       
-      h4 {
+      h5 {
   color: white;
   text-align: justify ;
   text-shadow: 1px 1px 5px black;
@@ -78,14 +78,14 @@
   &nbsp;
 <div> &nbsp; 
       &nbsp; </div> 
-      <h4> <p style="padding: 20px; border: 4px solid gray; background: #79B48C;">  Barangay Tangos </i> </b> is a former fishpond that is part of the San Roque coast. The word Tangos means "sea coast" or "beach". 
+      <h5> <p style="padding: 20px; border: 4px solid gray; background: #79B48C;">  Barangay Tangos </i> </b> is a former fishpond that is part of the San Roque coast. The word Tangos means "sea coast" or "beach". 
   The Patron of this barangay is San Roque which is believed by many to provide abundant marine resources to fishermen; which raises the livelihood of the village. Fishermen 
   entrepreneurs usually lived in Barangay Tangos, which was once considered the "first class subdivision" of the BNI Realty Corporation. (BNI) because of their prosperous 
   business. The village later became a "commercial" and "industrial" area and was called the "business capital" of Navotas. Livelihood improved in the village and in 1967 it 
   began to be called Barangay Tangos.</p> </h4>
 
   <br> 
-  <br> <h4><p style="padding: 10px; border: 2px solid green;"> <b> VISION </b> </p>
+  <br> <h5><p style="padding: 10px; border: 2px solid green;"> <b> VISION </b> </p>
   <br>
   <br> To be a community that promotes peace and wellness, environmental and health hygiene, become developed in the field of economy and provide more knowledge. Education for the youth towards the growth of the individual and the society as a whole. 
 
@@ -93,8 +93,8 @@
   <br> <p style="padding: 10px; border: 2px solid green;">
   <br> <b> MISSION </b> </p>
   <br>
-  <br>  Lead and be a model in the way of life through unity, cooperation with fear of God. </h4> 
-  <h4> _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ </h4>
+  <br>  Lead and be a model in the way of life through unity, cooperation with fear of God. </h5> 
+  <h5> _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ </h5>
 </div>
 </body>
 
