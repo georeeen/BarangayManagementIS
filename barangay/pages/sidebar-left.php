@@ -117,12 +117,17 @@
                     }
                     else{
                         echo '
-                        <ul class="sidebar-menu">
+                        <ul class="sidebar-menu"> 
                             <li>
                                 <a href="../dashboardresi/dashboardresi.php">
                                     <i class="fa fa-calendar"></i> <span>Dashboard</span>
                                 </a>
                             </li>
+                            <li>
+                                 <a href="..announceresi/announceresi.php">
+                            <i class="fa fa-calendar"></i> <span>Announcements/Events</span>
+                                </a>
+                            </li>   
                             <li>
                                 <a href="../permit/permit.php">
                                     <i class="fa fa-file"></i> <span>Permit</span>
