@@ -28,7 +28,7 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                  <h1>
-                    Announcements </h1>
+                    Announcement </h1>
                     
                 </section>
 
