@@ -106,7 +106,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="../activity logs/activitylogs.php">
+                                <a href="../activity/activity.php">
                                     <i class="fa fa-calendar"></i> <span>Activity Logs</span>
                                 </a>
                             </li>
@@ -136,7 +136,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="../activity logs/activitylogs.php">
+                                <a href="../activity/activity.php">
                                     <i class="fa fa-calendar"></i> <span>Activity Logs</span>
                                 </a>
                             </li>
