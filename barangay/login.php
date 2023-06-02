@@ -48,7 +48,7 @@ session_start();
                   <label for="txt_password">Password</label>
                   <input type="password" class="form-control" style="border-radius:0px" name="txt_password" placeholder="Enter Password">
                 </div>
-                <button type="submit" class="btn btn-sm btn-primary" name="btn_login" color="pink">Log in</button>
+                <button type="submit" class="btn btn-sm btn-primary" name="btn_login">Log in</button>
                 <label id="error" class="label label-danger pull-right"></label> 
               </form>
             </div>
