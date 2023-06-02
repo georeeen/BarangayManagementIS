@@ -45,13 +45,13 @@
                                             {
                                         ?>
 
-                                                <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal" style="background-color: green"><i class="fa fa-user-plus" aria-hidden="true"></i> Add Activity</button>  
+                                                <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal" style="background-color: green"><i class="fa fa-user-plus" aria-hidden="true"></i> Save</button>  
                                                 
                                                 <?php 
                                                     if(!isset($_SESSION['staff']))
                                                     {
                                                 ?>
-                                                <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal" style="background-color: red"><i class="fa fa-trash-o" aria-hidden="true"></i> Remove</button> 
+                                                <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal" style="background-color: red"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button> 
                                                 <?php
                                                     }
                                             }
@@ -72,10 +72,10 @@
                                                 <?php
                                                     }
                                                 ?>
-                                                <th>Date of Activity</th>
+                                                <th>User</th>
+                                                <th>Date</th>
                                                 <th>Activity</th>
-                                                <th>Description</th>
-                                                <th style="width: 140px !important;">Option</th>
+                                                
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -92,9 +92,7 @@
                                                         <td>'.$row['dateofactivity'].'</td>
                                                         <td>'.$row['activity'].'</td>
                                                         <td>'.$row['description'].'</td>
-                                                        <td>
-                                                            <button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button>
-                                                            <button class="btn btn-primary btn-sm" data-target="#viewModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-search" aria-hidden="true"></i> Photo</button>
+                                                        
                                                         </td>
                                                     </tr>
                                                     ';
@@ -129,9 +127,7 @@
                                                         <td>'.$row['dateofactivity'].'</td>
                                                         <td>'.$row['activity'].'</td>
                                                         <td>'.$row['description'].'</td>
-                                                        <td>
-                                                            <button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button>
-                                                            <button class="btn btn-primary btn-sm" data-target="#viewModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-search" aria-hidden="true"></i> Photo</button>
+                                                        
                                                         </td>
                                                     </tr>
                                                     ';
