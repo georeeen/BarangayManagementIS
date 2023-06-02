@@ -19,6 +19,7 @@ session_start();
     }
     </style> 
     <body class="skin-red"> 
+    <h1> <b>Welcome Navoteños!</b>  </h1> 
         <div class="container" style="margin-top:100px; margin-bottom: 140px">
           <div class="col-md-4 col-md-offset-4">
               <div class="panel panel-default">
