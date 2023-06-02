@@ -113,11 +113,7 @@
                                     <i class="fa fa-calendar"></i> <span>Activity Logs</span>
                                 </a>
                             </li>
-                            <li>
-                                 <a href="../announceresi/announceresi.php">
-                                     <i class="fa fa-calendar"></i> <span>Announcements</span>
-                                </a>
-                            </li>   
+                            
                         </ul>';
                     }
                     else{
