@@ -26,7 +26,7 @@ session_start();
     <br>
     <br>
     <h3> <center> <i>Hello Admin!</b>  </h3> 
-        <div class="container" style="margin-top:100px; margin-bottom: 140px">
+        <div class="container" style="margin-top:90px; margin-bottom: 140px">
           <div class="col-md-4 col-md-offset-4">
               <div class="panel panel-default">
             <div class="panel-heading" style="text-align:center;">
