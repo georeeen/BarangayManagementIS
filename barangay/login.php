@@ -19,7 +19,7 @@ session_start();
     }
     </style> 
     <body class="skin-red"> 
-        <div class="container" style="margin-top:100px; margin-bottom: 120px">
+        <div class="container" style="margin-top:100px; margin-bottom: 130px">
           <div class="col-md-4 col-md-offset-4">
               <div class="panel panel-default">
             <div class="panel-heading" style="text-align:center;">
