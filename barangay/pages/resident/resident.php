@@ -75,7 +75,7 @@
                                                 <?php
                                                     }
                                                 ?>
-                                                <th>Street</th>
+                                                <th>Account Number</th>
                                                 <th>Image</th>
                                                 <th>Name</th>
                                                 <th>Age</th>
@@ -88,7 +88,7 @@
                                             <?php
                                             if(!isset($_SESSION['staff']))
                                             {
-                                                $squery = mysqli_query($con, "SELECT id,CONCAT(lname, ', ', fname, ' ', mname) as cname, age, gender, image FROM tblresident order by id");
+                                                $squery = mysqli_query($con, "SELECT id,CONCAT(lname, ', ', fname, ' ', mname) as cname, age, gender, householdnum,  image FROM tblresident order by id");
                                                 while($row = mysqli_fetch_array($squery))
                                                 {
                                                     echo '
@@ -99,6 +99,7 @@
                                                         <td>'.$row['cname'].'</td>
                                                         <td>'.$row['age'].'</td>
                                                         <td>'.$row['gender'].'</td>
+                                                        <td>'.$row['householdnum'].'</td>
                                                         <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal" style="background-color: #556B2F"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
                                                     </tr>
                                                     ';
@@ -107,7 +108,7 @@
                                                 }
                                             }
                                             else{
-                                                $squery = mysqli_query($con, "SELECT zone,id,CONCAT(lname, ', ', fname, ' ', mname) as cname, age, gender, formerAddress, image FROM tblresident order by zone");
+                                                $squery = mysqli_query($con, "SELECT id,CONCAT(lname, ', ', fname, ' ', mname) as cname, age, gender, householdnum, image FROM tblresident order by id");
                                                 while($row = mysqli_fetch_array($squery))
                                                 {
                                                     echo '
@@ -117,7 +118,7 @@
                                                         <td>'.$row['cname'].'</td>
                                                         <td>'.$row['age'].'</td>
                                                         <td>'.$row['gender'].'</td>
-                                                        <td>'.$row['formerAddress'].'</td>
+                                                        <td>'.$row['householdnum'].'</td>   
                                                         <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
                                                     </tr>
                                                     ';
@@ -170,13 +171,12 @@
                                                 <th>Name</th>
                                                 <th>Age</th>
                                                 <th>Gender</th>
-                                                <th>Former Address</th>
                                                 <th style="width: 40px !important;">Manage</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <?php
-                                            $squery = mysqli_query($con, "SELECT id,CONCAT(lname, ', ', fname, ' ', mname) as cname, age, gender, formerAddress, image FROM tblresident where householdnum = '".$_GET['resident']."'");
+                                            $squery = mysqli_query($con, "SELECT id,CONCAT(lname, ', ', fname, ' ', mname) as cname, age, gender, image FROM tblresident where householdnum = '".$_GET['resident']."'");
                                             while($row = mysqli_fetch_array($squery))
                                             {
                                                 echo '
@@ -186,7 +186,6 @@
                                                     <td>'.$row['cname'].'</td>
                                                     <td>'.$row['age'].'</td>
                                                     <td>'.$row['gender'].'</td>
-                                                    <td>'.$row['formerAddress'].'</td>
                                                     <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal" style="background-color: #556B2F"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
                                                 </tr>
                                                 ';
