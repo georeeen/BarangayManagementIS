@@ -30,12 +30,16 @@
                                         <label class="control-label">Birthdate:</label>
                                         <input name="txt_bdate" class="form-control input-sm input-size" type="date" placeholder="Birthdate"/>
                                     </div>
-                                    <!--
+
                                     <div class="form-group">
                                         <label class="control-label">Age:</label>
                                         <input name="txt_age" class="form-control input-sm input-size" type="number" placeholder="Age"/>
-                                    </div> -->
+                                    </div>
 
+                                    <div class="form-group">
+                                        <label class="control-label">Phone Number:</label>
+                                        <input name="txt_phonenum" class="form-control input-sm input-size" type="text" placeholder="Phone Number"/>
+                                    </div> 
 
                                     <div class="form-group">
                                         <label class="control-label">Barangay:</label>
@@ -94,12 +98,10 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="control-label">Water Usage:</label>
-                                        <select name="txt_water" class="form-control input-sm input-size">
-                                            <option>Faucet</option>
-                                            <option>Deep Well</option>
-                                        </select>
-                                    </div>
+                                        <label class="control-label">Image:</label>
+                                        <input name="txt_image" class="form-control input-sm" type="file" />
+                                    </div> 
+
 
                                     <div class="form-group">
                                         <label class="control-label">Username:</label>
@@ -107,10 +109,16 @@
                                         <label id="user_msg" style="color:#CC0000;" ></label>
                                     </div>
 
-                                </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Password:</label>
+                                        <input name="txt_upass" class="form-control input-sm" type="password" placeholder="Password"/>
+                                    </div>
+
+                            </div>
 
                                 <div class="col-md-6 col-sm-12">
                                     
+
                                     <div class="form-group">     
                                         <label class="control-label">Gender:</label>
                                         <select name="ddl_gender" class="form-control input-sm">
@@ -123,6 +131,11 @@
                                     <div class="form-group">
                                         <label class="control-label">Birthplace:</label>
                                         <input name="txt_bplace" class="form-control input-sm" type="text" placeholder="Birthplace"/>
+                                    </div> 
+
+                                    <div class="form-group">
+                                        <label class="control-label">Email:</label>
+                                        <input name="txt_email" class="form-control input-sm" type="text" placeholder="Email"/>
                                     </div> 
 
                                     <div class="form-group">
@@ -173,16 +186,12 @@
                                     </div>
                                     
                                     <div class="form-group">
-                                        <label class="control-label">Image:</label>
-                                        <input name="txt_image" class="form-control input-sm" type="file" />
-                                    </div> 
-                                    
-                                    <div class="form-group">
-                                        <label class="control-label">Password:</label>
-                                        <input name="txt_upass" class="form-control input-sm" type="password" placeholder="Password"/>
+                                        <label class="control-label">Water Usage:</label>
+                                        <select name="txt_water" class="form-control input-sm input-size">
+                                            <option>Faucet</option>
+                                            <option>Deep Well</option>
+                                        </select>
                                     </div>
-
-
 
                                 </div>
 
