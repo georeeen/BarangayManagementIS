@@ -16,7 +16,6 @@ if(isset($_POST['btn_add'])){
     $txt_brgy = $_POST['txt_brgy'];
     $txt_dperson = $_POST['txt_dperson'];
     $txt_mstatus = $_POST['txt_mstatus'];
-    $txt_zone = $_POST['txt_zone'];
     $txt_householdmem = $_POST['txt_householdmem'];
     $txt_rthead = $_POST['txt_rthead'];
 
@@ -28,9 +27,6 @@ if(isset($_POST['btn_add'])){
     $txt_length = $_POST['txt_length'];
     $txt_religion = $_POST['txt_religion'];
     $txt_national = $_POST['txt_national'];
-    $txt_skills = $_POST['txt_skills'];
-    $txt_igpit = $_POST['txt_igpit'];
-    $txt_phno = $_POST['txt_phno'];
     $ddl_eattain = $_POST['ddl_eattain'];
     $ddl_hos = $_POST['ddl_hos'];
 
@@ -38,12 +34,9 @@ if(isset($_POST['btn_add'])){
     $ddl_dtype = $_POST['ddl_dtype'];
     $txt_water = $_POST['txt_water'];
     $txt_lightning = $_POST['txt_lightning'];
-    $txt_toilet = $_POST['txt_toilet'];
-    $txt_faddress = $_POST['txt_faddress'];
     $txt_uname = $_POST['txt_uname'];
     $txt_upass = $_POST['txt_upass'];
 
-    $txt_remarks = $_POST['txt_remarks'];
 
     $name = basename($_FILES['txt_image']['name']);
     $temp = $_FILES['txt_image']['tmp_name'];
@@ -76,9 +69,7 @@ if(isset($_POST['btn_add'])){
                                         bplace,
                                         age,
                                         barangay,
-                                        zone,
                                         totalhousehold,
-                                        differentlyabledperson,
                                         relationtohead,
                                         maritalstatus,
                                         bloodtype,
@@ -90,16 +81,11 @@ if(isset($_POST['btn_add'])){
                                         religion,
                                         nationality,
                                         gender,
-                                        skills,
-                                        igpitID,
-                                        philhealthNo,
                                         highestEducationalAttainment,
                                         houseOwnershipStatus,
                                         landOwnershipStatus,
-                                        dwellingtype,
                                         waterUsage,
                                         lightningFacilities,
-                                        sanitaryToilet,
                                         formerAddress,
                                         remarks,
                                         image,
@@ -166,9 +152,7 @@ if(isset($_POST['btn_add'])){
                                         bplace,
                                         age,
                                         barangay,
-                                        zone,
                                         totalhousehold,
-                                        differentlyabledperson,
                                         relationtohead,
                                         maritalstatus,
                                         bloodtype,
@@ -180,18 +164,11 @@ if(isset($_POST['btn_add'])){
                                         religion,
                                         nationality,
                                         gender,
-                                        skills,
-                                        igpitID,
-                                        philhealthNo,
                                         highestEducationalAttainment,
                                         houseOwnershipStatus,
                                         landOwnershipStatus,
-                                        dwellingtype,
                                         waterUsage,
                                         lightningFacilities,
-                                        sanitaryToilet,
-                                        formerAddress,
-                                        remarks,
                                         image,
                                         username,
                                         password
@@ -204,7 +181,6 @@ if(isset($_POST['btn_add'])){
                                         '$txt_bplace',
                                         '$txt_age',
                                         '$txt_brgy',
-                                        '$txt_zone',
                                         '$txt_householdmem',
                                         '$txt_dperson',
                                         '$txt_rthead',
@@ -218,18 +194,12 @@ if(isset($_POST['btn_add'])){
                                         '$txt_religion',
                                         '$txt_national',
                                         '$ddl_gender', 
-                                        '$txt_skills', 
-                                        '$txt_igpit', 
-                                        '$txt_phno', 
                                         '$ddl_eattain', 
                                         '$ddl_hos',
                                         '$ddl_los', 
                                         '$ddl_dtype', 
                                         '$txt_water', 
                                         '$txt_lightning', 
-                                        '$txt_toilet', 
-                                        '$txt_faddress', 
-                                        '$txt_remarks', 
                                         '$txt_image',
                                         '$txt_uname', 
                                         '$txt_upass'
