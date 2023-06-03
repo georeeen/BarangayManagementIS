@@ -14,7 +14,6 @@ if(isset($_POST['btn_add'])){
     $txt_age = $diff->format('%y');
 
     $txt_brgy = $_POST['txt_brgy'];
-    $txt_dperson = $_POST['txt_dperson'];
     $txt_mstatus = $_POST['txt_mstatus'];
     $txt_householdmem = $_POST['txt_householdmem'];
     $txt_rthead = $_POST['txt_rthead'];
@@ -31,7 +30,6 @@ if(isset($_POST['btn_add'])){
     $ddl_hos = $_POST['ddl_hos'];
 
     $ddl_los = $_POST['ddl_los'];
-    $ddl_dtype = $_POST['ddl_dtype'];
     $txt_water = $_POST['txt_water'];
     $txt_lightning = $_POST['txt_lightning'];
     $txt_uname = $_POST['txt_uname'];
@@ -182,7 +180,6 @@ if(isset($_POST['btn_add'])){
                                         '$txt_age',
                                         '$txt_brgy',
                                         '$txt_householdmem',
-                                        '$txt_dperson',
                                         '$txt_rthead',
                                         '$txt_mstatus',
                                         '$txt_btype',
@@ -196,8 +193,7 @@ if(isset($_POST['btn_add'])){
                                         '$ddl_gender', 
                                         '$ddl_eattain', 
                                         '$ddl_hos',
-                                        '$ddl_los', 
-                                        '$ddl_dtype', 
+                                        '$ddl_los',  
                                         '$txt_water', 
                                         '$txt_lightning', 
                                         '$txt_image',
@@ -239,9 +235,7 @@ if(isset($_POST['btn_save']))
     $txt_edit_age = $diff->format('%y');
 
     $txt_edit_brgy = $_POST['txt_edit_brgy'];
-    $txt_edit_dperson = $_POST['txt_edit_dperson'];
     $txt_edit_mstatus = $_POST['txt_edit_mstatus'];
-    $txt_edit_zone = $_POST['txt_edit_zone'];
     $txt_edit_householdmem = $_POST['txt_edit_householdmem'];
     $txt_edit_rthead = $_POST['txt_edit_rthead'];
 
@@ -256,22 +250,15 @@ if(isset($_POST['btn_save']))
     $txt_edit_religion = $_POST['txt_edit_religion'];
     $txt_edit_national = $_POST['txt_edit_national'];
     $ddl_edit_gender = $_POST['ddl_edit_gender'];
-    $txt_edit_skills = $_POST['txt_edit_skills'];
-    $txt_edit_igpit = $_POST['txt_edit_igpit'];
-    $txt_edit_phno = $_POST['txt_edit_phno'];
     $ddl_edit_eattain = $_POST['ddl_edit_eattain'];
     $ddl_edit_hos = $_POST['ddl_edit_hos'];
 
     $ddl_edit_los = $_POST['ddl_edit_los'];
-    $ddl_edit_dtype = $_POST['ddl_edit_dtype'];
     $txt_edit_water = $_POST['txt_edit_water'];
     $txt_edit_lightning = $_POST['txt_edit_lightning'];
-    $txt_edit_toilet = $_POST['txt_edit_toilet'];
-    $txt_edit_faddress = $_POST['txt_edit_faddress'];
 
     $txt_edit_uname = $_POST['txt_edit_uname'];
     $txt_edit_upass = $_POST['txt_edit_upass'];
-    $txt_edit_remarks = $_POST['txt_edit_remarks'];
 
     $name = basename($_FILES['txt_edit_image']['name']);
     $temp = $_FILES['txt_edit_image']['tmp_name'];
@@ -357,9 +344,7 @@ if($ct == 0){
                                         bplace = '".$txt_edit_bplace."',
                                         age = '".$txt_edit_age."',
                                         barangay = '".$txt_edit_brgy."',
-                                        zone = '".$txt_edit_zone."',
                                         totalhousehold = '".$txt_edit_householdmem."',
-                                        differentlyabledperson = '".$txt_edit_dperson."',
                                         relationtohead = '".$txt_edit_rthead."',
                                         maritalstatus = '".$txt_edit_mstatus."',
                                         bloodtype = '".$txt_edit_btype."',
@@ -370,19 +355,11 @@ if($ct == 0){
                                         lengthofstay = '".$txt_edit_length."',
                                         religion = '".$txt_edit_religion."',
                                         nationality = '".$txt_edit_national."',
-                                        gender = '".$ddl_edit_gender."',
-                                        skills = '".$txt_edit_skills."',
-                                        igpitID = '".$txt_edit_igpit."',
-                                        philhealthNo = '".$txt_edit_phno."',
                                         highestEducationalAttainment = '".$ddl_edit_eattain."',
                                         houseOwnershipStatus = '".$ddl_edit_hos."',
                                         landOwnershipStatus = '".$ddl_edit_los."',
-                                        dwellingtype = '".$ddl_edit_dtype."',
                                         waterUsage = '".$txt_edit_water."',
                                         lightningFacilities = '".$txt_edit_lightning."',
-                                        sanitaryToilet = '".$txt_edit_toilet."',
-                                        formerAddress = '".$txt_edit_faddress."',
-                                        remarks = '".$txt_edit_remarks."',
                                         image = '".$txt_edit_image."',
                                         username = '".$txt_edit_uname."',
                                         password = '".$txt_edit_upass."'
