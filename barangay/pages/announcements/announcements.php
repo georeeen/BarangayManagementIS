@@ -66,7 +66,7 @@
                                                     <td><input type="checkbox" name="chk_delete[]" class="chk_delete" value="'.$row['announcement'].'" /></td>
                                                     <td>'.$row['announcement'].'</td>
                                                     <td>'.$row['about'].'</td>
-                                                    <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['announcement'].'" data-toggle="modal" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
+                                                    <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
                                                 </tr>
                                                 ';
 
