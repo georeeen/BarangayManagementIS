@@ -1,7 +1,7 @@
   <?php
 
    echo  '<header class="header">
-            <a href="#" class="logo">
+            <a href="#" class="logo" style="background-color: #2A7F46">
                 <!-- Add the class icon to your logo image or logo icon to add the margining -->
                 <style>
   .my_font
@@ -17,7 +17,7 @@
 
             </a>
             <!-- Header Navbar: style can be found in header.less -->
-            <nav class="navbar navbar-static-top" role="navigation">
+            <nav class="navbar navbar-static-top" role="navigation" style="background-color: #2A7F46">
                 <!-- Sidebar toggle button-->
                 <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
                     <span class="sr-only">Toggle navigation</span>
