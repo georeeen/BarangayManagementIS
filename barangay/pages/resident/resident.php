@@ -16,7 +16,7 @@
         width:418px;
     }
     </style>
-    <body class="skin-black">
+    <body class="skin-blue">
         <!-- header logo: style can be found in header.less -->
         <?php 
         
