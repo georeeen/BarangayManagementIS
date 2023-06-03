@@ -29,7 +29,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php"><img alt="Brand" src="../img/logo.png" style="width:50px; margin-top:-15px; "></a>
+      <a class="navbar-brand" href="index.php"><img alt="Brand" src="../img/logo.png" style="width:50px; margin-top:-15px; color: green;"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
