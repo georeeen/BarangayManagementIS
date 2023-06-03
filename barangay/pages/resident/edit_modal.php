@@ -49,8 +49,6 @@
 
                         <div class="form-group">
                             <label class="control-label">Differently-abled Person:</label>
-                            <input name="txt_edit_dperson" class="form-control input-sm input-size" type="text" value="'.$erow['differentlyabledperson'].'"/>
-                        </div>
 
                         <div class="form-group">
                             <label class="control-label">Blood Type:</label>
@@ -70,11 +68,6 @@
                         <div class="form-group">
                             <label class="control-label">Nationality:</label>
                             <input name="txt_edit_national" class="form-control input-sm" type="text" value="'.$erow['nationality'].'"/>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="control-label">IgpitID:</label>
-                            <input name="txt_edit_igpit" class="form-control input-sm" type="number" value="'.$erow['igpitID'].'" min="1" />
                         </div>
 
                         <div class="form-group">
@@ -113,21 +106,6 @@
                             </select>
                         </div>
 
-                         <div class="form-group">
-                            <label class="control-label">Sanitary Toilet:</label>
-                        	<select name="txt_edit_toilet" class="form-control input-sm input-size">
-                                <option>'.$erow['sanitaryToilet'].'</option>
-                                <option>Water-sealed</option>
-                                <option>Antipolo</option>
-                                <option>None</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="control-label">Remarks:</label>
-                            <input name="txt_edit_remarks" class="form-control input-sm" type="text" value="'.$erow['remarks'].'"/>
-                        </div>
-
                         <div class="form-group">
                             <label class="control-label">Username:</label>
                             <input name="txt_edit_uname" class="form-control input-sm" type="text" value="'.$erow['username'].'"/>
@@ -157,11 +135,6 @@
                         </div> 
 
                         <div class="form-group">
-                            <label class="control-label">Zone #:</label>
-                            <input name="txt_edit_zone" class="form-control input-sm" type="text" value="'.$erow['zone'].'"/>
-                        </div>
-
-                        <div class="form-group">
                             <label class="control-label">Total Household Member:</label>
                             <input name="txt_edit_householdmem" class="form-control input-sm" type="number" min="1" value="'.$erow['totalhousehold'].'"/>
                         </div>
@@ -187,18 +160,6 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label">Skills:</label>
-                            <input name="txt_edit_skills" class="form-control input-sm" type="text" value="'.$erow['skills'].'"/>
-                        </div>
-
-
-                        <div class="form-group">
-                            <label class="control-label">PhilHealth #:</label>
-                            <input name="txt_edit_phno" class="form-control input-sm" type="number" max="999999999999" min="1" value="'.$erow['philhealthNo'].'"/>
-                        </div>
-
-
-                        <div class="form-group">
                             <label class="control-label">House Ownership Status:</label>
                             <select name="ddl_edit_hos" class="form-control input-sm">
                                 <option value="'.$erow['houseOwnershipStatus'].'" selected>'.$erow['houseOwnershipStatus'].'</option>
@@ -207,31 +168,6 @@
                                 <option value="Live with Parents/Relatives">Live with Parents/Relatives</option>
                             </select>
                         </div>
-
-
-                        <div class="form-group">
-                            <label class="control-label">Dwelling Type:</label>
-                            <select name="ddl_edit_dtype" class="form-control input-sm">
-                                <option value="'.$erow['dwellingtype'].'">'.$erow['dwellingtype'].'</option>
-                                <option value="1st Option">1st Option</option>
-                                <option value="2nd Option">2nd Option</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="control-label">Lightning Facilities:</label>
-                        	<select name="txt_edit_lightning" class="form-control input-sm input-size">
-                                <option>'.$erow['philhealthNo'].'</option>
-                                <option>Electric</option>
-                                <option>Lamp</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="control-label">Former Address:</label>
-                            <input name="txt_edit_faddress" class="form-control input-sm" type="text" value="'.$erow['formerAddress'].'"/>
-                        </div>
-
 
                         <div class="form-group">
                             <label class="control-label">Password:</label>
