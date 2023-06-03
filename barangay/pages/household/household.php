@@ -69,8 +69,8 @@
                                                 ?>
                                                 <th>Household No.</th>
                                                 <th>Address</th>
-                                                <th>Head of the Family</th>
                                                 <th>No. of Members</th>
+                                                <th>Head of the Family</th>
                                                 <th style="width: 40px !important;">Manage</th>
                                             </tr>
                                         </thead>
