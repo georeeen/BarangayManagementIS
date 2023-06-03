@@ -8,10 +8,11 @@
         header("Location: ../../login.php"); 
     }
     else
-    
+    {
     ob_start();
+    }
     include('../head_css.php'); ?>
-    <body class="skin-black">
+    <body class="skin-blue">
         <!-- header logo: style can be found in header.less -->
         <?php 
         
@@ -28,7 +29,7 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                  <h1>
-                    Announcements </h1>
+                    Announcement </h1>
                     
                 </section>
 
@@ -46,19 +47,18 @@
     <tbody>
         <?php
         include "../pages/connection.php";
-        $squery = mysqli_query($con, "SELECT *,CONCAT(announcement, ', ', about, ' ',details) as home FROM tblannounce");
+        $squery = mysqli_query($con, "SELECT *,CONCAT(lname, ', ', fname, ' ', mname) as cname FROM tblresident");
         while($row = mysqli_fetch_array($squery))
         {
             echo '
             <tr>
-                <td style="width:70px;"><image src="../pages/resident/image/'.basename($row['image']).'" style="width:60px;height:60px;"/></td>
-                <td>'.$row['announcement'].'</td>
-                <td><button class="btn btn-primary btn-sm" data-target="#detailsModal'.$row['announcement'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Details</button></td>
+                <td>'.$row['cname'].'</td>
+                <td>'.$row['barangay'].'</td>
+                <td><button class="btn btn-primary btn-sm" data-target="#detailsModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-search" aria-hidden="true"></i> Details</button></td>
             </tr>
             ';
             include "detailsModal.php";
         }
-        ;
         ?>
     </tbody>
 </table>
@@ -83,7 +83,22 @@
 
 <script src="../js/plugins/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
 <!-- AdminLTE App -->
-<script src="../js/AdminLTE/app.js" type="text/javascript"></script></script>
+<script src="../js/AdminLTE/app.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  $(function() {
+      $("#table").dataTable({
+         "aoColumnDefs": [ { "bSortable": false, "aTargets": [ 0,5 ] } ],"aaSorting": [],
+         "dom":' <"search"f><"top"l>rt<"bottom"ip><"clear">'
+      });
+  });
+
+  $(document).ready(function () {             
+  $('.dataTables_filterinput[type="search"]').css(
+     {'width':'350px','display':'inline-block'}
+  );
+});
+</script>
 
 
 </html>
