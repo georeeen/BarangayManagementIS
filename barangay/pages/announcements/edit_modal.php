@@ -1,4 +1,4 @@
-<?php echo '<div id="editModal'.$row['id'].'" class="modal fade">
+<?php echo '<div id="editModal',$row['id'].'" class="modal fade">
 <form method="post">
   <div class="modal-dialog modal-sm" style="width:300px !important;">
     <div class="modal-content">
@@ -9,7 +9,7 @@
         <div class="modal-body">
         <div class="row">
             <div class="col-md-12">
-                <input type="hidden" value="'.$row['id'].'" name="hidden_id" id="hidden_id"/>
+                <input type="hidden" value="',$row['id'],'" name="hidden_id" id="hidden_id"/>
                 <div class="form-group">
                     <label>Title: <span style="color:gray; font-size: 10px;">(Title)</span></label>
                     <input name="txt_edit_announce" class="form-control input-sm" type="text" value="'.$row['id'].'"/>
