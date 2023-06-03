@@ -22,7 +22,7 @@ session_start();
       }
 
     </style> 
-    <body class="skin-green"> 
+    <body class="skin-red"> 
     <br>
     <br>
     <br>
