@@ -38,7 +38,7 @@
                     <div class="row">
                         <!-- left column -->
                             <div class="box">
-                                <div class="box-header">
+                                <div class="box-header" color= "green">
                                     <div style="padding:10px;" div class= "pull-right">
                                         
                                         <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal" style="background-color: green"><i class="fa fa-user-plus" aria-hidden="true"></i> Compose</button>  
