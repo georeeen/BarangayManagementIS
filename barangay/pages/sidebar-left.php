@@ -125,7 +125,7 @@
                                 </a>
                             </li>
                             <li>
-                                 <a href="../announceresi/announceresi.php">
+                                 <a href="../announcements/announcements.php">
                             <i class="fa fa-calendar"></i> <span>Announcements</span>
                                 </a>
                             </li>   
