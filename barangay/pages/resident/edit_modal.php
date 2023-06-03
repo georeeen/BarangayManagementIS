@@ -36,7 +36,6 @@
                             <input name="txt_edit_bdate" class="form-control input-sm" type="date" value="'.$erow['bdate'].'"/> 
                         </div>
 
-
                         <div class="form-group">
                             <label class="control-label">Barangay:</label>
                             <input name="txt_edit_brgy" class="form-control input-sm input-size" type="text" value="'.$erow['barangay'].'"/>
@@ -44,11 +43,8 @@
 
                         <div class="form-group">
                             <label class="control-label">Household #:</label>
-                            <input name="txt_edit_householdnum" class="form-control input-sm" type="number" min="1" value="'.$erow['householdnum'].'"/>
+                            <input name="txt_edit_householdnum" class="form-control input-sm input-size" type="text" value="'.$erow['householdnum'].'"/>
                         </div>
-
-                        <div class="form-group">
-                            <label class="control-label">Differently-abled Person:</label>
 
                         <div class="form-group">
                             <label class="control-label">Blood Type:</label>
@@ -98,11 +94,11 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label">Water Usage:</label>
-                        	<select name="txt_edit_water" class="form-control input-sm input-size">
-                                <option>'.$erow['waterUsage'].'</option>
-                                <option>Faucet</option>
-                                <option>Deep Well</option>
+                            <label class="control-label">Lightning Facilities:</label>
+                        	<select name="txt_edit_lightning" class="form-control input-sm input-size">
+                                <option>'.$erow['lightningFacilities'].'</option>
+                                <option>Electric</option>
+                                <option>Lamp</option>
                             </select>
                         </div>
 
@@ -170,14 +166,22 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label">Password:</label>
-                            <input name="txt_edit_upass" class="form-control input-sm" type="password" value="'.$erow['password'].'"/>
+                            <label class="control-label">Water Usage:</label>
+                        	<select name="txt_edit_water" class="form-control input-sm input-size">
+                                <option>'.$erow['waterUsage'].'</option>
+                                <option>Faucet</option>
+                                <option>Deep Well</option>
+                            </select>
                         </div>
 
+                        <div class="form-group">
+                        <label class="control-label">Image:</label>
+                        <input name="txt_edit_image" class="form-control input-sm" type="file" />
+                    </div>
 
                         <div class="form-group">
-                            <label class="control-label">Image:</label>
-                            <input name="txt_edit_image" class="form-control input-sm" type="file" />
+                            <label class="control-label">Password:</label>
+                            <input name="txt_edit_upass" class="form-control input-sm" type="password" value="'.$erow['password'].'"/>
                         </div>
 
                     </div>
