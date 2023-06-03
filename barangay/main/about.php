@@ -33,10 +33,10 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" color="green">
 <ul class="nav navbar-nav">
         <li class="active"><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
-        <li color= green;><a href="about.php">About</a></li>
+        <li><a href="about.php">About</a></li>
         <li><a href="../login.php">Admin</a></li>
         <li><a href="../pages/resident/login.php">Resident</a></li>
       </ul>
