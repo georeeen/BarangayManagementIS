@@ -56,7 +56,7 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color: #3FB466">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color: #2A7F46">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
         <li><a href="../login.php">Admin</a></li>
