@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['btn_add'])){
     $txt_householdno = $_POST['txt_householdno'];
-    $txt_street = $_POST['txt_steet'];
+    $txt_street = $_POST['txt_street'];
     $txt_totalmembers = $_POST['txt_totalmembers'];
     $txt_hof = $_POST['txt_hof'];
 
