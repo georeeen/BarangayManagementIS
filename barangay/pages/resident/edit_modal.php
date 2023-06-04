@@ -47,13 +47,13 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label">Barangay:</label>
-                            <input name="txt_edit_brgy" class="form-control input-sm input-size" type="text" value="'.$erow['barangay'].'"/>
+                            <label class="control-label">Household #:</label>
+                            <input name="txt_edit_householdnum" class="form-control input-sm input-size" type="text" value="'.$erow['householdnum'].'"/>
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label">Household #:</label>
-                            <input name="txt_edit_householdnum" class="form-control input-sm input-size" type="text" value="'.$erow['householdnum'].'"/>
+                            <label class="control-label">Barangay:</label>
+                            <input name="txt_edit_brgy" class="form-control input-sm input-size" type="text" value="'.$erow['barangay'].'"/>
                         </div>
 
                         <div class="form-group">
@@ -148,6 +148,11 @@
                             <input name="txt_edit_mstatus" class="form-control input-sm" type="text" value="'.$erow['maritalstatus'].'"/>
                         </div> 
 
+                        <div class="form-group">
+                            <label class="control-label">Street:</label>
+                            <input name="txt_edit_street" class="form-control input-sm input-size" type="text" value="'.$erow['street'].'"/>
+                        </div>
+                        
                         <div class="form-group">
                             <label class="control-label">Total Household Member:</label>
                             <input name="txt_edit_householdmem" class="form-control input-sm" type="number" min="1" value="'.$erow['totalhousehold'].'"/>
