@@ -22,7 +22,6 @@
 
                                 <div class="form-group">
                                     <label>Head of the Family:</label>
-
                                     <select id="txt_hof" name="txt_hof" class="form-control input-sm select2" style="width:100%" onchange="show_total()">
                                     <option disabled selected>-- Input Household # First --</option>
                                     
