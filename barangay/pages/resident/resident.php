@@ -113,7 +113,7 @@
                                                 {
                                                     echo '
                                                     <tr>
-                                                        <td>'.$row['zone'].'</td>
+                                                        <td>'.$row['id'].'</td>
                                                         <td style="width:70px;"><image src="image/'.basename($row['image']).'" style="width:60px;height:60px;"/></td>
                                                         <td>'.$row['cname'].'</td>
                                                         <td>'.$row['age'].'</td>
