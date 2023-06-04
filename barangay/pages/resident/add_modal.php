@@ -42,13 +42,13 @@
                                     </div> 
 
                                     <div class="form-group">
-                                        <label class="control-label">Barangay:</label>
-                                        <input name="txt_brgy" class="form-control input-sm input-size" type="text" placeholder="Barangay"/>
-                                    </div>
-
-                                    <div class="form-group">
                                         <label class="control-label">Household #:</label>
                                         <input name="txt_householdnum" class="form-control input-sm input-size" type="number" min="1" placeholder="Household #"/>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="control-label">Barangay:</label>
+                                        <input name="txt_brgy" class="form-control input-sm input-size" type="text" placeholder="Barangay"/>
                                     </div>
 
                                     <div class="form-group">
@@ -141,6 +141,11 @@
                                     <div class="form-group">
                                         <label class="control-label">Marital Status:</label>
                                         <input name="txt_mstatus" class="form-control input-sm" type="text" placeholder="Marital Status"/>
+                                    </div> 
+
+                                    <div class="form-group">
+                                        <label class="control-label">Street:</label>
+                                        <input name="txt_street" class="form-control input-sm" type="text" placeholder="Street"/>
                                     </div> 
 
                                     <div class="form-group">
