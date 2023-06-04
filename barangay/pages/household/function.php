@@ -15,7 +15,7 @@ if(isset($_POST['btn_add'])){
 
 
     if($num_rows == 0){
-        $query = mysqli_query($con,"INSERT INTO tblhousehold (householdno,street,totalhouseholdmembers,headoffamily) 
+        $query = mysqli_query($con,"INSERT INTO tblhousehold (householdno, street, totalhouseholdmembers, headoffamily) 
             values ('$txt_householdno', '$txt_street', '$txt_totalmembers', '$txt_hof')") or die('Error: ' . mysqli_error($con));
         if($query == true)
         {
@@ -34,7 +34,7 @@ if(isset($_POST['btn_save']))
 {
     $txt_id = $_POST['hidden_id'];
     $hiddennum = $_POST['hiddennum'];
-    $txt_edit_st = $_POST['txt_edit_street'];
+    $txt_edit_street = $_POST['txt_edit_street'];
     //$txt_edit_totalmembers = $_POST['txt_edit_totalmembers'];
     //$txt_edit_hof = $_POST['txt_edit_hof'];
 
