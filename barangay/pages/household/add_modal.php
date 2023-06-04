@@ -17,7 +17,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Street:</label>
-                                    <input name="txt_zone" class="form-control input-sm" type="text" placeholder="Street"/>
+                                    <input name="txt_street" class="form-control input-sm" type="text" placeholder="Street"/>
                                 </div>
 
                                 <div class="form-group">
