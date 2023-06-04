@@ -79,14 +79,14 @@
                                             if(!isset($_SESSION['staff']))
                                             {   
 
-                                                $squery = mysqli_query($con, "select *,h.id as hid,h.zone as hzone,CONCAT(r.lname, ', ', r.fname, ' ', r.mname) as hname from tblhousehold h left join tblresident r on r.id = h.headoffamily");
+                                                $squery = mysqli_query($con, "select *,h.id as hid,h.street as hzone,CONCAT(r.lname, ', ', r.fname, ' ', r.mname) as hname from tblhousehold h left join tblresident r on r.id = h.headoffamily");
                                                 while($row = mysqli_fetch_array($squery))
                                                 {
                                                     echo '
                                                     <tr>
                                                         <td><input type="checkbox" name="chk_delete[]" class="chk_delete" value="'.$row['hid'].'" /></td>
                                                         <td><a href="../resident/resident.php?resident='.$row['householdno'].'">'.$row['householdno'].'</a></td>
-                                                        <td>'.$row['hzone'].'</td>
+                                                        <td>'.$row['street'].'</td>
                                                         <td>'.$row['totalhousehold'].'</td>
                                                         <td>'.$row['hname'].'</td>
                                                         <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['hid'].'" data-toggle="modal" style="background-color:green"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
@@ -104,7 +104,7 @@
                                                     echo '
                                                     <tr>
                                                         <td><a href="../resident/resident.php?resident='.$row['householdno'].'">'.$row['householdno'].'</a></td>
-                                                        <td>'.$row['hzone'].'</td>
+                                                        <td>'.$row['street'].'</td>
                                                         <td>'.$row['totalhousehold'].'</td>
                                                         <td>'.$row['hname'].'</td>
                                                         <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['hid'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
