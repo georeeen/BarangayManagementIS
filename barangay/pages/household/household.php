@@ -68,7 +68,7 @@
                                                     }
                                                 ?>
                                                 <th>Household No.</th>
-                                                <th>Address</th>
+                                                <th>Street</th>
                                                 <th>No. of Members</th>
                                                 <th>Head of the Family</th>
                                                 <th style="width: 40px !important;">Manage</th>
@@ -79,7 +79,7 @@
                                             if(!isset($_SESSION['staff']))
                                             {   
 
-                                                $squery = mysqli_query($con, "select *,h.id as hid,h.street as hzone,CONCAT(r.lname, ', ', r.fname, ' ', r.mname) as hname from tblhousehold h left join tblresident r on r.id = h.headoffamily");
+                                                $squery = mysqli_query($con, "select *,h.id as hid,h.street as hstreet,CONCAT(r.lname, ', ', r.fname, ' ', r.mname) as hname from tblhousehold h left join tblresident r on r.id = h.headoffamily");
                                                 while($row = mysqli_fetch_array($squery))
                                                 {
                                                     echo '
