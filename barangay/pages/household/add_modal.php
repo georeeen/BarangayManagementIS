@@ -15,9 +15,10 @@
                                     <label>Household No:</label>
                                     <input onkeyup="show_head()" id="txt_householdno" name="txt_householdno" class="form-control input-sm" type="number" placeholder="Household #"/>
                                 </div>
+
                                 <div class="form-group">
                                     <label>Street:</label>
-                                    <input name="txt_street" class="form-control input-sm" type="text" placeholder="Street"/>
+                                    <input id="txt_street" class="form-control input-sm" type="text" placeholder="Street"/>
                                 </div>
 
                                 <div class="form-group">
