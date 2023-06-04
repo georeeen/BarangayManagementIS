@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['btn_add'])){
     $txt_householdno = $_POST['txt_householdno'];
-    $txt_zone = $_POST['txt_zone'];
+    $txt_street = $_POST['txt_steet'];
     $txt_totalmembers = $_POST['txt_totalmembers'];
     $txt_hof = $_POST['txt_hof'];
 
@@ -15,8 +15,8 @@ if(isset($_POST['btn_add'])){
 
 
     if($num_rows == 0){
-        $query = mysqli_query($con,"INSERT INTO tblhousehold (householdno,zone,totalhouseholdmembers,headoffamily) 
-            values ('$txt_householdno', '$txt_zone', '$txt_totalmembers', '$txt_hof')") or die('Error: ' . mysqli_error($con));
+        $query = mysqli_query($con,"INSERT INTO tblhousehold (householdno,street,totalhouseholdmembers,headoffamily) 
+            values ('$txt_householdno', '$txt_street', '$txt_totalmembers', '$txt_hof')") or die('Error: ' . mysqli_error($con));
         if($query == true)
         {
             $_SESSION['added'] = 1;
@@ -34,11 +34,11 @@ if(isset($_POST['btn_save']))
 {
     $txt_id = $_POST['hidden_id'];
     $hiddennum = $_POST['hiddennum'];
-    $txt_edit_zone = $_POST['txt_edit_zone'];
+    $txt_edit_st = $_POST['txt_edit_street'];
     //$txt_edit_totalmembers = $_POST['txt_edit_totalmembers'];
     //$txt_edit_hof = $_POST['txt_edit_hof'];
 
-    $update_query = mysqli_query($con,"UPDATE tblhousehold set zone ='".$txt_edit_zone."' where id = '".$txt_id."' ") or die('Error: ' . mysqli_error($con));
+    $update_query = mysqli_query($con,"UPDATE tblhousehold set street ='".$txt_edit_street."' where id = '".$txt_id."' ") or die('Error: ' . mysqli_error($con));
 
     if(isset($_SESSION['role'])){
         $action = 'Update Household Number '.$hiddennum;
