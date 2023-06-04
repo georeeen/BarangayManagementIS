@@ -16,8 +16,8 @@
                                     <input onkeyup="show_head()" id="txt_householdno" name="txt_householdno" class="form-control input-sm" type="number" placeholder="Household #"/>
                                 </div>
                                 <div class="form-group">
-                                    <label>Address:</label>
-                                    <input name="txt_zone" class="form-control input-sm" type="text" placeholder="Zone #"/>
+                                    <label>Street:</label>
+                                    <input name="txt_zone" class="form-control input-sm" type="text" placeholder="Street"/>
                                 </div>
 
                                 <div class="form-group">
