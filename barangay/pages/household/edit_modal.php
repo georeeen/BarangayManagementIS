@@ -16,8 +16,8 @@
                     <input class="form-control input-sm" type="text" value="'.$row['householdno'].'" readonly/>
                 </div>
                 <div class="form-group">
-                    <label>Zone: </label>
-                    <input name="txt_edit_zone" class="form-control input-sm" type="text" value="'.$row['hzone'].'"/>
+                    <label>Street: </label>
+                    <input name="txt_edit_street" class="form-control input-sm" type="text" value="'.$row['street'].'"/>
                 </div>
                 <div class="form-group">
                     <label>Head of Family: <span style="color:gray; font-size: 10px;">(Lastname, Firstname Middlename)</span></label>';
