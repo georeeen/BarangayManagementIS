@@ -49,7 +49,7 @@ session_start();
                 </div>
                 <button type="submit" class="btn btn-sm btn-primary pull-left" name="btn_login">Log in</button>
                 <label id="error" class="label label-danger" ></label> 
-                <a href="/pages/resident/signup.php" class="btn btn-sm btn-primary pull-right">Sign Up</a>
+                <button type="submit" class="btn btn-sm btn-primary pull-right" name="btn_login">Sign Up</button>
                 <label id="error" class="label label-danger"></label> 
               </form>
             </div>

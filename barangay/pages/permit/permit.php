@@ -109,7 +109,8 @@
                                                         <td>₱ '.number_format($row['samount'],2).'</td>
                                                             <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: green"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Approve</button></td>
                                                             <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: red"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Disapprove</button></td>
-                                                            <td><a class="btn btn-primary btn-sm" target="_blank" href="/pages/clearance/fpdf/generate_indigency_cert.php?resident_id='.$row['residentid'].'"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Generate</a></td>
+                                                            <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: orange"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Generate</button></td>
+
                                                     </tr>
 
                                                     ';
@@ -131,6 +132,7 @@
                                                         <td>₱ '.number_format($row['samount'],2).'</td>
                                                             <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: green"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Approve</button></td>
                                                             <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: red"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Disapprove</button></td>
+                                                            <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal" style="background-color: orange"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Generate</button></td>
                                                     </tr>
                                                     ';
 
@@ -225,7 +227,7 @@
 
                     <?php
                     }
-                    elseif($_SESSION['role'] == "Administrator")
+                    elseif($_SESSION['role'] == "Zone Leader")
                     {
                     ?>
 
