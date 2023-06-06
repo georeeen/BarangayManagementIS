@@ -58,13 +58,13 @@
                                         </thead>
                                         <tbody>
                                             <?php
-                                            $squery = mysqli_query($con, "select * from tblannounce");
+                                            $squery = mysqli_query($con, "SELECT * from tblannounce");
                                             while($row = mysqli_fetch_array($squery))
                                             {
                                                 echo '
                                                 <tr>
-                                                    <td><input type="checkbox" name="chk_delete[]" class="chk_delete" value="'.$row['announcement'].'" /></td>
-                                                    <td>'.$row['announcement'].'</td>
+                                                    <td><input type="checkbox" name="chk_delete[]" class="chk_delete" value="'.$row['announcements'].'" /></td>
+                                                    <td>'.$row['announcements'].'</td>
                                                     <td>'.$row['about'].'</td>
                                                     <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
                                                 </tr>
