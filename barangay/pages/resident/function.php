@@ -6,8 +6,10 @@ if(isset($_POST['btn_add'])){
     $ddl_gender = $_POST['ddl_gender'];
     $txt_bdate = $_POST['txt_bdate'];
     $txt_bplace = $_POST['txt_bplace'];
+    $txt_email = $_POST['txt_email'];
+    $txt_phonenum = $_POST['txt_phonenum'];
 
-    //$txt_age = $_POST['txt_age'];
+    $txt_age = $_POST['txt_age'];
     $dateOfBirth = $txt_bdate;
     $today = date("Y-m-d");
     $diff = date_diff(date_create($dateOfBirth), date_create($today));
@@ -66,6 +68,8 @@ if(isset($_POST['btn_add'])){
                                         mname,
                                         bdate,
                                         bplace,
+                                        email,
+                                        phonenum,
                                         age,
                                         barangay,
                                         totalhousehold,
@@ -97,6 +101,8 @@ if(isset($_POST['btn_add'])){
                                         '$txt_bdate', 
                                         '$txt_bplace',
                                         '$txt_age',
+                                        '$txt_email'
+                                        '$txt_phonenum'
                                         '$txt_brgy',
                                         '$txt_householdmem',
                                         '$txt_rthead',
@@ -140,6 +146,8 @@ if(isset($_POST['btn_add'])){
                                         mname,
                                         bdate,
                                         bplace,
+                                        email,
+                                        phonenum,
                                         age,
                                         barangay,
                                         totalhousehold,
@@ -170,6 +178,8 @@ if(isset($_POST['btn_add'])){
                                         '$txt_mname',  
                                         '$txt_bdate', 
                                         '$txt_bplace',
+                                        '$txt_email',
+                                        '$txt_phonenum',
                                         '$txt_age',
                                         '$txt_brgy',
                                         '$txt_householdmem',
@@ -222,7 +232,7 @@ if(isset($_POST['btn_save']))
     $txt_edit_mname = $_POST['txt_edit_mname'];
     $txt_edit_bdate = $_POST['txt_edit_bdate'];
     $txt_edit_bplace = $_POST['txt_edit_bplace'];
-
+   
     $dateOfBirth = $txt_edit_bdate;
     $today = date("Y-m-d");
     $diff = date_diff(date_create($dateOfBirth), date_create($today));
@@ -245,6 +255,8 @@ if(isset($_POST['btn_save']))
     $txt_edit_religion = $_POST['txt_edit_religion'];
     $txt_edit_national = $_POST['txt_edit_national'];
     $ddl_edit_gender = $_POST['ddl_edit_gender'];
+    $txt_edit_email = $_POST['txt_edit_email'];
+    $txt_edit_phonenum = $_POST['txt_edit_phonenum'];
     $ddl_edit_eattain = $_POST['ddl_edit_eattain'];
     $ddl_edit_hos = $_POST['ddl_edit_hos'];
 
@@ -285,6 +297,8 @@ if($ct == 0){
                                         mname = '".$txt_edit_mname."',
                                         bdate = '".$txt_edit_bdate."',
                                         bplace = '".$txt_edit_bplace."',
+                                        email = '".$txt_edit_email."',
+                                        phonenum = '".$txt_edit_phonenum."',
                                         age = '".$txt_edit_age."',
                                         barangay = '".$txt_edit_brgy."',
                                         totalhousehold = '".$txt_edit_householdmem."',
@@ -336,6 +350,8 @@ if($ct == 0){
                                         mname = '".$txt_edit_mname."',
                                         bdate = '".$txt_edit_bdate."',
                                         bplace = '".$txt_edit_bplace."',
+                                        email = '".$txt_edit_email."',
+                                        phonenum = '".$txt_edit_phonenum."',
                                         age = '".$txt_edit_age."',
                                         barangay = '".$txt_edit_brgy."',
                                         totalhousehold = '".$txt_edit_householdmem."',
