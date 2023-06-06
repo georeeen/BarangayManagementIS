@@ -38,7 +38,7 @@ if(isset($_POST['btn_save']))
     //$txt_edit_totalmembers = $_POST['txt_edit_totalmembers'];
     //$txt_edit_hof = $_POST['txt_edit_hof'];
 
-    $update_query = mysqli_query($con,"UPDATE tblhousehold set street ='".$txt_edit_street."' where id = '".$txt_id."' ") or die('Error: ' . mysqli_error($con));
+    $update_query = mysqli_query($con,"UPDATE tblhousehold set street ='".$txt_edit_street."' where id = '".$txt_street."' ") or die('Error: ' . mysqli_error($con));
 
     if(isset($_SESSION['role'])){
         $action = 'Update Household Number '.$hiddennum;
