@@ -15,6 +15,7 @@ if(isset($_POST['btn_add'])){
 
     $txt_brgy = $_POST['txt_brgy'];
     $txt_mstatus = $_POST['txt_mstatus'];
+    $txt_mstatus = $_POST['txt_street'];
     $txt_householdmem = $_POST['txt_householdmem'];
     $txt_rthead = $_POST['txt_rthead'];
 
@@ -70,6 +71,7 @@ if(isset($_POST['btn_add'])){
                                         totalhousehold,
                                         relationtohead,
                                         maritalstatus,
+                                        street,
                                         bloodtype,
                                         civilstatus,
                                         occupation,
@@ -99,6 +101,7 @@ if(isset($_POST['btn_add'])){
                                         '$txt_householdmem',
                                         '$txt_rthead',
                                         '$txt_mstatus',
+                                        '$txt_street',
                                         '$txt_btype',
                                         '$txt_cstatus',
                                         '$txt_occp',
@@ -142,6 +145,7 @@ if(isset($_POST['btn_add'])){
                                         totalhousehold,
                                         relationtohead,
                                         maritalstatus,
+                                        street,
                                         bloodtype,
                                         civilstatus,
                                         occupation,
@@ -171,6 +175,7 @@ if(isset($_POST['btn_add'])){
                                         '$txt_householdmem',
                                         '$txt_rthead',
                                         '$txt_mstatus',
+                                        '$txt_street',
                                         '$txt_btype',
                                         '$txt_cstatus',
                                         '$txt_occp',
@@ -225,6 +230,7 @@ if(isset($_POST['btn_save']))
 
     $txt_edit_brgy = $_POST['txt_edit_brgy'];
     $txt_edit_mstatus = $_POST['txt_edit_mstatus'];
+    $txt_edit_street = $_POST['txt_edit_street'];
     $txt_edit_householdmem = $_POST['txt_edit_householdmem'];
     $txt_edit_rthead = $_POST['txt_edit_rthead'];
 
@@ -282,9 +288,9 @@ if($ct == 0){
                                         age = '".$txt_edit_age."',
                                         barangay = '".$txt_edit_brgy."',
                                         totalhousehold = '".$txt_edit_householdmem."',
-                                        differentlyabledperson = '".$txt_edit_dperson."',
                                         relationtohead = '".$txt_edit_rthead."',
                                         maritalstatus = '".$txt_edit_mstatus."',
+                                        street = '".$txt_edit_street."',
                                         bloodtype = '".$txt_edit_btype."',
                                         civilstatus = '".$txt_edit_cstatus."',
                                         occupation = '".$txt_edit_occp."',
@@ -335,6 +341,7 @@ if($ct == 0){
                                         totalhousehold = '".$txt_edit_householdmem."',
                                         relationtohead = '".$txt_edit_rthead."',
                                         maritalstatus = '".$txt_edit_mstatus."',
+                                        street = '".$txt_edit_street."',
                                         bloodtype = '".$txt_edit_btype."',
                                         civilstatus = '".$txt_edit_cstatus."',
                                         occupation = '".$txt_edit_occp."',
