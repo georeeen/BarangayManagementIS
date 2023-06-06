@@ -134,7 +134,7 @@
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
 
-                            <?php include "../duplicate_error.php"; ?>
+                            
                             <?php include "../edit_notif.php"; ?>
 
                             <?php include "../added_notif.php"; ?>
