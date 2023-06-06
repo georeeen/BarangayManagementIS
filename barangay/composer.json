@@ -1,0 +1,16 @@
+{
+    "name": "socra/barangay",
+    "autoload": {
+        "psr-4": {
+            "Socra\\Barangay\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "socrates"
+        }
+    ],
+    "require": {
+        "geekcom/phpjasper": "^3.1"
+    }
+}

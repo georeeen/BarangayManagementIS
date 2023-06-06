@@ -1,5 +1,8 @@
 <?php
-if(isset($_POST['btn_add'])){
+
+require "./../connection.php";
+
+if (isset($_POST['btn_add'])) {
     $txt_lname = $_POST['txt_lname'];
     $txt_fname = $_POST['txt_fname'];
     $txt_mname = $_POST['txt_mname'];
@@ -36,31 +39,29 @@ if(isset($_POST['btn_add'])){
     $txt_uname = $_POST['txt_uname'];
     $txt_upass = $_POST['txt_upass'];
 
-
     $name = basename($_FILES['txt_image']['name']);
     $temp = $_FILES['txt_image']['tmp_name'];
     $imagetype = $_FILES['txt_image']['type'];
     $size = $_FILES['txt_image']['size'];
 
     $milliseconds = round(microtime(true) * 1000);
-    $image = $milliseconds.'_'.$name;
+    $image = $milliseconds . '_' . $name;
 
-    if(isset($_SESSION['role'])){
-        $action = 'Added Resident named '.$txt_lname.', '.$txt_fname.' '.$txt_mname;
-        $iquery = mysqli_query($con,"INSERT INTO tbllogs (user,logdate,action) values ('".$_SESSION['role']."', NOW(), '".$action."')");
+    if (isset($_SESSION['role'])) {
+        $action = 'Added Resident named ' . $txt_lname . ', ' . $txt_fname . ' ' . $txt_mname;
+        $iquery = mysqli_query($con, "INSERT INTO tbllogs (user,logdate,action) values ('" . $_SESSION['role'] . "', NOW(), '" . $action . "')");
     }
 
-    $su = mysqli_query($con,"SELECT * from tblresident where username = '".$txt_uname."' ");
+    $su = mysqli_query($con, "SELECT * from tblresident where username = '" . $txt_uname . "' ");
     $ct = mysqli_num_rows($su);
-    
-    if($ct == 0){
 
-        if($name != ""){
-            if(($imagetype=="image/jpeg" || $imagetype=="image/png" || $imagetype=="image/bmp") && $size<=2048000){
-                    if(move_uploaded_file($temp, 'image/'.$image))
-                    {
+    if ($ct == 0) {
+
+        if ($name != "") {
+            if (($imagetype == "image/jpeg" || $imagetype == "image/png" || $imagetype == "image/bmp") && $size <= 2048000) {
+                if (move_uploaded_file($temp, 'image/' . $image)) {
                     $txt_image = $image;
-                    $query = mysqli_query($con,"INSERT INTO tblresident (
+                    $query = mysqli_query($con, "INSERT INTO tblresident (
                                         lname,
                                         fname,
                                         mname,
@@ -89,12 +90,12 @@ if(isset($_POST['btn_add'])){
                                         image,
                                         username,
                                         password
-                                    ) 
+                                    )
                                     values (
-                                        '$txt_lname', 
-                                        '$txt_fname', 
-                                        '$txt_mname',  
-                                        '$txt_bdate', 
+                                        '$txt_lname',
+                                        '$txt_fname',
+                                        '$txt_mname',
+                                        '$txt_bdate',
                                         '$txt_bplace',
                                         '$txt_age',
                                         '$txt_brgy',
@@ -110,31 +111,27 @@ if(isset($_POST['btn_add'])){
                                         '$txt_length',
                                         '$txt_religion',
                                         '$txt_national',
-                                        '$ddl_gender', 
-                                        '$ddl_eattain', 
+                                        '$ddl_gender',
+                                        '$ddl_eattain',
                                         '$ddl_hos',
-                                        '$ddl_los',  
-                                        '$txt_water', 
-                                        '$txt_lightning',  
+                                        '$ddl_los',
+                                        '$txt_water',
+                                        '$txt_lightning',
                                         '$txt_image',
-                                        '$txt_uname', 
+                                        '$txt_uname',
                                         '$txt_upass'
                                     )"
-                            ) 
-                            or die('Error: ' . mysqli_error($con));
-                    }
+                    )
+                    or die('Error: ' . mysqli_error($con));
+                }
+            } else {
+                $_SESSION['filesize'] = 1;
+                header("location: " . $_SERVER['REQUEST_URI']);
             }
-            else
-            {
-                $_SESSION['filesize'] = 1; 
-                header ("location: ".$_SERVER['REQUEST_URI']);
-            }
-        }
-        else
-        {
-             $txt_image = 'default.png';
-             
-        $query = mysqli_query($con,"INSERT INTO tblresident (
+        } else {
+            $txt_image = 'default.png';
+
+            $query = mysqli_query($con, "INSERT INTO tblresident (
                                         lname,
                                         fname,
                                         mname,
@@ -163,12 +160,12 @@ if(isset($_POST['btn_add'])){
                                         image,
                                         username,
                                         password
-                                    ) 
+                                    )
                                     values (
-                                        '$txt_lname', 
-                                        '$txt_fname', 
-                                        '$txt_mname',  
-                                        '$txt_bdate', 
+                                        '$txt_lname',
+                                        '$txt_fname',
+                                        '$txt_mname',
+                                        '$txt_bdate',
                                         '$txt_bplace',
                                         '$txt_age',
                                         '$txt_brgy',
@@ -184,38 +181,33 @@ if(isset($_POST['btn_add'])){
                                         '$txt_length',
                                         '$txt_religion',
                                         '$txt_national',
-                                        '$ddl_gender', 
-                                        '$ddl_eattain', 
+                                        '$ddl_gender',
+                                        '$ddl_eattain',
                                         '$ddl_hos',
-                                        '$ddl_los',  
-                                        '$txt_water', 
-                                        '$txt_lightning', 
+                                        '$ddl_los',
+                                        '$txt_water',
+                                        '$txt_lightning',
                                         '$txt_image',
-                                        '$txt_uname', 
+                                        '$txt_uname',
                                         '$txt_upass'
                                     )"
-                            ) 
-                            or die('Error: ' . mysqli_error($con));
-             
+            )
+            or die('Error: ' . mysqli_error($con));
+
         }
 
-        
-            if($query == true)
-            {
-                $_SESSION['added'] = 1;
-                header ("location: ".$_SERVER['REQUEST_URI']);
-            }
-    }
-    else{
+        if ($query == true) {
+            $_SESSION['added'] = 1;
+            header("location: " . $_SERVER['REQUEST_URI']);
+        }
+    } else {
         $_SESSION['duplicateuser'] = 1;
-        header ("location: ".$_SERVER['REQUEST_URI']);
-    }    
+        header("location: " . $_SERVER['REQUEST_URI']);
+    }
 
 }
 
-
-if(isset($_POST['btn_save']))
-{
+if (isset($_POST['btn_save'])) {
     $txt_id = $_POST['hidden_id'];
     $txt_edit_lname = $_POST['txt_edit_lname'];
     $txt_edit_fname = $_POST['txt_edit_fname'];
@@ -239,7 +231,6 @@ if(isset($_POST['btn_save']))
     $txt_edit_occp = $_POST['txt_edit_occp'];
     $txt_edit_income = $_POST['txt_edit_income'];
 
-
     $txt_edit_householdnum = $_POST['txt_edit_householdnum'];
     $txt_edit_length = $_POST['txt_edit_length'];
     $txt_edit_religion = $_POST['txt_edit_religion'];
@@ -261,22 +252,21 @@ if(isset($_POST['btn_save']))
     $size = $_FILES['txt_edit_image']['size'];
 
     $milliseconds = round(microtime(true) * 1000);
-    $image = $milliseconds.'_'.$name;
+    $image = $milliseconds . '_' . $name;
 
-    if(isset($_SESSION['role'])){
-        $action = 'Update Resident named '.$txt_edit_lname.', '.$txt_edit_fname.' '.$txt_edit_mname;
-        $iquery = mysqli_query($con,"INSERT INTO tbllogs (user,logdate,action) values ('".$_SESSION['role']."', NOW(), '".$action."')");
+    if (isset($_SESSION['role'])) {
+        $action = 'Update Resident named ' . $txt_edit_lname . ', ' . $txt_edit_fname . ' ' . $txt_edit_mname;
+        $iquery = mysqli_query($con, "INSERT INTO tbllogs (user,logdate,action) values ('" . $_SESSION['role'] . "', NOW(), '" . $action . "')");
     }
 
-$su = mysqli_query($con,"SELECT * from tblresident where username = '".$txt_edit_uname."' and id not in (".$txt_id.") ");
-$ct = mysqli_num_rows($su);
+    $su = mysqli_query($con, "SELECT * from tblresident where username = '" . $txt_edit_uname . "' and id not in (" . $txt_id . ") ");
+    $ct = mysqli_num_rows($su);
 
-if($ct == 0){
+    if ($ct == 0) {
 
-    if($name != ""){
-            if(($imagetype=="image/jpeg" || $imagetype=="image/png" || $imagetype=="image/bmp") && $size<=2048000){
-                if(move_uploaded_file($temp, 'image/'.$image))
-                {
+        if ($name != "") {
+            if (($imagetype == "image/jpeg" || $imagetype == "image/png" || $imagetype == "image/bmp") && $size <= 2048000) {
+                if (move_uploaded_file($temp, 'image/' . $image)) {
 
                 $txt_edit_image = $image;
                 $update_query = mysqli_query($con,"UPDATE tblresident set 
@@ -288,9 +278,9 @@ if($ct == 0){
                                         age = '".$txt_edit_age."',
                                         barangay = '".$txt_edit_brgy."',
                                         totalhousehold = '".$txt_edit_householdmem."',
+                                        differentlyabledperson = '".$txt_edit_dperson."',
                                         relationtohead = '".$txt_edit_rthead."',
                                         maritalstatus = '".$txt_edit_mstatus."',
-                                        street = '".$txt_edit_street."',
                                         bloodtype = '".$txt_edit_btype."',
                                         civilstatus = '".$txt_edit_cstatus."',
                                         occupation = '".$txt_edit_occp."',
@@ -318,16 +308,14 @@ if($ct == 0){
                                         where id = '".$txt_id."'
                                 ") or die('Error: ' . mysqli_error($con));
                 }
+            } else {
+                $_SESSION['filesize'] = 1;
+                header("location: " . $_SERVER['REQUEST_URI']);
             }
-            else{
-                $_SESSION['filesize'] = 1; 
-                header ("location: ".$_SERVER['REQUEST_URI']);
-            }
-    }
-    else{
+        } else {
 
-        $chk_image = mysqli_query($con,"SELECT * from tblresident where id = '".$_POST['hidden_id']."' ");
-        $rowimg = mysqli_fetch_array($chk_image);
+            $chk_image = mysqli_query($con, "SELECT * from tblresident where id = '" . $_POST['hidden_id'] . "' ");
+            $rowimg = mysqli_fetch_array($chk_image);
 
         $txt_edit_image = $rowimg['image'];
         $update_query = mysqli_query($con,"UPDATE tblresident set 
@@ -341,7 +329,6 @@ if($ct == 0){
                                         totalhousehold = '".$txt_edit_householdmem."',
                                         relationtohead = '".$txt_edit_rthead."',
                                         maritalstatus = '".$txt_edit_mstatus."',
-                                        street = '".$txt_edit_street."',
                                         bloodtype = '".$txt_edit_btype."',
                                         civilstatus = '".$txt_edit_cstatus."',
                                         occupation = '".$txt_edit_occp."',
@@ -360,38 +347,67 @@ if($ct == 0){
                                         password = '".$txt_edit_upass."'
                                         where id = '".$txt_id."'
                                 ") or die('Error: ' . mysqli_error($con));
-    }
-        
-        if($update_query == true){
-            $_SESSION['edited'] = 1;
-            header("location: ".$_SERVER['REQUEST_URI']);
         }
 
-    }
-    else{
-        $_SESSION['duplicateuser'] = 1;
-        header ("location: ".$_SERVER['REQUEST_URI']);
-    }  
+        if ($update_query == true) {
+            $_SESSION['edited'] = 1;
+            header("location: " . $_SERVER['REQUEST_URI']);
+        }
 
-    
+    } else {
+        $_SESSION['duplicateuser'] = 1;
+        header("location: " . $_SERVER['REQUEST_URI']);
+    }
+
 }
 
-if(isset($_POST['btn_delete']))
-{
-    if(isset($_POST['chk_delete']))
-    {
-        foreach($_POST['chk_delete'] as $value)
-        {
-            $delete_query = mysqli_query($con,"DELETE from tblresident where id = '$value' ") or die('Error: ' . mysqli_error($con));
-                    
-            if($delete_query == true)
-            {
+if (isset($_POST['btn_delete'])) {
+    if (isset($_POST['chk_delete'])) {
+        foreach ($_POST['chk_delete'] as $value) {
+            $delete_query = mysqli_query($con, "DELETE from tblresident where id = '$value' ") or die('Error: ' . mysqli_error($con));
+
+            if ($delete_query == true) {
                 $_SESSION['delete'] = 1;
-                header("location: ".$_SERVER['REQUEST_URI']);
+                header("location: " . $_SERVER['REQUEST_URI']);
             }
         }
     }
 }
 
+/* GET DROPDOWN OPTIONS */
+function getNationalities($con)
+{
+    $query = "SELECT * FROM ref_nationalities";
+    $result = mysqli_query($con, $query);
 
-?>
+    if (!$result) {
+        die('Error: ' . mysqli_error($con));
+    }
+
+    return $result;
+}
+
+function getReligions($con)
+{
+    $query = "SELECT * FROM ref_religions";
+    $result = mysqli_query($con, $query);
+
+    if (!$result) {
+        die('Error: ' . mysqli_error($con));
+    }
+
+    return $result;
+}
+
+function getDwellingTypes($con)
+{
+    $query = "SELECT * FROM ref_dwelling_types";
+    $result = mysqli_query($con, $query);
+
+    if (!$result) {
+        die('Error: ' . mysqli_error($con));
+    }
+
+    return $result;
+}
+
