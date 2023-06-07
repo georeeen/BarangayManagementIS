@@ -37,8 +37,8 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label" style="margin-top:10px;">Age:</label>
-                            <input name="txt_edit_age" class="form-control input-sm" type="date" value="'.$erow['age'].'"/> 
+                            <label class="control-label">Age:</label>
+                            <input name="txt_edit_age" class="form-control input-sm input-size" type="text" value="'.$erow['age'].'"/>
                         </div>
 
                         <div class="form-group">

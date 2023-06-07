@@ -9,8 +9,10 @@ if (isset($_POST['btn_add'])) {
     $ddl_gender = $_POST['ddl_gender'];
     $txt_bdate = $_POST['txt_bdate'];
     $txt_bplace = $_POST['txt_bplace'];
+    $txt_email = $_POST['txt_email'];
+    $txt_phonenum = $_POST['txt_phonenum'];
 
-    //$txt_age = $_POST['txt_age'];
+    $txt_age = $_POST['txt_age'];
     $dateOfBirth = $txt_bdate;
     $today = date("Y-m-d");
     $diff = date_diff(date_create($dateOfBirth), date_create($today));
@@ -18,6 +20,7 @@ if (isset($_POST['btn_add'])) {
 
     $txt_brgy = $_POST['txt_brgy'];
     $txt_mstatus = $_POST['txt_mstatus'];
+    $txt_mstatus = $_POST['txt_street'];
     $txt_householdmem = $_POST['txt_householdmem'];
     $txt_rthead = $_POST['txt_rthead'];
 
@@ -66,11 +69,14 @@ if (isset($_POST['btn_add'])) {
                                         mname,
                                         bdate,
                                         bplace,
+                                        email,
+                                        phonenum,
                                         age,
                                         barangay,
                                         totalhousehold,
                                         relationtohead,
                                         maritalstatus,
+                                        street,
                                         bloodtype,
                                         civilstatus,
                                         occupation,
@@ -96,10 +102,13 @@ if (isset($_POST['btn_add'])) {
                                         '$txt_bdate',
                                         '$txt_bplace',
                                         '$txt_age',
+                                        '$txt_email'
+                                        '$txt_phonenum'
                                         '$txt_brgy',
                                         '$txt_householdmem',
                                         '$txt_rthead',
                                         '$txt_mstatus',
+                                        '$txt_street',
                                         '$txt_btype',
                                         '$txt_cstatus',
                                         '$txt_occp',
@@ -134,11 +143,14 @@ if (isset($_POST['btn_add'])) {
                                         mname,
                                         bdate,
                                         bplace,
+                                        email,
+                                        phonenum,
                                         age,
                                         barangay,
                                         totalhousehold,
                                         relationtohead,
                                         maritalstatus,
+                                        street,
                                         bloodtype,
                                         civilstatus,
                                         occupation,
@@ -163,11 +175,14 @@ if (isset($_POST['btn_add'])) {
                                         '$txt_mname',
                                         '$txt_bdate',
                                         '$txt_bplace',
+                                        '$txt_email',
+                                        '$txt_phonenum',
                                         '$txt_age',
                                         '$txt_brgy',
                                         '$txt_householdmem',
                                         '$txt_rthead',
                                         '$txt_mstatus',
+                                        '$txt_street',
                                         '$txt_btype',
                                         '$txt_cstatus',
                                         '$txt_occp',
@@ -209,7 +224,7 @@ if (isset($_POST['btn_save'])) {
     $txt_edit_mname = $_POST['txt_edit_mname'];
     $txt_edit_bdate = $_POST['txt_edit_bdate'];
     $txt_edit_bplace = $_POST['txt_edit_bplace'];
-
+   
     $dateOfBirth = $txt_edit_bdate;
     $today = date("Y-m-d");
     $diff = date_diff(date_create($dateOfBirth), date_create($today));
@@ -217,6 +232,7 @@ if (isset($_POST['btn_save'])) {
 
     $txt_edit_brgy = $_POST['txt_edit_brgy'];
     $txt_edit_mstatus = $_POST['txt_edit_mstatus'];
+    $txt_edit_street = $_POST['txt_edit_street'];
     $txt_edit_householdmem = $_POST['txt_edit_householdmem'];
     $txt_edit_rthead = $_POST['txt_edit_rthead'];
 
@@ -230,6 +246,8 @@ if (isset($_POST['btn_save'])) {
     $txt_edit_religion = $_POST['txt_edit_religion'];
     $txt_edit_national = $_POST['txt_edit_national'];
     $ddl_edit_gender = $_POST['ddl_edit_gender'];
+    $txt_edit_email = $_POST['txt_edit_email'];
+    $txt_edit_phonenum = $_POST['txt_edit_phonenum'];
     $ddl_edit_eattain = $_POST['ddl_edit_eattain'];
     $ddl_edit_hos = $_POST['ddl_edit_hos'];
 
@@ -311,35 +329,35 @@ if (isset($_POST['btn_save'])) {
             $chk_image = mysqli_query($con, "SELECT * from tblresident where id = '" . $_POST['hidden_id'] . "' ");
             $rowimg = mysqli_fetch_array($chk_image);
 
-            $txt_edit_image = $rowimg['image'];
-            $update_query = mysqli_query($con, "UPDATE tblresident set
-                                        lname = '" . $txt_edit_lname . "',
-                                        fname = '" . $txt_edit_fname . "',
-                                        mname = '" . $txt_edit_mname . "',
-                                        bdate = '" . $txt_edit_bdate . "',
-                                        bplace = '" . $txt_edit_bplace . "',
-                                        age = '" . $txt_edit_age . "',
-                                        barangay = '" . $txt_edit_brgy . "',
-                                        totalhousehold = '" . $txt_edit_householdmem . "',
-                                        relationtohead = '" . $txt_edit_rthead . "',
-                                        maritalstatus = '" . $txt_edit_mstatus . "',
-                                        bloodtype = '" . $txt_edit_btype . "',
-                                        civilstatus = '" . $txt_edit_cstatus . "',
-                                        occupation = '" . $txt_edit_occp . "',
-                                        monthlyincome = '" . $txt_edit_income . "',
-                                        householdnum = '" . $txt_edit_householdnum . "',
-                                        lengthofstay = '" . $txt_edit_length . "',
-                                        religion = '" . $txt_edit_religion . "',
-                                        nationality = '" . $txt_edit_national . "',
-                                        highestEducationalAttainment = '" . $ddl_edit_eattain . "',
-                                        houseOwnershipStatus = '" . $ddl_edit_hos . "',
-                                        landOwnershipStatus = '" . $ddl_edit_los . "',
-                                        waterUsage = '" . $txt_edit_water . "',
-                                        lightningFacilities = '" . $txt_edit_lightning . "',
-                                        image = '" . $txt_edit_image . "',
-                                        username = '" . $txt_edit_uname . "',
-                                        password = '" . $txt_edit_upass . "'
-                                        where id = '" . $txt_id . "'
+        $txt_edit_image = $rowimg['image'];
+        $update_query = mysqli_query($con,"UPDATE tblresident set 
+                                        lname = '".$txt_edit_lname."',
+                                        fname = '".$txt_edit_fname."',
+                                        mname = '".$txt_edit_mname."',
+                                        bdate = '".$txt_edit_bdate."',
+                                        bplace = '".$txt_edit_bplace."',
+                                        age = '".$txt_edit_age."',
+                                        barangay = '".$txt_edit_brgy."',
+                                        totalhousehold = '".$txt_edit_householdmem."',
+                                        relationtohead = '".$txt_edit_rthead."',
+                                        maritalstatus = '".$txt_edit_mstatus."',
+                                        bloodtype = '".$txt_edit_btype."',
+                                        civilstatus = '".$txt_edit_cstatus."',
+                                        occupation = '".$txt_edit_occp."',
+                                        monthlyincome = '".$txt_edit_income."',
+                                        householdnum = '".$txt_edit_householdnum."',
+                                        lengthofstay = '".$txt_edit_length."',
+                                        religion = '".$txt_edit_religion."',
+                                        nationality = '".$txt_edit_national."',
+                                        highestEducationalAttainment = '".$ddl_edit_eattain."',
+                                        houseOwnershipStatus = '".$ddl_edit_hos."',
+                                        landOwnershipStatus = '".$ddl_edit_los."',
+                                        waterUsage = '".$txt_edit_water."',
+                                        lightningFacilities = '".$txt_edit_lightning."',
+                                        image = '".$txt_edit_image."',
+                                        username = '".$txt_edit_uname."',
+                                        password = '".$txt_edit_upass."'
+                                        where id = '".$txt_id."'
                                 ") or die('Error: ' . mysqli_error($con));
         }
 
