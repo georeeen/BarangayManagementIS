@@ -15,10 +15,10 @@ session_start();
     </head>
     <style>
     body {
-    background-color: #DFF0D8;
+    background-color: #2A7F46;
     }
     h3 {
-    color: black;
+    color: white;
       }
     </style>
     <body class="skin-black">
@@ -27,7 +27,7 @@ session_start();
     <br>
     <h3> <center> <i>Hello Navoteño!</b>  </h3> 
         <div class="container" style="margin-top:70px; margin-bottom: 140px">
-          <div class="col-sm-8 col-md-8 col-md-offset-2">
+          <div class="col-md-4 col-md-offset-4">
               <div class="panel panel-default">
             <div class="panel-heading" style="text-align:center;">
                 <img src="../../img/logo.png" style="height:150px;"/>
