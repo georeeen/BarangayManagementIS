@@ -53,12 +53,29 @@
 
                                     <div class="form-group">
                                         <label class="control-label">Blood Type:</label>
-                                        <input name="txt_btype" class="form-control input-sm input-size" type="text" placeholder="Blood Type"/>
+                                        <select name="txt_btype" class="form-control input-sm input-size" placeholder="Blood Type">
+                                        <option selected="" disabled="">Select Blood Type:
+                                            <option>AB-</option>
+                                            <option>AB+</option>
+                                            <option>A+</option>
+                                            <option>A-</option>
+                                            <option>B+</option>
+                                            <option>B-</option>
+                                            <option>O+</option>
+                                            <option>O-</option>
+                                        </select>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="control-label">Civil Status:</label>
-                                        <input name="txt_cstatus" class="form-control input-sm input-size" type="text" placeholder="Civil Status"/>
+                                        <select name="txt_cstatus" class="form-control input-sm input-size" placeholder="Civil Status">
+                                            <<option selected="" disabled="">Select Educational Attainment:
+                                            <option>Single</option>
+                                            <option>Married</option>
+                                            <option>Widowed</option>
+                                            <option>Separated</option>
+                                            <option>Divorced</option>
+                                        </select>
                                     </div>
 
                                     <div class="form-group">
@@ -69,12 +86,25 @@
 
                                     <div class="form-group">
                                         <label class="control-label">Religion:</label>
-                                        <input name="txt_religion" class="form-control input-sm input-size" type="text" placeholder="Religion"/>
+                                        <select name="txt_religion" class="form-control input-sm input-size" placeholder="Religion">
+                                        <option selected="" disabled="">Select Religion:
+                                        <option>Enter your Religion</option>
+                                            <option>Roman Catholic</option>
+                                            <option>Iglesia ni Cristo</option>
+                                            <option>Christian</option>
+                                            <option>Saksi ni Jehovah</option>
+                                            <option>Islam</option>
+                                            <option>Protestantism</option>
+                                            <option>Others</option>
+                                        </select>
+                                        
+                                    </select>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="control-label">Educational Attainment:</label>
                                         <select name="ddl_eattain" class="form-control input-sm input-size">
+                                        <option selected="" disabled="">Select Educational Attainment:
                                             <option>No schooling completed</option>
                                             <option>Elementary</option>
                                             <option>High school, undergrad</option>
@@ -90,8 +120,8 @@
                                     <div class="form-group">
                                         <label class="control-label">Land Ownership Status:</label>
                                         <select name="ddl_los" class="form-control input-sm input-size">
+                                        <option selected="" disabled="">Land Ownership Status:
                                             <option>Owned</option>
-                                            <option>Landless</option>
                                             <option>Tenant</option>
                                             <option>Care Taker</option>
                                         </select>
@@ -120,7 +150,7 @@
                                     
 
                                     <div class="form-group">     
-                                        <label class="control-label">Gender:</label>
+                                        <label class="control-label">Sex:</label>
                                         <select name="ddl_gender" class="form-control input-sm">
                                             <option selected="" disabled="">-Select Gender-</option>
                                             <option value="Male">Male</option>
@@ -136,11 +166,6 @@
                                     <div class="form-group">
                                         <label class="control-label">Email:</label>
                                         <input name="txt_email" class="form-control input-sm" type="text" placeholder="Email"/>
-                                    </div> 
-
-                                    <div class="form-group">
-                                        <label class="control-label">Marital Status:</label>
-                                        <input name="txt_mstatus" class="form-control input-sm" type="text" placeholder="Marital Status"/>
                                     </div> 
 
                                     <div class="form-group">

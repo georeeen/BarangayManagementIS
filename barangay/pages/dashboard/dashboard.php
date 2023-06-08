@@ -172,6 +172,7 @@
                                 </div>
                             </div><!-- /.box -->
                     </div>   <!-- /.row -->
+                    
                 </section><!-- /.content -->
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
