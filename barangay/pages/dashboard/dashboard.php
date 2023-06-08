@@ -170,6 +170,17 @@
                                   </div>
                                   <!-- /.info-box -->
                                 </div>
+                                <div class="row">                     
+                                    <div class="col-md-12 col-sm-12 col-xs-12">                     
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                Resident Income Level
+                                            </div>
+                                            <div class="panel-body">
+                                                <div id="morris-bar-chart4"></div>
+                                            </div>
+                                        </div>          
+                                    </div>   
                             </div><!-- /.box -->
                     </div>   <!-- /.row -->
                     
@@ -178,7 +189,9 @@
         </div><!-- ./wrapper -->
         <!-- jQuery 2.0.2 -->
         <?php }
-        include "../footer.php"; ?>
+        include "../footer.php";
+        include "dash-bar.php";
+        ?>
 <script type="text/javascript">
     $(function() {
         $("#table").dataTable({
