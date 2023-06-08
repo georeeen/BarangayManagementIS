@@ -170,22 +170,16 @@ $dwelling_types = getDwellingTypes($con);
                                         <?php mysqli_free_result($nationalities); // free result set ?>
                                     </select>
                                 </div>
+
                                 <div class="form-group">
-                                    <label for="gender">Gender <span class="text-danger">*</span></label>
+                                    <label for="gender">Sex <span class="text-danger">*</span></label>
                                     <select class="form-control" id="gender" name="gender">
-                                        <option value="">Select Gender</option>
+                                        <option value="">Select Sex</option>
                                         <option value="MALE">Male</option>
                                         <option value="FEMALE">Female</option>
                                     </select>
                                 </div>
-                                <div class="form-group">
-                                    <label for="skills">Skills <span class="text-danger">*</span></label>
-                                    <select class="form-control" id="skills" name="skills" multiple></select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="igpitID">Igpit ID <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="igpitID" name="igpitID" placeholder="Enter your Igpit ID">
-                                </div>
+            
                                 <div class="form-group">
                                     <label for="philhealthNo">PhilHealth Number <span class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="philhealthNo" name="philhealthNo" placeholder="Enter your PhilHealth number">

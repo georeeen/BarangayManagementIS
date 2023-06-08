@@ -52,6 +52,15 @@
                                     </div>
 
                                     <div class="form-group">
+                                        <label class="control-label">Are you a person considered as PWD?</label>
+                                        <select name="txt_pwd" class="form-control input-sm input-size" placeholder="Are you a person considered as PWD?">
+                                        <option selected="" disabled="">Please Select:
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
                                         <label class="control-label">Blood Type:</label>
                                         <select name="txt_btype" class="form-control input-sm input-size" placeholder="Blood Type">
                                         <option selected="" disabled="">Select Blood Type:
@@ -69,7 +78,7 @@
                                     <div class="form-group">
                                         <label class="control-label">Civil Status:</label>
                                         <select name="txt_cstatus" class="form-control input-sm input-size" placeholder="Civil Status">
-                                            <<option selected="" disabled="">Select Educational Attainment:
+                                            <<option selected="" disabled="">Civil Status:
                                             <option>Single</option>
                                             <option>Married</option>
                                             <option>Widowed</option>
@@ -120,10 +129,30 @@
                                     <div class="form-group">
                                         <label class="control-label">Land Ownership Status:</label>
                                         <select name="ddl_los" class="form-control input-sm input-size">
-                                        <option selected="" disabled="">Land Ownership Status:
+                                        <option selected="" disabled="">Select Land Ownership Status:
+                                            <option>Freehold</option>
+                                            <option>Leasehold</option>
+                                            <option>Commonhold</option>
+                                            <option>Joint Tenancy</option>
+                                            <option>Tenancy in Common</option>
+                                            <option>Community Land Trust</option>
+                                            <option>Indigenous</option>
+                                            <option>Government</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label">House Ownership Status:</label>
+                                        <select name="ddl_hos" class="form-control input-sm input-size">
+                                        <option selected="" disabled=""> Select House Ownership Status:
                                             <option>Owned</option>
-                                            <option>Tenant</option>
-                                            <option>Care Taker</option>
+                                            <option>Rented</option>
+                                            <option>Mortgaged</option>
+                                            <option>Leased</option>
+                                            <option>Co-owned</option>
+                                            <option>Inherited</option>
+                                            <option>Govenrment-owned</option>
+                                            <option>Occupied without ownership</option>
                                         </select>
                                     </div>
 
@@ -152,7 +181,7 @@
                                     <div class="form-group">     
                                         <label class="control-label">Sex:</label>
                                         <select name="ddl_gender" class="form-control input-sm">
-                                            <option selected="" disabled="">-Select Gender-</option>
+                                            <option selected="" disabled="">Select Sex</option>
                                             <option value="Male">Male</option>
                                             <option value="Female">Female</option>
                                         </select>
@@ -170,7 +199,14 @@
 
                                     <div class="form-group">
                                         <label class="control-label">Street:</label>
-                                        <input name="txt_street" class="form-control input-sm" type="text" placeholder="Street"/>
+                                        <select name="txt_street" class="form-control input-sm" type="text" placeholder="Street">
+                                        <option selected="" disabled="">Select Street</option>
+                                            <option value="r.domingo">R. Domingo</option>
+                                            <option value="m.domingo">M. Domingo</option>
+                                            <option value="a.cruz">A. Cruz</option>
+                                            <option value="b.cruz">B. Cruz</option>
+                                            <option value="oliveros">Oliveros</option>
+                                        </select>   
                                     </div> 
 
                                     <div class="form-group">
@@ -180,31 +216,44 @@
 
                                     <div class="form-group">
                                         <label class="control-label">Relationship to Head:</label>
-                                        <input name="txt_rthead" class="form-control input-sm" type="text" placeholder="Relationship to Head"/>
+                                        <select name="txt_rthead" class="form-control input-sm" type="text" placeholder="Relationship to Head">
+                                        <option selected="" disabled="">Select Your Relationship to Head</option>
+                                            <option>Father</option>
+                                            <option>Mother</option>
+                                            <option>Brother</option>
+                                            <option>Sister</option>
+                                            <option>Spouse</option>
+                                            <option>Relatives</option>
+                                        </select>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="control-label">Occupation:</label>
-                                        <input name="txt_occp" class="form-control input-sm" type="text" placeholder="Occupation"/>
+                                        <select name="txt_occp" class="form-control input-sm" type="text" placeholder="Occupation">
+                                        <option selected="" disabled="">Select Your Occupation</option>
+                                            <option>Government Employee</option>
+                                            <option>Private Employee</option>
+                                            <option>Student</option>
+                                            <option>Self-employed</option>
+                                            <option>Others</option>
+                                        </select>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="control-label">Monthly Income:</label>
-                                        <input name="txt_income" class="form-control input-sm" type="number" min="1" placeholder="Monthly Income"/>
+                                        <select name="txt_income" class="form-control input-sm" placeholder="Monthly Income">
+                                        <option selected="" disabled=""> Select Monthly Income:
+                                            <option>Php10,000 and below</option>
+                                            <option>Php 21,000-Php 30,000</option>
+                                            <option>Php 31,000-Php 40,000</option>
+                                            <option>Php 41,000 - Php 50,000</option>
+                                            <option>Php 51,000 and above</option>
+                                        </select>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="control-label">Nationality:</label>
                                         <input name="txt_national" class="form-control input-sm" type="text" placeholder="Nationality"/>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="control-label">House Ownership Status:</label>
-                                        <select name="ddl_hos" class="form-control input-sm">
-                                            <option value="Own Home">Own Home</option>
-                                            <option value="Rent">Rent</option>
-                                            <option value="Live with Parents/Relatives">Live with Parents/Relatives</option>
-                                        </select>
                                     </div>
 
                                     <div class="form-group">
