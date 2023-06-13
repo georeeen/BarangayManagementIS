@@ -1,6 +1,6 @@
 <?php
 
-require_once "./../connection.php";
+require_once ".../connection.php";
 
 extract($_POST);
 
@@ -23,20 +23,20 @@ if ($_FILES['image']['error'] == UPLOAD_ERR_OK) {
         $stmt = $con->prepare("INSERT INTO `db_barangay`.`tblresident` 
             (
                 `lname`, `fname`, `mname`, `bdate`, `bplace`, 
-                `zone`, `totalhousehold`, `differentlyabledperson`, `relationtohead`, 
-                `maritalstatus`, `bloodtype`, `occupation`, `monthlyincome`, `householdnum`, 
-                `lengthofstay`, `religion`, `nationality`, `gender`, `skills`, 
-                `igpitID`, `philhealthNo`, `highestEducationalAttainment`, `houseOwnershipStatus`, `landOwnershipStatus`, 
-                `dwellingtype`, `waterUsage`, `lightningFacilities`, `sanitaryToilet`, `formerAddress`, 
+                `street`, `totalhousehold`, `pwd`, `relationtohead`, 
+                `civilstatus`, `bloodtype`, `occupation`, `monthlyincome`, `householdnum`, 
+                `lengthofstay`, `religion`, `nationality`, `gender`, 
+                `philhealthNo`, `highestEducationalAttainment`, `houseOwnershipStatus`, `landOwnershipStatus`, 
+                `dwellingtype`, `waterUsage`, `lightningFacilities`, `formerAddress`, 
                 `remarks`, `image`, `username`, `password`
             ) 
             VALUES (
                 ?, ?, ?, ?, ?,
-                ?, ?, ?, ?,
+                ?, ?, ?,  ?,
                 ?, ?, ?, ?, ?,
-                ?, ?, ?, ?, ?,
-                ?, ?, ?, ?, ?,
-                ?, ?, ?, ?, ?,
+                ?, ?, ?, ?, 
+                ?, ?, ?, ?, 
+                ?, ?, ?, ?, 
                 ?, ?, ?, ?
             );
         ");
@@ -48,10 +48,10 @@ if ($_FILES['image']['error'] == UPLOAD_ERR_OK) {
         // Bind parameters to the statement
         $stmt->bind_param("sssssssssssssssssssssssssssssssss", 
             $lname, $fname, $mname, $bdate, $bplace,
-            $zone, $totalhousehold, $differentlyabledperson, $relationtohead,
-            $maritalstatus, $bloodtype, $occupation, $monthlyincome, $householdnum,
+            $street, $totalhousehold, $pwd, $relationtohead,
+            $civilstatus, $bloodtype, $occupation, $monthlyincome, $householdnum,
             $lengthofstay, $religion, $nationality, $gender, $skills,
-            $igpitID, $philhealthNo, $highestEducationalAttainment, $houseOwnershipStatus, $landOwnershipStatus,
+            $philhealthNo, $highestEducationalAttainment, $houseOwnershipStatus, $landOwnershipStatus,
             $dwellingtype, $waterUsage,  $lightningFacilities, $sanitaryToilet, $formerAddress,
             $remarks, $image, $username, $password
         );

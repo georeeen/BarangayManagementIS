@@ -67,9 +67,6 @@ session_start();
             $admin = mysqli_query($con, "SELECT * from tbluser where username = '$username' and password = '$password' and type = 'administrator' ");
             $numrow_admin = mysqli_num_rows($admin);
 
-            $zone = mysqli_query($con, "SELECT * from tblzone where username = '$username' and password = '$password'");
-            $numrow_zone = mysqli_num_rows($zone);
-
             $staff = mysqli_query($con, "SELECT * from tblstaff where username = '$username' and password = '$password' ");
             $numrow_staff = mysqli_num_rows($staff);
 
@@ -81,15 +78,6 @@ session_start();
                   $_SESSION['username'] = $row['username'];
                 }    
                 header ('location: pages/dashboard/dashboard.php');
-            }
-            elseif($numrow_zone > 0)
-            {
-                while($row = mysqli_fetch_array($zone)){
-                  $_SESSION['role'] = "Zone Leader";
-                  $_SESSION['userid'] = $row['id'];
-                  $_SESSION['username'] = $row['username'];
-                }    
-                header ('location: pages/permit/permit.php');
             }
             elseif($numrow_staff > 0)
             {

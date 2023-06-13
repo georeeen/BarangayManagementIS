@@ -63,7 +63,7 @@ class BarangayIndigencyCertificate extends FPDF {
         $this->Cell(0, 8, 'Issued this ' . date('d') . ' day of' . date('F Y') . ' at the Office of Punong Barangay, ', 0, 1, 'C');
 
         $this->SetLeftMargin(40);
-        $this->Cell(0, 3, 'Barangay Tangos North, Navotas City, Zamboanga, Philippines', 0, 1);
+        $this->Cell(0, 3, 'Barangay Tangos North, Navotas City, Philippines', 0, 1);
 
         $this->Ln(15);
 

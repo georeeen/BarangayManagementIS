@@ -1,6 +1,10 @@
-<?php session_start();?>
+<?php 
 
-<?php require_once 'function.php';?>
+session_start();
+
+include 'function.php';
+include '../connection.php';
+?>
 
 <?php
 
@@ -75,105 +79,138 @@ $dwelling_types = getDwellingTypes($con);
                             <form action="" method="post" id="resident-form">
                                 <div class="form-group">
                                     <label for="lname">Last Name <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="lname" name="lname" placeholder="Enter your last name">
+                                    <input type="text" class="form-control" id="lname" name="txt_lname" placeholder="Enter your last name">
                                 </div>
                                 <div class="form-group">
                                     <label for="fname">First Name <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter your first name">
+                                    <input type="text" class="form-control" id="fname" name="txt_fname" placeholder="Enter your first name">
                                 </div>
                                 <div class="form-group">
                                     <label for="mname">Middle Name <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="mname" name="mname" placeholder="Enter your middle name">
+                                    <input type="text" class="form-control" id="mname" name="txt_mname" placeholder="Enter your middle name">
                                 </div>
                                 <div class="form-group">
                                     <label for="bdate">Birth Date <span class="text-danger">*</span></label>
-                                    <input type="date" class="form-control" id="bdate" name="bdate">
+                                    <input type="date" class="form-control input-sm input-size" id="bdate" name="txt_bdate">
                                 </div>
                                 <div class="form-group">
                                     <label for="bplace">Birth Place <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="bplace" name="bplace" placeholder="Enter your birth place">
+                                    <input type="text" class="form-control" id="bplace" name="txt_bplace" placeholder="Enter your birth place">
                                 </div>
                                 <div class="form-group">
-                                    <label for="zone">Zone <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="zone" name="zone" placeholder="Enter your zone">
+                                    <label for="age">Age<span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="age" name="txt_age" placeholder="Enter your age">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="street">Street <span class="text-danger">*</span></label>
+                                    <select class="form-control" id="street" name="ddl_street" placeholder="Select your street">
+                                    <option selected="" disabled="">Select your street
+                                            <option value="r.domingo">R. Domingo</option>
+                                            <option value="m.domingo">M. Domingo</option>
+                                            <option value="a.cruz">A. Cruz</option>
+                                            <option value="b.cruz">B. Cruz</option>
+                                            <option value="oliveros">Oliveros</option>
+                                        </select>   
                                 </div>
                                 <div class="form-group">
-                                    <label for="totalhousehold">Total Household <span class="text-danger">*</span></label>
-                                    <input type="number" class="form-control" id="totalhousehold" name="totalhousehold" placeholder="Enter the total household count">
+                                    <label for="totalhousehold">Total Household Member:<span class="text-danger">*</span></label>
+                                    <input type="number" min="1" class="form-control" id="totalhousehold" name="txt_householdnum" placeholder="Enter the total household member">
                                 </div>
                                 <div class="form-group">
-                                    <label for="differentlyabledperson">Differently Abled Person <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="differentlyabledperson" name="differentlyabledperson" placeholder="Enter if differently abled">
-                                </div>
-                                <div class="form-group">
-                                    <label for="relationtohead">Relation to Head <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="relationtohead" name="relationtohead" placeholder="Enter your relation to head of the household">
-                                </div>
-                                <div class="form-group">
-                                    <label for="maritalstatus">Marital Status <span class="text-danger">*</span></label>
-                                    <select class="form-control" id="maritalstatus" name="maritalstatus">
-                                        <option value="">Select Marital Status</option>
-                                        <option value="SINGLE">Single</option>
-                                        <option value="MARRIED">Married</option>
-                                        <option value="DIVORCED">Divorced</option>
-                                        <option value="SEPARATED">Separated</option>
-                                        <option value="WIDOWED">Widowed</option>
+                                    <label for="pwd">Are you a person considered as PWD? <span class="text-danger">*</span></label>
+                                    <select class="form-control" id="pwd" name="txt_pwd" placeholder="Are you a person considered as PWD?">
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
+                                    <label for="relationtohead">Relation to Head <span class="text-danger">*</span></label>
+                                    <select class="form-control" id="relationtohead" name="txt_rthead" placeholder="Enter your relation to head of the household">
+                                    <option value="father">Father</option>
+                                    <option value="mother">Mother</option>
+                                    <option value="brother">Brother</option>
+                                    <option value="sister">Sister</option>
+                                    <option value="spouse">Spouse</option>
+                                    <option value="relatives">Relatives</option>
+                                        </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="civilstatus">Civil Status <span class="text-danger">*</span></label>
+                                    <select class="form-control" id="civilstatus" name="txt_cstatus" placeholder="Select Civil Status">
+                                            <option value="single">Single</option>
+                                            <option value="married">Married</option>
+                                            <option value="widowed">Widowed</option>
+                                            <option value="separated">Separated</option>
+                                            <option value="divorced">Divorced</option>
+                                        </select>
+                                </div>
+                                <div class="form-group">
                                     <label for="bloodtype">Blood Type <span class="text-danger">*</span></label>
-                                    <select class="form-control" id="bloodtype" name="bloodtype">
+                                    <select class="form-control" id="bloodtype" name="txt_btype" placeholder="Enter your blood type">
                                         <option value="">Select Blood Type</option>
-                                        <option value="A+">A-positive (A+)</option>
-                                        <option value="A-">A-negative (A-)</option>
-                                        <option value="B+">B-positive (B+)</option>
-                                        <option value="B-">B-negative (B-)</option>
-                                        <option value="AB+">AB-positive (AB+)</option>
-                                        <option value="AB-">AB-negative (AB-)</option>
-                                        <option value="O+">O-positive (O+)</option>
-                                        <option value="O-">O-negative (O-)</option>
+                                        <option value="A+">A+</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B-">B-</option>
+                                        <option value="AB+">AB+</option>
+                                        <option value="AB-">AB-</option>
+                                        <option value="O+">O+</option>
+                                        <option value="O-">O-</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="occupation">Occupation <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="occupation" name="occupation" placeholder="Enter your occupation">
+                                    <select class="form-control" id="occupation" name="txt_occp" placeholder="Enter your occupation">
+                                    <option value="">Select Occupation</option>
+                                            <option value="government_employee">Government Employee</option>
+                                            <option value="private_employee">Private Employee</option>
+                                            <option value="student">Student</option>
+                                            <option value="self-employed">Self-employed</option>
+                                            <option value="others">Others</option>
+                                        </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="monthlyincome">Monthly Income <span class="text-danger">*</span></label>
-                                    <input type="number" class="form-control" id="monthlyincome" name="monthlyincome" placeholder="Enter your monthly income">
+                                    <select class="form-control" id="monthlyincome" name="txt_income" placeholder="Enter your monthly income">
+                                    <option value="">Select Monthly Income</option>
+                                            <option value="10k">Php10,000 and below</option>
+                                            <option value="21k">Php 21,000-Php 30,000</option>
+                                            <option value="31k">Php 31,000-Php 40,000</option>
+                                            <option value="41k">Php 41,000 - Php 50,000</option>
+                                            <option value="51k">Php 51,000 and above</option>
+                                        </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="householdnum">Household Number <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="householdnum" name="householdnum" placeholder="Enter your household number">
+                                    <input type="text" class="form-control" id="householdnum" name="txt_householdnum" placeholder="Enter your household number">
                                 </div>
                                 <div class="form-group">
-                                    <label for="lengthofstay">Length of Stay <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="lengthofstay" name="lengthofstay" placeholder="Enter the length of stay">
+                                    <label for="lengthofstay">Length of Stay: in Months<span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" type="number" min="0" id="txt_length" name="lengthofstay" placeholder="Enter the length of stay">
                                 </div>
                                 <div class="form-group">
                                     <label for="religion">Religion <span class="text-danger">*</span></label>
-                                    <select class="form-control" id="religion" name="religion">
+                                    <select class="form-control" id="religion" name="txt_religion">
                                         <option value="">Select Religion</option>
-                                        <?php while ($row = mysqli_fetch_assoc($religions)): ?>
-                                            <option value="<?php echo $row['religion_name'] ?>"><?php echo $row['religion_name'] ?></option>
-                                        <?php endwhile;?>
-                                        <?php mysqli_free_result($religions); // free result set ?>
+                                            <option value="roman_catholic">Roman Catholic</option>
+                                            <option value="iglesio">Iglesia ni Cristo</option>
+                                            <option value="christian">Christian</option>
+                                            <option value="saksi">Saksi ni Jehovah</option>
+                                            <option value="islam">Islam</option>
+                                            <option value="protestantism">Protestantism</option>
+                                            <option value="others">Others</option>
+                                        </select>
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="nationality">Nationality <span class="text-danger">*</span></label>
-                                    <select class="form-control select2" id="nationality" name="nationality">
-                                        <option value="">Select Nationality</option>
-                                        <?php while ($row = mysqli_fetch_assoc($nationalities)): ?>
-                                            <option value="<?php echo $row['name'] ?>"><?php echo $row['name'] ?></option>
-                                        <?php endwhile;?>
-                                        <?php mysqli_free_result($nationalities); // free result set ?>
-                                    </select>
-                                </div>
+                                        <label class="control-label">Nationality:</label>
+                                        <input name="txt_national" class="form-control input-sm" type="text" placeholder="Nationality"/>
+                                    </div>
 
                                 <div class="form-group">
                                     <label for="gender">Sex <span class="text-danger">*</span></label>
-                                    <select class="form-control" id="gender" name="gender">
+                                    <select class="form-control" id="gender" name="ddl_gender">
                                         <option value="">Select Sex</option>
                                         <option value="MALE">Male</option>
                                         <option value="FEMALE">Female</option>
@@ -186,20 +223,21 @@ $dwelling_types = getDwellingTypes($con);
                                 </div>
                                 <div class="form-group">
                                     <label for="highestEducationalAttainment">Highest Educational Attainment <span class="text-danger">*</span></label>
-                                    <select class="form-control" id="highestEducationalAttainment" name="highestEducationalAttainment">
-                                        <option value="">Select Highest Education Attainment</option>
-                                        <option value="NO_FORMAL_EDUCATION">No Formal Education</option>
-                                        <option value="ELEMENTARY_SCHOOL">Elementary School</option>
-                                        <option value="HIGH_SCHOOL">High School</option>
-                                        <option value="VOCATIONAL">Vocational/Trade School</option>
-                                        <option value="COLLEGE">College/University</option>
-                                        <option value="MASTERS_DEGREE">Postgraduate/Master's Degree</option>
-                                        <option value="PHD">Doctorate/Ph.D.</option>
-                                    </select>
+                                    <select class="form-control" id="highestEducationalAttainment" name="ddl_eattain">
+                                            <option value="no_schooling">No schooling completed</option>
+                                            <option value="elementary">Elementary</option>
+                                            <option value="highschool-undergrad">High school, undergrad</option>
+                                            <option value="highschool-graduate">High school graduate</option>
+                                            <option value="college-undergrad">College, undergrad</option>
+                                            <option value="vocational">Vocational</option>
+                                            <option value="bachelors">Bachelor’s degree</option>
+                                            <option value="masters">Master’s degree</option>
+                                            <option value="doctorate">Doctorate degree</option>
+                                        </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="houseOwnershipStatus">House Ownership Status <span class="text-danger">*</span></label>
-                                    <select class="form-control" id="houseOwnershipStatus" name="houseOwnershipStatus">
+                                    <select class="form-control" id="houseOwnershipStatus" name="ddl_hos">
                                         <option value="">Select House Ownership Status</option>
                                         <option value="OWNED">Owned</option>
                                         <option value="RENTED">Rented</option>
@@ -213,7 +251,7 @@ $dwelling_types = getDwellingTypes($con);
                                 </div>
                                 <div class="form-group">
                                     <label for="landOwnershipStatus">Land Ownership Status <span class="text-danger">*</span></label>
-                                    <select class="form-control" id="landOwnershipStatus" name="landOwnershipStatus">
+                                    <select class="form-control" id="landOwnershipStatus" name="ddl_los">
                                         <option value="">Select Land Ownership Status</option>
                                         <option value="FREEHOLD">Freehold</option>
                                         <option value="LEASEHOLD">Leasehold</option>
@@ -237,35 +275,23 @@ $dwelling_types = getDwellingTypes($con);
                                 </div>
                                 <div class="form-group">
                                     <label for="waterUsage">Water Usage <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="waterUsage" name="waterUsage" placeholder="Enter your water usage">
+                                    <input type="text" class="form-control" id="waterUsage" name="txt_water" placeholder="Enter your water usage">
                                 </div>
                                 <div class="form-group">
                                     <label for="lightningFacilities">Lightning Facilities <span class="text-danger">*</span></label>
-                                    <select class="form-control" id="lightningFacilities" name="lightningFacilities" multiple></select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="sanitaryToilet">Sanitary Toilet <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="sanitaryToilet" name="sanitaryToilet" placeholder="Enter your sanitary toilet">
-                                </div>
-                                <div class="form-group">
-                                    <label for="formerAddress">Former Address <span class="text-danger">*</span></label>
-                                    <textarea class="form-control" id="formerAddress" name="formerAddress" rows="4" cols="50"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <label for="remarks">Remarks <span class="text-danger">*</span></label>
-                                    <textarea class="form-control" id="remarks" name="remarks" rows="4" cols="50"></textarea>
+                                    <select class="form-control" id="lightningFacilities" name="txt_lightning" multiple></select>
                                 </div>
                                 <div class="form-group">
                                     <label for="image">Image <span class="text-danger">*</span></label>
-                                    <input type="file" class="form-control-file" id="image" name="image">
+                                    <input type="file" class="form-control-file" id="image" name="txt_image">
                                 </div>
                                 <div class="form-group">
                                     <label for="username">Username <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username">
+                                    <input type="text" class="form-control" id="username" name="txt_uname" placeholder="Enter your username">
                                 </div>
                                 <div class="form-group">
                                     <label for="password">Password <span class="text-danger">*</span></label>
-                                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
+                                    <input type="password" class="form-control" id="password" name="txt_upass" placeholder="Enter your password">
                                 </div>
                                 <div class="form-group">
                                     <label for="confirmPassword">Confirm Password <span class="text-danger">*</span></label>
@@ -367,16 +393,16 @@ $dwelling_types = getDwellingTypes($con);
                             bplace: {
                                 required: true
                             },
-                            zone: {
+                            street: {
                                 required: true
                             },
                             totalhousehold: {
                                 required: true
                             },
-                            differentlyabledperson: {
+                            pwd: {
                                 required: true
                             },
-                            maritalstatus: {
+                            civilstatus: {
                                 required: true
                             },
                             bloodtype: {
@@ -403,12 +429,7 @@ $dwelling_types = getDwellingTypes($con);
                             gender: {
                                 required: true
                             },
-                            skills: {
-                                atleasteOneValue: true
-                            },
-                            igpitID: {
-                                required: true
-                            },
+
                             philhealthNo: {
                                 required: true
                             },
@@ -439,9 +460,6 @@ $dwelling_types = getDwellingTypes($con);
                             remarks: {
                                 required: true
                             },
-                            sanitaryToilet: {
-                                required: true
-                            },
                             image: {
                                 required: true,
                                 imageExtension: true
@@ -459,10 +477,6 @@ $dwelling_types = getDwellingTypes($con);
                         },
                         messages: {
                             lightningFacilities: {
-                                required: "Please add atleast one value.",
-                                atleasteOneValue: "Please add atleast one value."
-                            },
-                            skills: {
                                 required: "Please add atleast one value.",
                                 atleasteOneValue: "Please add atleast one value."
                             },
@@ -525,17 +539,14 @@ $dwelling_types = getDwellingTypes($con);
                         $validator.element($(this));
                     });
 
-                    $("#skills").on("change input", function() {
-                        $validator.element($(this));
-                    });
 
 
                     Swal.fire({
-                        title: 'Do you want to save the changes?',
+                        title: 'Are you sure you want to submit?',
                         showDenyButton: true,
                         showCancelButton: true,
-                        confirmButtonText: 'Save',
-                        denyButtonText: `Don't save`,
+                        confirmButtonText: 'Confirm',
+                        denyButtonText: `Cancel`,
                     }).then((result) => {
                         if (result.isConfirmed) {
                             // check if form is valid

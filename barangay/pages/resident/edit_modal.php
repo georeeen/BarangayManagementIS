@@ -48,7 +48,7 @@
 
                         <div class="form-group">
                             <label class="control-label">Household #:</label>
-                            <input name="txt_edit_householdnum" class="form-control input-sm input-size" type="text" value="'.$erow['householdnum'].'"/>
+                            <input name="txt_edit_householdnum" class="form-control input-sm input-size" type="text" min="1"'.$erow['householdnum'].'"/>
                         </div>
 
                         <div class="form-group">
@@ -57,13 +57,37 @@
                         </div>
 
                         <div class="form-group">
+                                        <label class="control-label">Are you a person considered as PWD?</label>
+                                        <select name="txt_pwd" class="form-control input-sm input-size" <option selected>'.$erow['pwd'].'</option>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                    </div>
+
+                        <div class="form-group">
                             <label class="control-label">Blood Type:</label>
-                            <input name="txt_edit_btype" class="form-control input-sm input-size" type="text" value="'.$erow['bloodtype'].'"/>
+                            <select name="txt_edit_btype" class="form-control input-sm input-size" <option selected>'.$erow['bloodtype'].'</option>
+                                            <option>AB-</option>
+                                            <option>AB+</option>
+                                            <option>A+</option>
+                                            <option>A-</option>
+                                            <option>B+</option>
+                                            <option>B-</option>
+                                            <option>O+</option>
+                                            <option>O-</option>
+                                        </select>
                         </div>
 
                         <div class="form-group">
                             <label class="control-label">Civil Status:</label>
-                            <input name="txt_edit_cstatus" class="form-control input-sm input-size" type="text" value="'.$erow['civilstatus'].'"/>
+                            <select name="txt_edit_cstatus" class="form-control input-sm input-size" <option selected>'.$erow['civilstatus'].'</option>
+                                            <option>Single</option>
+                                            <option>Married</option>
+                                            <option>Widowed</option>
+                                            <option>Separated</option>
+                                            <option>Divorced</option>
+                                    </select>
+
                         </div>
 
                         <div class="form-group">
@@ -96,10 +120,13 @@
                             <label class="control-label">Land Ownership Status:</label>
                             <select name="ddl_edit_los" class="form-control input-sm">
                                 <option value="'.$erow['landOwnershipStatus'].'">'.$erow['landOwnershipStatus'].'</option>
-                                <option>Owned</option>
-                                <option>Landless</option>
-                                <option>Tenant</option>
-                                <option>Care Taker</option>
+                                <option>Freehold</option>
+                                <option>Commonhold</option>
+                                <option>Joint Tenancy</option>
+                                <option>Tenancy in Common</option>
+                                <option>Community Land Trust</option>
+                                <option>Indigenous</option>
+                                <option>Government</option>
                             </select>
                         </div>
 
@@ -125,7 +152,7 @@
 
 
                         <div class="form-group">
-                            <label class="control-label">Gender:</label>
+                            <label class="control-label">Sex:</label>
                             <select name="ddl_edit_gender" class="form-control input-sm">
                                 <option value="'.$erow['gender'].'" selected="">'.$erow['gender'].'</option>
                                 <option value="Male">Male</option>
@@ -143,15 +170,16 @@
                             <input name="txt_edit_email" class="form-control input-sm" type="text" value="'.$erow['email'].'"/>
                          </div> 
 
-                        <div class="form-group">
-                            <label class="control-label">Marital Status:</label>
-                            <input name="txt_edit_mstatus" class="form-control input-sm" type="text" value="'.$erow['maritalstatus'].'"/>
-                        </div> 
-
-                        <div class="form-group">
+                         <div class="form-group">
                             <label class="control-label">Street:</label>
-                            <input name="txt_edit_street" class="form-control input-sm input-size" type="text" value="'.$erow['street'].'"/>
-                        </div>
+                            <select name="txt_edit_street" class="form-control input-sm" <option selected>'.$erow['street'].'</option>
+                                            <option>R. Domingo</option>
+                                            <option>M. Domingo</option>
+                                            <option>A. Cruz</option>
+                                            <option>B. Cruz</option>
+                                            <option>Oliveros</option>
+                                            </select>
+                         </div> 
                         
                         <div class="form-group">
                             <label class="control-label">Total Household Member:</label>
@@ -160,22 +188,49 @@
 
                         <div class="form-group">
                             <label class="control-label">Relationship to Head:</label>
-                            <input name="txt_edit_rthead" class="form-control input-sm" type="text" value="'.$erow['relationtohead'].'"/>
+                            <select name="txt_edit_rthead" class="form-control input-sm" <option selected>'.$erow['relationtohead'].'</option>
+                                            5<option>Father</option>
+                                            <option>Mother</option>
+                                            <option>Brother</option>
+                                            <option>Sister</option>
+                                            <option>Spouse</option>
+                                            <option>Relatives</option>
+                                            </select>
                         </div>
 
                         <div class="form-group">
                             <label class="control-label">Occupation:</label>
-                            <input name="txt_edit_occp" class="form-control input-sm" type="text" value="'.$erow['occupation'].'"/>
+                            <select name="txt_edit_occp" class="form-control input-sm" <option selected>'.$erow['occupation'].'</option>
+                                            <option>Government Employee</option>
+                                            <option>Private Employee</option>
+                                            <option>Student</option>
+                                            <option>Self-employed</option>
+                                            <option>Others</option>
+                                        </select>
                         </div>
 
                         <div class="form-group">
                             <label class="control-label">Monthly Income:</label>
-                            <input name="txt_edit_income" class="form-control input-sm" type="number" min="1" value="'.$erow['monthlyincome'].'"/>
+                            <select name="txt_edit_income" class="form-control input-sm" <option selected>'.$erow['monthlyincome'].'</option>
+                                         <option>Php10,000 and below</option>
+                                            <option>Php 21,000-Php 30,000</option>
+                                            <option>Php 31,000-Php 40,000</option>
+                                            <option>Php 41,000 - Php 50,000</option>
+                                            <option>Php 51,000 and above</option>
+                                        </select>
                         </div>
 
                         <div class="form-group">
                             <label class="control-label">Religion:</label>
-                            <input name="txt_edit_religion" class="form-control input-sm" type="text" value="'.$erow['religion'].'"/>
+                            <select name="txt_edit_religion" class="form-control input-sm" <option selected>'.$erow['religion'].'</option>
+                                            <option>Roman Catholic</option>
+                                            <option>Iglesia ni Cristo</option>
+                                            <option>Christian</option>
+                                            <option>Saksi ni Jehovah</option>
+                                            <option>Islam</option>
+                                            <option>Protestantism</option>
+                                            <option>Others</option>
+                                        </select>
                         </div>
 
                         <div class="form-group">

@@ -97,7 +97,6 @@
                                         <label class="control-label">Religion:</label>
                                         <select name="txt_religion" class="form-control input-sm input-size" placeholder="Religion">
                                         <option selected="" disabled="">Select Religion:
-                                        <option>Enter your Religion</option>
                                             <option>Roman Catholic</option>
                                             <option>Iglesia ni Cristo</option>
                                             <option>Christian</option>
@@ -201,17 +200,17 @@
                                         <label class="control-label">Street:</label>
                                         <select name="txt_street" class="form-control input-sm" type="text" placeholder="Street">
                                         <option selected="" disabled="">Select Street</option>
-                                            <option value="r.domingo">R. Domingo</option>
-                                            <option value="m.domingo">M. Domingo</option>
-                                            <option value="a.cruz">A. Cruz</option>
-                                            <option value="b.cruz">B. Cruz</option>
-                                            <option value="oliveros">Oliveros</option>
+                                            <option>R. Domingo</option>
+                                            <option>M. Domingo</option>
+                                            <option>A. Cruz</option>
+                                            <option>B. Cruz</option>
+                                            <option>Oliveros</option>
                                         </select>   
                                     </div> 
 
                                     <div class="form-group">
                                         <label class="control-label">Total Household Member:</label>
-                                        <input name="txt_householdmem" class="form-control input-sm" type="number" min="1" placeholder="Total Household Member"/>
+                                        <input name="txt_householdnum" class="form-control input-sm" type="number" min="1" placeholder="Total Household Member"/>
                                     </div>
 
                                     <div class="form-group">
@@ -241,7 +240,7 @@
 
                                     <div class="form-group">
                                         <label class="control-label">Monthly Income:</label>
-                                        <select name="txt_income" class="form-control input-sm" placeholder="Monthly Income">
+                                        <select name="txt_income" class="form-control input-sm" type="text" placeholder="Monthly Income">
                                         <option selected="" disabled=""> Select Monthly Income:
                                             <option>Php10,000 and below</option>
                                             <option>Php 21,000-Php 30,000</option>

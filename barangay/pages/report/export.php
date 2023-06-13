@@ -1,7 +1,7 @@
 <?php
                             if(isset($_POST['export'])){
 
-                                include "connection.php";
+                                include "../connection.php";
 
                             $SQL1 = "SELECT count(*) as NumberofResident, round(monthlyincome,-1) as Income FROM tblresident group by monthlyincome";
                             $SQL2 = "SELECT count(*) as NumberofResident,Zone FROM tblresident r group by r.zone";
