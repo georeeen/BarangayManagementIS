@@ -29,8 +29,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="../announcements/announcements.php">
-                                    <i class="fa fa-user"></i> <span>Announcement</span>
+                                <a href="../event/index.php">
+                                    <i class="fa fa-user"></i> <span>Events</span>
                                 </a>
                             </li>
                             <li>
@@ -125,8 +125,8 @@
                                 </a>
                             </li>
                             <li>
-                                 <a href="../announcements/announcements.php">
-                            <i class="fa fa-calendar"></i> <span>Announcements</span>
+                                 <a href="../event/index.php">
+                            <i class="fa fa-calendar"></i> <span>Events</span>
                                 </a>
                             </li>   
                             <li>
