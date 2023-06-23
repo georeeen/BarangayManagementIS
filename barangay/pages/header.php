@@ -155,3 +155,7 @@
             }
 
             ?>
+<link rel="stylesheet" href="fullcalendar/fullcalendar.min.css" />
+<script src="fullcalendar/lib/jquery.min.js"></script>
+<script src="fullcalendar/lib/moment.min.js"></script>
+<script src="fullcalendar/fullcalendar.min.js"></script>

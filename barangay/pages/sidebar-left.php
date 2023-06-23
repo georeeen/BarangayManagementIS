@@ -64,7 +64,7 @@
                                 </a>
                             </li>
                             <li>
-                            <a href="../report/report.php">
+                            <a href="../report/report1.php">
                                 <i class="fa fa-calendar"></i> <span>Reports</span>
                             </a>
                         </li>              

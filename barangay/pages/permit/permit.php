@@ -63,7 +63,7 @@
                                 <ul class="nav nav-tabs" id="myTab">
                                      <li class="active"><a data-target="#requests" data-toggle="tab">Requests</a></li>
                                       <li class="active"><a data-target="#approved" data-toggle="tab">Approved</a></li>
-                                      <li><a data-target="#disapproved" data-toggle="tab">Disapproved</a></li>
+                                      <li  class="active"><a data-target="#disapproved" data-toggle="tab">Disapproved</a></li>
                                 </ul>
                                 <form method="post">
                                 

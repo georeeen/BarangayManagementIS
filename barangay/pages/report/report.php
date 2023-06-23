@@ -100,9 +100,6 @@
         <!-- jQuery 2.0.2 -->
         <?php }
         include "../footer.php"; 
-
-        include "donut-chart.php";
-        include "bar-chart.php"; 
         ?>
 
 
