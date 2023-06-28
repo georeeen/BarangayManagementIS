@@ -147,7 +147,7 @@ INSERT INTO `tblclearance` (`id`, `clearanceNo`, `residentid`, `findings`, `purp
 CREATE TABLE IF NOT EXISTS `tblhousehold` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `householdno` int(11) NOT NULL,
-  `zone` varchar(11) NOT NULL,
+  `street` varchar(11) NOT NULL,
   `totalhouseholdmembers` int(2) NOT NULL,
   `headoffamily` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
@@ -157,7 +157,7 @@ CREATE TABLE IF NOT EXISTS `tblhousehold` (
 -- Dumping data for table `tblhousehold`
 --
 
-INSERT INTO `tblhousehold` (`id`, `householdno`, `zone`, `totalhouseholdmembers`, `headoffamily`) VALUES
+INSERT INTO `tblhousehold` (`id`, `householdno`, `street`, `totalhouseholdmembers`, `headoffamily`) VALUES
 (3, 2, '2', 0, '12');
 
 -- --------------------------------------------------------
@@ -289,7 +289,7 @@ CREATE TABLE IF NOT EXISTS `tblresident` (
   `bplace` text NOT NULL,
   `age` int(11) NOT NULL,
   `barangay` varchar(120) NOT NULL,
-  `zone` varchar(5) NOT NULL,
+  `street` varchar(50) NOT NULL,
   `totalhousehold` int(5) NOT NULL,
   `differentlyabledperson` varchar(100) NOT NULL,
   `relationtohead` varchar(50) NOT NULL,
@@ -325,7 +325,7 @@ CREATE TABLE IF NOT EXISTS `tblresident` (
 -- Dumping data for table `tblresident`
 --
 
-INSERT INTO `tblresident` (`id`, `lname`, `fname`, `mname`, `bdate`, `bplace`, `age`, `barangay`, `zone`, `totalhousehold`, `differentlyabledperson`, `relationtohead`, `maritalstatus`, `bloodtype`, `civilstatus`, `occupation`, `monthlyincome`, `householdnum`, `lengthofstay`, `religion`, `nationality`, `gender`, `skills`, `igpitID`, `philhealthNo`, `highestEducationalAttainment`, `houseOwnershipStatus`, `landOwnershipStatus`, `dwellingtype`, `waterUsage`, `lightningFacilities`, `sanitaryToilet`, `formerAddress`, `remarks`, `image`, `username`, `password`) VALUES
+INSERT INTO `tblresident` (`id`, `lname`, `fname`, `mname`, `bdate`, `bplace`, `age`, `barangay`, `street`, `totalhousehold`, `differentlyabledperson`, `relationtohead`, `maritalstatus`, `bloodtype`, `civilstatus`, `occupation`, `monthlyincome`, `householdnum`, `lengthofstay`, `religion`, `nationality`, `gender`, `skills`, `igpitID`, `philhealthNo`, `highestEducationalAttainment`, `houseOwnershipStatus`, `landOwnershipStatus`, `dwellingtype`, `waterUsage`, `lightningFacilities`, `sanitaryToilet`, `formerAddress`, `remarks`, `image`, `username`, `password`) VALUES
 (11, 'Sample1', 'User1', 'Brgy1', '2017-01-01', 'dfsd1', 1, 'asdf', '2', 3, 'asdf', 'asdf', 'saf', 'sadf', 'fsd', 'adfs', 1, 1, 7, 'asd', 'asd', 'Female', 'asda1', 2, 2211, 'Doctorate degree', 'Live with Parents/Re', '1st Option', '1st Option', 'dsad11', '2211', 'dsfs11', 'ddsfd111', 'fdgfd11', '1482037013441_bg.PNG', 'a', 'a'),
 (12, 'sda', 'as', 'das', '2016-01-01', 'adda', 1, '2323', '0', 5, '', '', '', '', '', '', 45, 2, 6, 'ada', 'sda', 'Male', 'sasda', 2, 3, 'Elementary', 'Rent', '2nd Option', '1st Option', 'sadas', '3', 'asdas', 'dsada', 'dsadsa', '1486342814017_Beach-Wallpapers.jpg', 'asd', 'asda'),
 (13, 'a', 'asd', 'das', '2016-12-31', 'asdf', 2, '', '0', 0, '', '', '', '', '', '', 234, 3, 1, 'asd', 'asdf', '', 'saf', 3, 3, 'No schooling completed', 'Own Home', '1st Option', '1st Option', 'asdf', 'asdf', 'asdf', 'asdf', 'asdf', 'default.png', '1', '1'),

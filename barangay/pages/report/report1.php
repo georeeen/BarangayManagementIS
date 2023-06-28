@@ -55,7 +55,7 @@
                                 </form>
                             </div>
                         </div>
-                        <button onclick="window.print()">Print Report</button>
+                        <button onlick="window.print()">Print Report</button>
                         <br>
                     </form>
                 <br>

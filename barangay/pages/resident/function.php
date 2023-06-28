@@ -20,11 +20,11 @@ if (isset($_POST['btn_add'])) {
 
     $txt_brgy = $_POST['txt_brgy'];
     $txt_cstatus = $_POST['txt_cstatus'];
-    $txt_street = $_POST['txt_street'];
+    $ddl_street = $_POST['ddl_street'];
     $txt_householdmem = $_POST['txt_householdmem'];
     $txt_rthead = $_POST['txt_rthead'];
 
-    $txt_pwd = $_POST['txt_pwd'];
+    $ddl_pwd = $_POST['ddl_pwd'];
     $txt_btype = $_POST['txt_btype'];
     $txt_occp = $_POST['txt_occp'];
     $txt_income = $_POST['txt_income'];
@@ -104,7 +104,7 @@ if (isset($_POST['btn_add'])) {
                                         '$txt_email'
                                         '$txt_phonenum'
                                         '$txt_brgy',
-                                        '$txt_pwd',
+                                        '$ddl_pwd',
                                         '$txt_householdmem',
                                         '$txt_rthead',
                                         '$txt_mstatus',
@@ -180,11 +180,11 @@ if (isset($_POST['btn_add'])) {
                                         '$txt_phonenum',
                                         '$txt_age',
                                         '$txt_brgy',
-                                        '$txt_pwd',
+                                        '$ddl_pwd',
                                         '$txt_householdmem',
                                         '$txt_rthead',
                                         '$txt_cstatus',
-                                        '$txt_street',
+                                        '$ddl_street',
                                         '$txt_btype',
                                         '$txt_cstatus',
                                         '$txt_occp',
@@ -233,7 +233,7 @@ if (isset($_POST['btn_save'])) {
     $txt_edit_age = $diff->format('%y');
 
     $txt_edit_brgy = $_POST['txt_edit_brgy'];
-    $txt_edit_pwd = $_POST['txt_edit_pwd'];
+    $ddl_edit_pwd = $_POST['ddl_edit_pwd'];
     $txt_edit_mstatus = $_POST['txt_edit_mstatus'];
     $ddl_edit_street = $_POST['ddl_edit_street'];
     $txt_edit_householdmem = $_POST['txt_edit_householdmem'];
@@ -292,7 +292,7 @@ if (isset($_POST['btn_save'])) {
                                         bplace = '" . $txt_edit_bplace . "',
                                         age = '" . $txt_edit_age . "',
                                         barangay = '" . $txt_edit_brgy . "',
-                                        pwd = '" . $txt_edit_pwd . "',
+                                        pwd = '" . $ddl_edit_pwd . "',
                                         totalhousehold = '" . $txt_edit_householdmem . "',
                                         differentlyabledperson = '" . $txt_edit_dperson . "',
                                         relationtohead = '" . $txt_edit_rthead . "',
@@ -341,7 +341,7 @@ if (isset($_POST['btn_save'])) {
                                         bplace = '".$txt_edit_bplace."',
                                         age = '".$txt_edit_age."',
                                         barangay = '".$txt_edit_brgy."',
-                                        pwd = '" . $txt_edit_pwd . "',
+                                        pwd = '" . $ddl_edit_pwd . "',
                                         totalhousehold = '".$txt_edit_householdmem."',
                                         relationtohead = '".$txt_edit_rthead."',
                                         bloodtype = '".$txt_edit_btype."',

@@ -172,7 +172,26 @@
                                 </div>   
                             </div><!-- /.box -->
                     </div>   <!-- /.row -->
-                    
+                                    <div class="col-md-4 col-sm-5 col-xs-5">                     
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                               Gender Pie Chart
+                                            </div>
+                                            <div class="panel-body">
+                                                <div id="morris-donut-chart"></div>
+                                            </div>
+                                          <!-- /.info-box-content -->
+                                  </div>
+                                  <!-- /.info-box -->
+                                </div>
+                                    <div class="col-md-5 col-sm-8 col-xs-8">                     
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                               Registered Resident per Street
+                                            </div>
+                                            <div class="panel-body">
+                                                <div id="morris-donut-chart1"></div>
+                                            </div>
                 </section><!-- /.content -->
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
@@ -180,6 +199,8 @@
         <!-- jQuery 2.0.2 -->
         <?php }
          include "../footer.php";
+         include "donut-chart.php";
+         include "donut-chart1.php";
         ?>
     </body>
 </html>

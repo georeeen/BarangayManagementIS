@@ -58,7 +58,7 @@
 
                         <div class="form-group">
                                         <label class="control-label">Are you a person considered as PWD?</label>
-                                        <select name="txt_pwd" class="form-control input-sm input-size" <option selected>'.$erow['pwd'].'</option>
+                                        <select name="ddl_pwd" class="form-control input-sm input-size" <option selected>'.$erow['pwd'].'</option>
                                             <option>Yes</option>
                                             <option>No</option>
                                         </select>
@@ -172,13 +172,14 @@
 
                          <div class="form-group">
                             <label class="control-label">Street:</label>
-                            <select name="txt_edit_street" class="form-control input-sm" <option selected>'.$erow['street'].'</option>
-                                            <option>R. Domingo</option>
-                                            <option>M. Domingo</option>
-                                            <option>A. Cruz</option>
-                                            <option>B. Cruz</option>
-                                            <option>Oliveros</option>
-                                            </select>
+                            <select name="ddl_edit_street" class="form-control input-sm">
+                            <option value="'.$erow['street'].'" selected="">'.$erow['street'].'</option>
+                                <option>R. Domingo</option>
+                                <option>M. Domingo</option>
+                                <option>A. Cruz</option>
+                                <option>B. Cruz</option>
+                                <option>Oliveros</option>
+                            </select>
                          </div> 
                         
                         <div class="form-group">
