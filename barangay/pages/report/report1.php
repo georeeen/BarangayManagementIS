@@ -55,6 +55,8 @@
                                 </form>
                             </div>
                         </div>
+                        <button onclick="window.print()">Print Report</button>
+                        <br>
                     </form>
                 <br>
                 <div class="box-body table-responsive">
@@ -68,8 +70,8 @@
                                                 <th scope="col">Age</th>
                                                 <th scope="col">Sex</th>
                                                 <th scope="col">Street</th>
-                                                <th scope="col">Blood Type</th>
                                                 <th scope="col">Relationship To Head</th>
+                                                <th scope="col">PWD</th>
                                             </tr>
                                         </thead>
                                         <?php
@@ -80,7 +82,7 @@
 
                                                 if(!isset($_SESSION['staff']))
                                                 {
-                                                    $squery = mysqli_query($con, "SELECT * FROM tblresident WHERE CONCAT(id, lname, fname, age, mname, bdate, bplace, barangay, totalhousehold, relationtohead, bloodtype, civilstatus, occupation, monthlyincome, householdnum, lengthofstay, religion, gender, highestEducationalAttainment, houseOwnershipStatus, landOwnershipStatus, dwellingtype, waterUsage, lightningFacilities, street, pwd) LIKE '%$value_filter%' ");
+                                                    $squery = mysqli_query($con, "SELECT * FROM tblresident WHERE CONCAT(id, lname, fname, gender, street, relationtohead, pwd) LIKE '%$value_filter%' ");
                                                     while($row = mysqli_fetch_array($squery))
                                                     {
                                                         ?>
@@ -91,7 +93,6 @@
                                                             <td><?php echo $row['age'];?></td>
                                                             <td><?php echo $row['gender'];?></td>
                                                             <td><?php echo $row['street'];?></td>
-                                                            <td><?php echo $row['bloodtype'];?></td>
                                                             <td><?php echo $row['relationtohead'];?></td>
                                                             <td><?php echo $row['pwd'];?></td>
                                                         </tr>
@@ -99,16 +100,7 @@
                                                     }
                                                 }
 
-                                        }
-                                            else
-                                            {
-                                                ?>
-                                                <tr>
-                                                    <td>No Record Found!</td>
-                                                </tr>
-                                                <?php
-                                            }
-                                    
+                                        }         
                                         ?>
 
 </body>

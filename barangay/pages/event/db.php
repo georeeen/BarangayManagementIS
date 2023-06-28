@@ -1,8 +1,10 @@
 <?php
-$conn = mysqli_connect("localhost","root","","db_barangay") ;
+$host     = 'localhost';
+$username = 'root';
+$password = '';
+$dbname   ='db_barangay';
 
-if (!$conn)
-{
-echo "Failed to connect to MySQL: " . mysqli_connect_error();
+$conn = new mysqli($host, $username, $password, $dbname);
+if(!$conn){
+    die("Cannot connect to the database.". $conn->error);
 }
-?>
