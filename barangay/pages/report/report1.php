@@ -55,6 +55,7 @@
                                 </form>
                             </div>
                         </div>
+                        <button onclick="window.print()">Print Calendar</button>
                     </form>
                 <br>
                 <div class="box-body table-responsive">

@@ -172,7 +172,14 @@
                                 </div>   
                             </div><!-- /.box -->
                     </div>   <!-- /.row -->
-                    
+                                    <div class="col-md-4 col-sm-5 col-xs-5">                     
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                               Gender Registered
+                                            </div>
+                                            <div class="panel-body">
+                                                <div id="morris-donut-chart"></div>
+                                            </div>
                 </section><!-- /.content -->
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
@@ -180,6 +187,7 @@
         <!-- jQuery 2.0.2 -->
         <?php }
          include "../footer.php";
+         include "donut-chart.php";
         ?>
     </body>
 </html>
